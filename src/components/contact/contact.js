@@ -45,9 +45,9 @@ class Contact extends Component {
     }
 
     if (emailSafe === true) {
-      this.sendEmail;
+      this.sendEmail();
     } else if (emailSafe === false) {
-      this.toggleEmailWarn;
+      this.toggleEmailWarn();
     }
   }
 
