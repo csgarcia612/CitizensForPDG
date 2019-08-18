@@ -1,0 +1,50 @@
+/* For no scrollbars in Chrome, Safari, newer versions of Opera */
+::-webkit-scrollbar {
+  width: 0 !important; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+// ::-webkit-scrollbar-thumb {
+// background: rgb(255, 0, 0);
+// }
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: -moz-scrollbars-none; /* For no scrollbars in Mozilla Firefox */
+  -ms-overflow-style: none; /* For no scrollbars in Internet Explorer 10+ */
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #525b64;
+
+    .App {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      header {
+        display: flex;
+        position: fixed;
+        top: 0px;
+        z-index: 990;
+        width: 100vw;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mainContentContainer {
+        display: flex;
+        position: relative;
+        width: 100vw;
+        margin-top: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.headerContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0px 10px 0px 10px;
+  z-index: 990;
+
+  .siteLogoContainer {
+    display: flex;
+    position: relative;
+
+    .siteLogo {
+      display: flex;
+      position: relative;
+      z-index: 999;
+      height: 40px;
+    }
+  }
+
+  .menuContainer {
+    display: flex;
+    position: relative;
+
+    .navLinks {
+      margin-right: 25px;
+      font-size: 24px;
+      text-decoration: none;
+      font-style: italic;
+      color: #20638c;
+      text-shadow: 1.25px 1.25px 0 #a61f38, 1.25px -1.25px 0 #a61f38,
+        -1.25px 1.25px 0 #a61f38, -1.25px -1.25px 0 #a61f38,
+        1.25px 0px 0 #a61f38, 0px 1.25px 0 #a61f38, -1.25px 0px 0 #a61f38,
+        0px -1.25px 0 #a61f38;
+      cursor: pointer;
+    }
+
+    .navLinks:hover {
+      font-size: 27px;
+    }
+
+    .active {
+      text-decoration: none;
+      color: #a61f38;
+      text-shadow: 1.25px 1.25px 0 #20638c, 1.25px -1.25px 0 #20638c,
+        -1.25px 1.25px 0 #20638c, -1.25px -1.25px 0 #20638c,
+        1.25px 0px 0 #20638c, 0px 1.25px 0 #20638c, -1.25px 0px 0 #20638c,
+        0px -1.25px 0 #20638c;
+    }
+
+    .donateBtn {
+      margin-right: 25px;
+      font-size: 24px;
+      text-decoration: none;
+      font-style: italic;
+      color: #1c9986;
+      text-shadow: 1.25px 1.25px 0 #525b64, 1.25px -1.25px 0 #525b64,
+        -1.25px 1.25px 0 #525b64, -1.25px -1.25px 0 #525b64,
+        1.25px 0px 0 #525b64, 0px 1.25px 0 #525b64, -1.25px 0px 0 #525b64,
+        0px -1.25px 0 #525b64;
+      cursor: pointer;
+    }
+
+    .donateBtn:hover {
+      font-size: 27px;
+    }
+  }
+
+  .mobileMenuContainer {
+    display: none;
+  }
+}
