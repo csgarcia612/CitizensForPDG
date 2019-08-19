@@ -3,10 +3,80 @@
   position: relative;
   z-index: 500;
   flex-direction: row;
+  background-color: #20638c;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 75px);
   justify-content: space-evenly;
   align-items: center;
+
+  .showEmailMsg {
+  }
+
+  .hideEmailMsg {
+    display: none;
+  }
+
+  .showModalContainer {
+  }
+
+  .hideModalContainer {
+    display: none;
+  }
+
+  .showEmailErr {
+  }
+
+  .hideEmailErr {
+    display: none;
+  }
+
+  .showEmailWarn {
+  }
+
+  .hideEmailWarn {
+    display: none;
+  }
+
+  .contactMsgContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    .contactMsg1 {
+      line-height: 40px;
+      font-family: sans-serif;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 2px;
+      color: #a61f38;
+      margin-bottom: 50px;
+      text-shadow: 0.5px 0.5px 0 white, 0.5px -0.5px 0 white,
+        -0.5px 0.5px 0 white, -0.5px -0.5px 0 white, 0.5px 0px 0 white,
+        0px 0.5px 0 white, -0.5px 0px 0 white, 0px -0.5px 0 white;
+    }
+
+    .contactMsg2 {
+      line-height: 40px;
+      font-family: sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+      color: white;
+    }
+  }
+
+  .separator {
+    display: flex;
+    position: relative;
+    width: 5px;
+    height: 90%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+    margin: 30px 0px 30px 0px;
+  }
 
   .contactFormContainer {
     display: flex;
@@ -20,12 +90,12 @@
       align-items: flex-start;
 
       .contactTitle1 {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-style: italic;
+        font-family: sans-serif;
         font-size: 25px;
+        font-weight: bold;
         text-align: left;
         letter-spacing: 1px;
-        color: #fefbd8;
+        color: white;
         text-shadow: 0 0 15px black;
       }
 
@@ -56,12 +126,12 @@
       align-items: flex-start;
 
       .contactTitle2 {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-style: italic;
+        font-family: sans-serif;
+        font-weight: bold;
         font-size: 25px;
         text-align: left;
         letter-spacing: 1px;
-        color: #fefbd8;
+        color: white;
         text-shadow: 0 0 15px black;
       }
 
@@ -87,19 +157,18 @@
     }
 
     .contactSubmitBtn {
+      background-color: transparent;
+      border: none;
       font-size: 30px;
       text-decoration: none;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-style: italic;
-      color: #ca6357;
-      // text-shadow: 1.25px 1.25px 0 white, 1.25px -1.25px 0 white,
-      //   -1.25px 1.25px 0 white, -1.25px -1.25px 0 white, 1.25px 0px 0 white,
-      //   0px 1.25px 0 white, -1.25px 0px 0 white, 0px -1.25px 0 white;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #1c9986;
       text-shadow: 0 0 15px black;
     }
 
     .contactSubmitBtn:hover {
-      font-size: 45px;
+      font-size: 33px;
     }
   }
 }

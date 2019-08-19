@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './header.scss';
 import { NavLink } from 'react-router-dom';
+import PDGLogo from '../../images/PDGLogo.svg';
 
 class Header extends Component {
   constructor() {
@@ -21,7 +22,7 @@ class Header extends Component {
     return (
       <div className='headerContainer'>
         <div className='siteLogoContainer'>
-          <img className='siteLogo' src='' alt='candidate logo' />
+          <img className='siteLogo' src={PDGLogo} alt='candidate logo' />
         </div>
         <div className='menuContainer'>
           <NavLink exact to='/' className='navLinks' activeClassName='active'>
@@ -82,7 +83,10 @@ class Header extends Component {
               </li>
             </ul>
             <div className='mobileDonateBtnContainer'>
-              <button className='mobileDonateBtn' onClick=''>
+              <button
+                className='mobileDonateBtn'
+                onClick='https://www.google.com'
+              >
                 Donate
               </button>
             </div>

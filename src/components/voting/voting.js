@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './voting.scss';
+import countyDistrictMap from '../../images/countyDistrictMap.png';
 
 export default class Voting extends Component {
   render() {
@@ -16,16 +17,18 @@ export default class Voting extends Component {
             <p>
               To find out if you live in District 02 you can check by
               <a
-                href=''
-                alt='Link To DuPage County District Address Check Website'
+                href='https://www.dupageco.org/VoterLookup/'
+                alt='Link To DuPage County Voter Lookup Website'
               >
                 CLICKING HERE
               </a>
-              <p>.</p>
             </p>
           </div>
           <div className='districtImgContainer'>
-            <img src='' alt='Map of DuPage County, District Two' />
+            <img
+              src={countyDistrictMap}
+              alt='Map of DuPage County, District Two'
+            />
           </div>
         </div>
         <div className='votingInfoContainer'>
@@ -33,8 +36,16 @@ export default class Voting extends Component {
             <p className='votingTitle'>Voting Information</p>
           </div>
           <div className='votingLinkContainer'>
-            <p>***INFO FOR GETTING HELP REGISTERING TO VOTE***</p>
-            <p>***LINK TO VOTING REGISTRATION WEBSITE***</p>
+            <p>
+              For additional DuPage County election information or to register
+              to vote
+              <a
+                href='https://www.dupageco.org/election/'
+                alt='DuPage County Election Information Website'
+              >
+                CLICK HERE
+              </a>
+            </p>
           </div>
         </div>
       </div>

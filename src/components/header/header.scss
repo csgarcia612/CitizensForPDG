@@ -12,29 +12,28 @@
   .siteLogoContainer {
     display: flex;
     position: relative;
+    margin-left: 10px;
 
     .siteLogo {
       display: flex;
       position: relative;
       z-index: 999;
-      height: 40px;
+      height: 70px;
     }
   }
 
   .menuContainer {
     display: flex;
     position: relative;
+    z-index: 999;
 
     .navLinks {
       margin-right: 25px;
       font-size: 24px;
+      font-family: sans-serif;
+      font-weight: bold;
       text-decoration: none;
-      font-style: italic;
       color: #20638c;
-      text-shadow: 1.25px 1.25px 0 #a61f38, 1.25px -1.25px 0 #a61f38,
-        -1.25px 1.25px 0 #a61f38, -1.25px -1.25px 0 #a61f38,
-        1.25px 0px 0 #a61f38, 0px 1.25px 0 #a61f38, -1.25px 0px 0 #a61f38,
-        0px -1.25px 0 #a61f38;
       cursor: pointer;
     }
 
@@ -44,23 +43,17 @@
 
     .active {
       text-decoration: none;
+      font-style: italic;
       color: #a61f38;
-      text-shadow: 1.25px 1.25px 0 #20638c, 1.25px -1.25px 0 #20638c,
-        -1.25px 1.25px 0 #20638c, -1.25px -1.25px 0 #20638c,
-        1.25px 0px 0 #20638c, 0px 1.25px 0 #20638c, -1.25px 0px 0 #20638c,
-        0px -1.25px 0 #20638c;
     }
 
     .donateBtn {
-      margin-right: 25px;
+      margin-right: 10px;
       font-size: 24px;
+      font-family: sans-serif;
+      font-weight: bold;
       text-decoration: none;
-      font-style: italic;
       color: #1c9986;
-      text-shadow: 1.25px 1.25px 0 #525b64, 1.25px -1.25px 0 #525b64,
-        -1.25px 1.25px 0 #525b64, -1.25px -1.25px 0 #525b64,
-        1.25px 0px 0 #525b64, 0px 1.25px 0 #525b64, -1.25px 0px 0 #525b64,
-        0px -1.25px 0 #525b64;
       cursor: pointer;
     }
 

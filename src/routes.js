@@ -10,7 +10,7 @@ import Voting from './components/voting/voting';
 export default (
   <Switch>
     <Route exact path='/' component={Homepage} />
-    <Route exact path='/issues' component={Issues} />
+    <Route path='/issues' component={Issues} />
     <Route path='/communityinvolvement' component={CommunityInvolvement} />
     <Route path='/votinginformation' component={Voting} />
     <Route path='/contact' component={Contact} />

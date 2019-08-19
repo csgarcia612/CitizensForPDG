@@ -133,6 +133,13 @@ class Contact extends Component {
             </p>
           </div>
         </div>
+        <div className='contactMsgContainer'>
+          <p className='contactMsg2'>
+            If you would like to send a message or volunteer for the campaign,
+            please fill out the form on this page and click "Send"
+          </p>
+        </div>
+        <span className='separator' />
         <div className='contactFormContainer'>
           <div className='contactInputContainer1'>
             <p className='contactTitle1'>Name</p>

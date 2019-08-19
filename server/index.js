@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 const nodemailerController = require('./controllers/nodemailerController');
 
 let transporter = nodemailer.createTransport({
@@ -13,7 +14,7 @@ let transporter = nodemailer.createTransport({
 
 transporter.verify(function(error, success) {
   if (error) {
-    console.log(error);
+    console.log('*** Error with connection to Gmail', error);
   } else {
     console.log('Server connection to Gmail is ready to take messages');
   }

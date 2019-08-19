@@ -11,7 +11,7 @@ let transporter = nodemailer.createTransport({
 });
 
 module.exports = {
-  send: (req, res, next) => {
+  sendEmail: (req, res, next) => {
     console.log(req.body);
     const {
       contactName,
