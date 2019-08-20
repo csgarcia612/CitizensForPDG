@@ -134,9 +134,16 @@ class Contact extends Component {
           </div>
         </div>
         <div className='contactMsgContainer'>
-          <p className='contactMsg2'>
-            If you would like to send a message or volunteer for the campaign,
-            please fill out the form on this page and click "Send"
+          <p className='contactMsg'>
+            Please feel free to connect if you would like to:
+            <br />
+            &bull; Volunteer
+            <br />
+            &bull; Get a sign for your yard
+            <br />
+            &bull; Get more information
+            <br />
+            &bull; Send a message of support
           </p>
         </div>
         <span className='separator' />

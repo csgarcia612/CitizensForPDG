@@ -7,18 +7,18 @@ export default class Voting extends Component {
     return (
       <div className='votingPageContainer'>
         <div className='districtInfoContainer'>
-          <div className='districtTitleContainer'>
-            <p className='districtTitle'>District Information</p>
-          </div>
-          <div>
-            <p>***DESCRIPTION OF DISTRICT***</p>
+          <div className='districtDescriptionContainer'>
+            <p className='districtDescription'>***DESCRIPTION OF DISTRICT***</p>
           </div>
           <div className='districtCheckContainer'>
-            <p>
-              To find out if you live in District 02 you can check by
+            <p className='districtCheck'>
+              To find out if you live in District 2 you can check by
               <a
+                className='districtCheckLink'
                 href='https://www.dupageco.org/VoterLookup/'
-                alt='Link To DuPage County Voter Lookup Website'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='DuPage County Voter Lookup - www.dupageco.org/VoterLookup'
               >
                 CLICKING HERE
               </a>
@@ -26,27 +26,43 @@ export default class Voting extends Component {
           </div>
           <div className='districtImgContainer'>
             <img
+              className='districtImg'
               src={countyDistrictMap}
               alt='Map of DuPage County, District Two'
             />
           </div>
         </div>
-        <div className='votingInfoContainer'>
-          <div className='votingTitleContainer'>
-            <p className='votingTitle'>Voting Information</p>
-          </div>
-          <div className='votingLinkContainer'>
-            <p>
-              For additional DuPage County election information or to register
-              to vote
-              <a
-                href='https://www.dupageco.org/election/'
-                alt='DuPage County Election Information Website'
-              >
-                CLICK HERE
-              </a>
-            </p>
-          </div>
+        <span className='separator' />
+        <div className='voterInfoContainer'>
+          <p className='voterInfoBanner'>
+            EVERY VOTE COUNTS
+            <br />&<br />
+            EVERY VOICE MATTERS
+          </p>
+          <p className='voterInfo'>
+            <a
+              className='voterInfoLink'
+              href='https://ova.elections.il.gov/'
+              target='_blank'
+              rel='noopener noreferrer'
+              title='Illinois Voter Registration - ova.elections.il.gov/'
+            >
+              CLICK HERE
+            </a>
+            to register to vote
+          </p>
+          <p className='electionInfo'>
+            For additional DuPage County election information
+            <a
+              className='electionInfoLink'
+              href='https://www.dupageco.org/election/'
+              target='_blank'
+              rel='noopener noreferrer'
+              title='DuPage County Election Information - www.dupageco.org/election'
+            >
+              CLICK HERE
+            </a>
+          </p>
         </div>
       </div>
     );
