@@ -8,7 +8,15 @@ export default class Voting extends Component {
       <div className='votingPageContainer'>
         <div className='districtInfoContainer'>
           <div className='districtDescriptionContainer'>
-            <p className='districtDescription'>***DESCRIPTION OF DISTRICT***</p>
+            <p className='districtDescription'>
+              DuPage County, District 2 includes some or all of:
+              <br />
+              Addison, Clarendon Hills, Downers Grove, Elmhurst, Hinsdale,
+              <br />
+              Lisle, Lombard, Naperville, Oak Brook, Oak Brook Terrace,
+              <br />
+              Villa Park, Westmont, Woodridge
+            </p>
           </div>
           <div className='districtCheckContainer'>
             <p className='districtCheck'>
