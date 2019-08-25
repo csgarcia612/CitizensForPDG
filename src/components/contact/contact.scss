@@ -10,20 +10,46 @@
   align-items: center;
 
   .showEmailMsg {
+    display: flex;
+    position: fixed;
+    z-index: 750;
+    width: 100%;
+    height: calc(100vh - 75px);
+    top: 75px;
+    background: rgba(50, 50, 50, 0.9);
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(0, 200, 0);
+    cursor: pointer;
   }
 
   .hideEmailMsg {
     display: none;
   }
 
-  .showModalContainer {
-  }
-
-  .hideModalContainer {
-    display: none;
-  }
-
   .showEmailErr {
+    display: flex;
+    position: fixed;
+    z-index: 750;
+    width: 100%;
+    height: calc(100vh - 75px);
+    top: 75px;
+    background: rgba(50, 50, 50, 0.9);
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
   }
 
   .hideEmailErr {
@@ -31,6 +57,23 @@
   }
 
   .showEmailWarn {
+    display: flex;
+    position: fixed;
+    z-index: 750;
+    width: 100%;
+    height: calc(100vh - 75px);
+    top: 75px;
+    background: rgba(50, 50, 50, 0.9);
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(225, 0, 0);
+    cursor: pointer;
   }
 
   .hideEmailWarn {
@@ -149,8 +192,10 @@
       text-decoration: none;
       font-family: sans-serif;
       font-weight: bold;
-      color: #1c9986;
+      color: #00bb9f;
       text-shadow: 0 0 15px black;
+      cursor: pointer;
+      outline: none;
     }
 
     .contactSubmitBtn:hover {

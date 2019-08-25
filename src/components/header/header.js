@@ -31,13 +31,6 @@ class Header extends Component {
           <NavLink to='/issues' className='navLinks' activeClassName='active'>
             Issues
           </NavLink>
-          <NavLink
-            to='/communityinvolvement'
-            className='navLinks'
-            activeClassName='active'
-          >
-            Community Involvement
-          </NavLink>
           <NavLink to='/about' className='navLinks' activeClassName='active'>
             About
           </NavLink>
@@ -51,8 +44,10 @@ class Header extends Component {
           <NavLink to='/contact' className='navLinks' activeClassName='active'>
             Contact & Volunteer
           </NavLink>
-          <NavLink to='' className='donateBtn'>
+          <NavLink to='/' className='donateBtn'>
             Donate
+            <br />
+            Coming Soon
           </NavLink>
         </div>
         <div className='mobileMenuContainer'>
@@ -70,9 +65,6 @@ class Header extends Component {
                 <a href='/issues'>Issues</a>
               </li>
               <li>
-                <a href='/communityinvolvement'>Community Involvement</a>
-              </li>
-              <li>
                 <a href='/about'>About</a>
               </li>
               <li>
@@ -83,12 +75,7 @@ class Header extends Component {
               </li>
             </ul>
             <div className='mobileDonateBtnContainer'>
-              <button
-                className='mobileDonateBtn'
-                onClick='https://www.google.com'
-              >
-                Donate
-              </button>
+              <button className='mobileDonateBtn'>Donate</button>
             </div>
           </div>
         </div>

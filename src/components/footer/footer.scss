@@ -1,0 +1,58 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #20638c;
+  width: 100%;
+  padding: 20px;
+
+  .authorizationContainer {
+    .authorization {
+      font-family: sans-serif;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .reportsContainer {
+    margin: 15px 0px 25px 0px;
+
+    .reports {
+      font-family: sans-serif;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: white;
+      text-align: center;
+      line-height: 25px;
+
+      .reportsLink {
+        text-decoration: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        margin: 0px 2px 0px 2px;
+      }
+    }
+  }
+
+  .developerContainer {
+    .developerInfo {
+      font-family: sans-serif;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: white;
+      text-align: center;
+
+      .developerLink {
+        text-decoration: none;
+        outline: none;
+        color: red;
+        cursor: pointer;
+        margin: 0px 0px 0px 5px;
+      }
+    }
+  }
+}

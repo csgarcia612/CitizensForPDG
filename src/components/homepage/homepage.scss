@@ -1,0 +1,113 @@
+.homepageContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .homepageHeaderContainer {
+    .homepageHeaderImg {
+    }
+  }
+
+  .reasonContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .reasonTitleContainer {
+      .reasonTitle {
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #20638c;
+      }
+    }
+
+    .reasonParagraphContainer {
+      .reasonParagraph {
+        line-height: 30px;
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .separator {
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #20638c;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+    margin: 30px 0px 30px 0px;
+  }
+
+  .campaignNewsContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .campaignNewsTitleContainer {
+      .campaignNewsTitle {
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #20638c;
+      }
+    }
+
+    .newsEntryContainer {
+      .entryTitleContainer {
+        .entryTitle {
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+      }
+
+      .entryDateContainer {
+        .entryDate {
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 20px;
+          font-style: italic;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+      }
+
+      .entryImgContainer {
+        .entryImg {
+          height: 500px;
+          border-radius: 15px;
+        }
+      }
+
+      .entryParagraphContainer {
+        .entryParagraph {
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 20px;
+          text-align: left;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
