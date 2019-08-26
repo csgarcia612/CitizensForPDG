@@ -6,8 +6,11 @@
   background-color: #20638c;
   width: 100%;
   padding: 20px;
+  margin-top: 25px;
 
   .authorizationContainer {
+    margin: 0px 0px 10px 0px;
+
     .authorization {
       font-family: sans-serif;
       font-size: 15px;
@@ -17,8 +20,19 @@
     }
   }
 
+  .socialMediaContainer {
+    .socialMediaLink {
+      outline: none;
+      text-decoration: none;
+      cursor: pointer;
+
+      .socialMediaIcon {
+      }
+    }
+  }
+
   .reportsContainer {
-    margin: 15px 0px 25px 0px;
+    margin: 10px 0px 25px 0px;
 
     .reports {
       font-family: sans-serif;

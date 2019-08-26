@@ -8,7 +8,10 @@
   margin-bottom: 15px;
 
   .homepageHeaderContainer {
+    margin: 0px 0px 25px 0px;
+
     .homepageHeaderImg {
+      height: 350px;
     }
   }
 
@@ -20,6 +23,8 @@
     align-items: center;
 
     .reasonTitleContainer {
+      margin: 0px 0px 15px 0px;
+
       .reasonTitle {
         font-family: sans-serif;
         font-size: 50px;
@@ -30,13 +35,30 @@
     }
 
     .reasonParagraphContainer {
+      justify-content: center;
+      align-items: center;
+
       .reasonParagraph {
         line-height: 30px;
         font-family: sans-serif;
         font-size: 24px;
-        font-weight: bold;
         text-align: center;
         letter-spacing: 1px;
+      }
+
+      .hashtagLogo {
+        margin-top: 25px;
+        line-height: 35px;
+        font-family: sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 2px;
+        color: white;
+        text-shadow: 0 0 15px black;
+        text-shadow: 2px 2px 0 #20638c, 2px -2px 0 #20638c, -2px 2px 0 #20638c,
+          -2px -2px 0 #20638c, 2px 0px 0 #20638c, 0px 2px 0 #20638c,
+          -2px 0px 0 #20638c, 0px -2px 0 #20638c, 2px 2px 0 rgba(0, 0, 255, 0);
       }
     }
   }
@@ -60,6 +82,8 @@
     align-items: center;
 
     .campaignNewsTitleContainer {
+      margin-bottom: 25px;
+
       .campaignNewsTitle {
         font-family: sans-serif;
         font-size: 50px;
@@ -70,7 +94,24 @@
     }
 
     .newsEntryContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+
+      .entryImgContainer {
+        margin: 15px 0px;
+
+        .entryImg {
+          height: 200px;
+          border-radius: 15px;
+        }
+      }
+
       .entryTitleContainer {
+        margin: 15px 0px;
+
         .entryTitle {
           line-height: 30px;
           font-family: sans-serif;
@@ -82,6 +123,8 @@
       }
 
       .entryDateContainer {
+        margin: 15px 0px;
+
         .entryDate {
           line-height: 30px;
           font-family: sans-serif;
@@ -89,13 +132,6 @@
           font-style: italic;
           text-align: center;
           letter-spacing: 1px;
-        }
-      }
-
-      .entryImgContainer {
-        .entryImg {
-          height: 500px;
-          border-radius: 15px;
         }
       }
 

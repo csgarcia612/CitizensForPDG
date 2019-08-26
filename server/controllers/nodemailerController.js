@@ -31,7 +31,7 @@ module.exports = {
     } = req.body;
     const mailOptions = {
       from: 'pdg4dupage.gmail.com',
-      to: 'csgarcia.dev@gmail.com',
+      to: 'CitizensforPaulaDeaconGarcia@gmail.com',
       subject: 'Message From Citizens For Paula Deacon Garcia Website',
       text: `Message from ${contactName} at ${contactEmailAddress} and ${contactPhoneNumber}. The subject of the message is: ${contactSubject}. The message is as follows: ${contactMessage}`,
       // html: `

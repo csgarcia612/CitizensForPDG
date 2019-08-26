@@ -10,6 +10,7 @@
 
   .bioContainer {
     display: flex;
+    width: 95%;
     flex-direction: column;
     position: relative;
     justify-content: center;
@@ -33,22 +34,26 @@
     .bioSectionContainer {
       display: flex;
       flex-flow: row;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
 
       .bioImgContainer {
-        margin: 25px 50px;
+        margin: 15px;
 
         .bioImg {
-          height: 500px;
+          height: 400px;
           border-radius: 15px;
         }
       }
       .bioParagraphContainer {
+        margin: 0px 15px;
+        width: 70%;
+
         .bioParagraph {
-          line-height: 50px;
+          margin: 10px 0px;
+          line-height: 40px;
           font-family: sans-serif;
-          font-size: 24px;
+          font-size: 20px;
           font-weight: bold;
           text-align: left;
           letter-spacing: 1px;
