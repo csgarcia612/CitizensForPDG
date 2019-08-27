@@ -7,43 +7,41 @@
   align-items: center;
   margin-bottom: 15px;
 
-  .issuesStatementContainer {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-
-    .issuesStatement {
-      line-height: 50px;
-      font-family: sans-serif;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: left;
-      letter-spacing: 1px;
-    }
-  }
-
   .issueSectionContainer {
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     .issueImgContainer {
-      margin: 25px 50px;
+      margin: 25px;
 
       .issueImg {
+        margin-bottom: 25px;
         height: 250px;
         border-radius: 15px;
+      }
+
+      .issueImgTitle {
+        line-height: 50px;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 2px;
       }
     }
 
     .issueParagraphContainer {
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+
       .issueParagraph {
-        line-height: 50px;
+        margin: 10px;
+        line-height: 40px;
         font-family: sans-serif;
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 20px;
         text-align: left;
         letter-spacing: 1px;
       }

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './homepage.scss';
-import placeholder from '../../images/placeholder.png';
+import breakingNews from '../../images/breakingNews.jpg';
+import pdgGroup2 from '../../images/homepageHeaderImg.jpg';
 
 export default class Homepage extends Component {
   render() {
     return (
       <div className='homepageContainer'>
         <div className='homepageHeaderContainer'>
-          <img className='homepageHeaderImg' src={placeholder} alt='' />
+          <img className='homepageHeaderImg' src={pdgGroup2} alt='' />
         </div>
         <div className='reasonContainer'>
           <div className='reasonTitleContainer'>
@@ -15,7 +16,20 @@ export default class Homepage extends Component {
           </div>
           <div className='reasonParagraphContainer'>
             <p className='reasonParagraph'>
-              Reason Why I Am Running
+              I am running to be your voice. I hear your frustrations as you
+              feel your concerns are not being addressed. I hear you when you
+              are frustrated at the misuse of your tax money. I hear your
+              worries about living paycheck to paycheck. I hear you say the
+              county needs to prioritize fair elections, protection for all
+              people's rights, and search for new jobs that will benefit the
+              area. These are things worth fighting for and I have experience
+              leading, mediating, and 20+ years of solving resident's problems.
+              I hear you and want to be your voice on the DuPage County Board.
+              <br />
+              <br />
+              I am running not as an individual voice, but as a spokesperson for
+              the many diverse and unique voices that make up our great
+              community.
               <br />
               <br />
               That's why I want to help build a better DuPage.
@@ -28,23 +42,9 @@ export default class Homepage extends Component {
           <div className='campaignNewsTitleContainer'>
             <p className='campaignNewsTitle'>Campaign News</p>
           </div>
-          {/* <div className='newsEntryContainer'>
-            <div className='entryImgContainer'>
-              <img className='entryImg' src='' alt='' />
-            </div>
-            <div className='entryTitleContainer'>
-              <p className='entryTitle'>Campaign News Entry Title</p>
-            </div>
-            <div className='entryDateContainer'>
-              <p className='entryDate'>Entry Date</p>
-            </div>
-            <div className='entryParagraphContainer'>
-              <p className='entryParagraph'>Entry Paragraph</p>
-            </div>
-          </div> */}
           <div className='newsEntryContainer'>
             <div className='entryImgContainer'>
-              <img className='entryImg' src={placeholder} alt='' />
+              <img className='entryImg' src={breakingNews} alt='' />
             </div>
             <div className='entryTitleContainer'>
               <p className='entryTitle'>

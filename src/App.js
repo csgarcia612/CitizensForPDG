@@ -8,6 +8,9 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        <div className='mobileModalContainer'>
+          <p className='mobileModalText'>Mobile Responsive Site Coming Soon</p>
+        </div>
         <header>
           <Header />
         </header>

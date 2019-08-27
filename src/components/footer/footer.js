@@ -21,16 +21,16 @@ class Footer extends Component {
       <div className='footerContainer'>
         <div className='authorizationContainer'>
           <p className='authorization'>
-            Authorized by Citizens For Paula Deacon Garcia
+            Paid For and Authorized by Citizens For Paula Deacon Garcia
           </p>
         </div>
         <div className='socialMediaContainer'>
           <a
             className='socialMediaLink'
-            href='https://www.facebook.com/'
+            href='https://www.facebook.com/pdg4dupage'
             target='_blank'
             rel='noopener noreferrer'
-            title='https://www.facebook.com/'
+            title='https://www.facebook.com/pdg4dupage'
           >
             <img
               className='socialMediaIcon'
