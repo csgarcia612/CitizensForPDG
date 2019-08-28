@@ -45,7 +45,23 @@ export default class Issues extends Component {
         <span className='separator' />
         <div className='issueSectionContainer'>
           <div className='issueParagraphContainer'>
-            <p className='issueParagraph'>Flooding Paragraph</p>
+            <p className='issueParagraph'>
+              DuPage County needs to be a leader in sustainability and help set
+              an example of how to take care of where we live. Climate change is
+              a very real danger and the county should be striving for solutions
+              that will help combat this issue. Solutions like renewable energy
+              like solar and wind, as well as new and updated recycling programs
+              and any other technologies that will help the future of our world.
+            </p>
+            <p className='issueParagraph'>
+              Unfortunately due to the increases in severity of the weather,
+              stormwater flooding solutions are critically needed in parts of
+              DuPage County. In my experience as a Certified Floodplain Manager,
+              I have seen the damage and heartbreak these situations create
+              firsthand. My goal is to work to find ways to better help all
+              people stay out of danger, especially those who are living near
+              rivers and in floodplains.
+            </p>
           </div>
           <div className='issueImgContainer'>
             <img className='issueImg' src={flooding} alt='' />
@@ -72,7 +88,20 @@ export default class Issues extends Component {
         <span className='separator' />
         <div className='issueSectionContainer'>
           <div className='issueParagraphContainer'>
-            <p className='issueParagraph'>Senior Care Paragraph</p>
+            <p className='issueParagraph'>
+              Services for our senior citizens is mandatory for a caring
+              society. As families are not always located in the same area, it
+              falls upon county services to help care for the people that have
+              helped build, maintain, and grow DuPage County in to what it is
+              today.
+            </p>
+            <p className='issueParagraph'>
+              I have lived through those times with my family as I had the
+              responsibility of making sure my mother got the best care as she
+              became unable to care for herself. I want to make sure people have
+              all the resources and assistance to get them through this
+              difficult time in life.
+            </p>
           </div>
           <div className='issueImgContainer'>
             <img className='issueImg' src={seniorCare} alt='' />

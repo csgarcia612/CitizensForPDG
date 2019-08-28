@@ -9,7 +9,7 @@ import communityGarden3 from '../../images/Community_Garden3.jpg';
 import pads1 from '../../images/PADS1.jpg';
 import packLeader from '../../images/packLeader.jpg';
 import roadwayPetition from '../../images/roadwayPetition.jpg';
-import placeholder from '../../images/placeholder.png';
+import hsoLogo from '../../images/HSOLogo.png';
 
 export default class About extends Component {
   render() {
@@ -67,11 +67,7 @@ export default class About extends Component {
               </p>
             </div>
             <div className='bioImgContainer'>
-              <img
-                className='bioImg'
-                src={coupleImg}
-                alt='Paula Deacon Garcia Headshot'
-              />
+              <img className='bioImg' src={coupleImg} alt='Paula and Larry' />
             </div>
           </div>
           <div className='bioSectionContainer2'>
@@ -87,7 +83,7 @@ export default class About extends Component {
               <img
                 className='bioImg2'
                 src={pdgGroup3}
-                alt='Paula Deacon Garcia Headshot'
+                alt='Neighborhood Discussion'
               />
             </div>
             <div className='bioParagraphContainer2'>
@@ -164,12 +160,16 @@ export default class About extends Component {
               </p>
             </div>
             <div className='philanthropyImgContainer'>
-              <img className='philanthropyImg' src={pads1} alt='' />
+              <img
+                className='philanthropyImg'
+                src={pads1}
+                alt='PADS Training'
+              />
             </div>
           </div>
           <div className='philanthropySectionContainer'>
             <div className='philanthropyImgContainer'>
-              <img className='philanthropyImg' src={placeholder} alt='' />
+              <img className='philanthropyImg' src={hsoLogo} alt='HSO Logo' />
             </div>
             <div className='philanthropyParagraphContainer'>
               <p className='philanthropyParagraph'>
@@ -200,12 +200,20 @@ export default class About extends Component {
               </p>
             </div>
             <div className='philanthropyImgContainer2'>
-              <img className='philanthropyImg2' src={packLeader} alt='' />
+              <img
+                className='philanthropyImg2'
+                src={packLeader}
+                alt='Cub Scouts'
+              />
             </div>
           </div>
           <div className='philanthropySectionContainer'>
             <div className='philanthropyImgContainer2'>
-              <img className='philanthropyImg2' src={roadwayPetition} alt='' />
+              <img
+                className='philanthropyImg2'
+                src={roadwayPetition}
+                alt='Speaking At Village Board'
+              />
             </div>
             <div className='philanthropyParagraphContainer'>
               <p className='philanthropyParagraph'>
