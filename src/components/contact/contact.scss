@@ -5,9 +5,9 @@
   flex-direction: row;
   background-color: #20638c;
   width: 100%;
-  height: calc(100vh - 75px);
   justify-content: space-evenly;
   align-items: center;
+  padding: 20px 0px 10px 0px;
 
   .showEmailMsg {
     display: flex;
@@ -19,6 +19,7 @@
     background: rgba(50, 50, 50, 0.9);
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -42,6 +43,7 @@
     background: rgba(50, 50, 50, 0.9);
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -66,6 +68,7 @@
     background: rgba(50, 50, 50, 0.9);
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -83,6 +86,8 @@
   .contactMsgContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 40%;
 
     .contactMsg {
@@ -200,6 +205,237 @@
 
     .contactSubmitBtn:hover {
       font-size: 33px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contactPageContainer {
+    .showEmailMsg {
+      font-size: 30px;
+    }
+
+    .showEmailErr {
+      font-size: 30px;
+    }
+
+    .showEmailWarn {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contactPageContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+
+    .showEmailMsg {
+      font-size: 30px;
+      line-height: 35px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .showEmailErr {
+      font-size: 30px;
+      line-height: 35px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .showEmailWarn {
+      font-size: 30px;
+      line-height: 35px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .contactMsgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .contactMsg {
+        line-height: 35px;
+        font-size: 25px;
+      }
+    }
+
+    .separator {
+      width: 95%;
+      height: 5px;
+    }
+
+    .contactFormContainer {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .contactInputContainer1 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contactInput1 {
+          margin: 10px 0px 30px 0px;
+        }
+      }
+
+      .contactInputContainer2 {
+        align-items: center;
+
+        .contactInput2 {
+          margin: 10px 0px 30px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .contactPageContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+
+    .showEmailMsg {
+      font-size: 30px;
+      line-height: 35px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .showEmailErr {
+      font-size: 30px;
+      line-height: 35px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .showEmailWarn {
+      font-size: 30px;
+      line-height: 35px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .contactMsgContainer {
+      width: 90%;
+
+      .contactMsg {
+        line-height: 35px;
+        font-size: 25px;
+      }
+    }
+
+    .separator {
+      width: 95%;
+      height: 5px;
+    }
+
+    .contactFormContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .contactInputContainer1 {
+        .contactInput1 {
+          margin: 10px 0px 30px 0px;
+        }
+      }
+
+      .contactInputContainer2 {
+        .contactInput2 {
+          margin: 10px 0px 30px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .contactPageContainer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+
+    .showEmailMsg {
+      font-size: 18px;
+      line-height: 30px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .showEmailErr {
+      font-size: 18px;
+      line-height: 30px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .showEmailWarn {
+      font-size: 18px;
+      line-height: 30px;
+      height: calc(100vh - 105px);
+      top: 105px;
+    }
+
+    .contactMsgContainer {
+      width: 90%;
+
+      .contactMsg {
+        line-height: 30px;
+        font-size: 18px;
+      }
+    }
+
+    .separator {
+      width: 95%;
+      height: 5px;
+    }
+
+    .contactFormContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .contactInputContainer1 {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .contactInput1 {
+          width: 90%;
+          margin: 10px 0px 25px 0px;
+        }
+      }
+
+      .contactInputContainer2 {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .contactInput2 {
+          width: 90%;
+          margin: 10px 0px 25px 0px;
+        }
+      }
+
+      .contactSubmitBtn {
+        font-size: 25px;
+      }
+
+      .contactSubmitBtn:hover {
+        font-size: 27px;
+      }
     }
   }
 }

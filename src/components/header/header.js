@@ -46,8 +46,6 @@ class Header extends Component {
           </NavLink>
           <NavLink to='/' className='donateBtn'>
             Donate
-            <br />
-            Coming Soon
           </NavLink>
         </div>
         <div className='mobileMenuContainer'>
@@ -73,10 +71,12 @@ class Header extends Component {
               <li>
                 <a href='/contact'>Contact & Volunteer</a>
               </li>
+              <li>
+                <a href='/' className='donateBtn'>
+                  Donate
+                </a>
+              </li>
             </ul>
-            <div className='mobileDonateBtnContainer'>
-              <button className='mobileDonateBtn'>Donate</button>
-            </div>
           </div>
         </div>
       </div>

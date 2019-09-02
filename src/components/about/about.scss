@@ -6,7 +6,7 @@
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   .bioContainer {
     display: flex;
@@ -31,6 +31,11 @@
         color: #20638c;
       }
     }
+
+    .mobileBioSectionContainer {
+      display: none;
+    }
+
     .bioSectionContainer {
       display: flex;
       flex-flow: row;
@@ -124,6 +129,10 @@
       }
     }
 
+    .mobilePhilanthropySectionContainer {
+      display: none;
+    }
+
     .philanthropySectionContainer {
       display: flex;
       flex-flow: row;
@@ -172,6 +181,545 @@
           text-align: left;
           letter-spacing: 1px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .aboutPageContainer {
+    .bioContainer {
+      .bioTitleContainer {
+        .bioTitle {
+          font-size: 40px;
+        }
+      }
+      .bioSectionContainer {
+        .bioImgContainer {
+          .bioImg {
+            height: 300px;
+          }
+        }
+        .bioParagraphContainer {
+          .bioParagraph {
+            line-height: 30px;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .bioSectionContainer2 {
+        .bioImgContainer2 {
+          .bioImg2 {
+            height: 300px;
+          }
+        }
+        .bioParagraphContainer2 {
+          .bioParagraph2 {
+            line-height: 30px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .philanthropyContainer {
+      .philanthropyTitleContainer {
+        .philanthropyTitle {
+          font-size: 40px;
+        }
+      }
+
+      .philanthropySectionContainer {
+        .philanthropyImgContainer {
+          margin: 15px;
+          width: 350px;
+        }
+
+        .philanthropyImgContainer2 {
+          margin: 1l 5px;
+          width: 250px;
+
+          .philanthropyImg2 {
+            width: 100%;
+            border-radius: 15px;
+          }
+        }
+
+        .philanthropyParagraphContainer {
+          width: 60%;
+          margin: 15px;
+
+          .philanthropyParagraph {
+            line-height: 30px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aboutPageContainer {
+    .bioContainer {
+      .bioTitleContainer {
+        .bioTitle {
+          font-size: 30px;
+        }
+      }
+
+      .mobileBioSectionContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobileBioImgContainer {
+          margin: 15px;
+
+          .mobileBioImg {
+            height: 300px;
+            border-radius: 15px;
+          }
+        }
+        .mobileBioParagraphContainer {
+          margin: 0px 15px;
+          width: 90%;
+
+          .mobileBioParagraph {
+            margin: 10px 0px;
+            line-height: 35px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .bioSectionContainer {
+        display: none;
+      }
+
+      .bioSectionContainer2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .bioImgContainer2 {
+          margin: 15px;
+
+          .bioImg2 {
+            height: 275px;
+            border-radius: 15px;
+          }
+        }
+        .bioParagraphContainer2 {
+          margin: 15px 0px;
+          width: 90%;
+
+          .bioParagraph2 {
+            margin: 10px 0px;
+            line-height: 35px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .separator {
+      display: flex;
+      position: relative;
+      width: 90%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      margin: 30px 0px 30px 0px;
+    }
+
+    .philanthropyContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .philanthropyTitleContainer {
+        .philanthropyTitle {
+          font-size: 30px;
+        }
+      }
+
+      .mobilePhilanthropySectionContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobilePhilanthropyImgContainer {
+          margin: 15px;
+          width: 400px;
+
+          .mobilePhilanthropyImg {
+            width: 100%;
+            border-radius: 15px;
+          }
+
+          .mobileImgRow1 > .mobilePhilanthropyImg {
+            width: 49%;
+            margin: 0 1% 0 0;
+          }
+
+          .mobileImgRow2 > .mobilePhilanthropyImg {
+            width: 99%;
+            margin: 0.5% 1% 0 0;
+          }
+        }
+
+        .mobilePhilanthropyImgContainer2 {
+          margin: 15px;
+          width: 250px;
+
+          .mobilePhilanthropyImg2 {
+            width: 100%;
+            border-radius: 15px;
+          }
+        }
+
+        .mobilePhilanthropyParagraphContainer {
+          width: 90%;
+          margin: 15px;
+
+          .mobilePhilanthropyParagraph {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .philanthropySectionContainer {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .aboutPageContainer {
+    .bioContainer {
+      .bioTitleContainer {
+        .bioTitle {
+          font-size: 30px;
+        }
+      }
+
+      .mobileBioSectionContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobileBioImgContainer {
+          margin: 15px;
+
+          .mobileBioImg {
+            height: 300px;
+            border-radius: 15px;
+          }
+        }
+        .mobileBioParagraphContainer {
+          margin: 0px 15px;
+          width: 90%;
+
+          .mobileBioParagraph {
+            margin: 10px 0px;
+            line-height: 35px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .bioSectionContainer {
+        display: none;
+      }
+
+      .bioSectionContainer2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .bioImgContainer2 {
+          margin: 15px;
+
+          .bioImg2 {
+            height: 200px;
+            border-radius: 15px;
+          }
+        }
+        .bioParagraphContainer2 {
+          margin: 15px 0px;
+          width: 90%;
+
+          .bioParagraph2 {
+            margin: 10px 0px;
+            line-height: 35px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .separator {
+      display: flex;
+      position: relative;
+      width: 90%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      margin: 30px 0px 30px 0px;
+    }
+
+    .philanthropyContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .philanthropyTitleContainer {
+        .philanthropyTitle {
+          font-size: 30px;
+        }
+      }
+
+      .mobilePhilanthropySectionContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobilePhilanthropyImgContainer {
+          margin: 15px;
+          width: 400px;
+
+          .mobilePhilanthropyImg {
+            width: 100%;
+            border-radius: 15px;
+          }
+
+          .mobileImgRow1 > .mobilePhilanthropyImg {
+            width: 49%;
+            margin: 0 1% 0 0;
+          }
+
+          .mobileImgRow2 > .mobilePhilanthropyImg {
+            width: 99%;
+            margin: 0.5% 1% 0 0;
+          }
+        }
+
+        .mobilePhilanthropyImgContainer2 {
+          margin: 15px;
+          width: 250px;
+
+          .mobilePhilanthropyImg2 {
+            width: 100%;
+            border-radius: 15px;
+          }
+        }
+
+        .mobilePhilanthropyParagraphContainer {
+          width: 90%;
+          margin: 15px;
+
+          .mobilePhilanthropyParagraph {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .philanthropySectionContainer {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .aboutPageContainer {
+    .bioContainer {
+      .bioTitleContainer {
+        .bioTitle {
+          font-size: 24px;
+        }
+      }
+
+      .mobileBioSectionContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobileBioImgContainer {
+          margin: 15px;
+
+          .mobileBioImg {
+            height: 200px;
+            border-radius: 10px;
+          }
+        }
+        .mobileBioParagraphContainer {
+          margin: 0px 15px;
+          width: 90%;
+
+          .mobileBioParagraph {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .bioSectionContainer {
+        display: none;
+      }
+
+      .bioSectionContainer2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .bioImgContainer2 {
+          margin: 15px;
+
+          .bioImg2 {
+            height: 150px;
+            border-radius: 10px;
+          }
+        }
+        .bioParagraphContainer2 {
+          margin: 10px 0px;
+          width: 90%;
+
+          .bioParagraph2 {
+            margin: 0px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .separator {
+      display: flex;
+      position: relative;
+      width: 90%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      margin: 15px 0px 15px 0px;
+    }
+
+    .philanthropyContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .philanthropyTitleContainer {
+        .philanthropyTitle {
+          font-size: 24px;
+        }
+      }
+
+      .mobilePhilanthropySectionContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobilePhilanthropyImgContainer {
+          margin: 15px;
+          width: 300px;
+
+          .mobilePhilanthropyImg {
+            width: 100%;
+            border-radius: 10px;
+          }
+
+          .mobileImgRow1 > .mobilePhilanthropyImg {
+            width: 49%;
+            margin: 0 1% 0 0;
+          }
+
+          .mobileImgRow2 > .mobilePhilanthropyImg {
+            width: 99%;
+            margin: 0.5% 1% 0 0;
+          }
+        }
+
+        .mobilePhilanthropyImgContainer2 {
+          margin: 15px;
+          width: 200px;
+
+          .mobilePhilanthropyImg2 {
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+
+        .mobilePhilanthropyParagraphContainer {
+          width: 90%;
+          margin: 15px;
+
+          .mobilePhilanthropyParagraph {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .philanthropySectionContainer {
+        display: none;
       }
     }
   }
