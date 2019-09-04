@@ -62,15 +62,15 @@ export default class About extends Component {
                 Degree in Communication/Public Relations.
               </p>
               <p className='mobileBioParagraph'>
-                For the past 20 years, Paula has worked for the Village of Lisle
+                For the past 20 years, Paula has worked for a local municipality
                 in the Development Services Department (Building Department),
                 now reorganized as the Customer Service Department. While at
                 work, Paula’s primary responsibility is to be a facilitator for
                 the residents who come in with questions regarding building
-                permits, codes, and other general village questions. Paula also
-                has experience as a Certified Floodplain Manager and used her
-                knowledge and skills to assist residents affected by the floods
-                that have occurred over the past decade.
+                permits, codes, and other general municipality questions. Paula
+                also has experience as a Certified Floodplain Manager and used
+                her knowledge and skills to assist residents affected by the
+                floods that have occurred over the past decade.
               </p>
             </div>
           </div>
@@ -110,15 +110,15 @@ export default class About extends Component {
                 Degree in Communication/Public Relations.
               </p>
               <p className='bioParagraph'>
-                For the past 20 years, Paula has worked for the Village of Lisle
+                For the past 20 years, Paula has worked for a local municipality
                 in the Development Services Department (Building Department),
                 now reorganized as the Customer Service Department. While at
                 work, Paula’s primary responsibility is to be a facilitator for
                 the residents who come in with questions regarding building
-                permits, codes, and other general village questions. Paula also
-                has experience as a Certified Floodplain Manager and used her
-                knowledge and skills to assist residents affected by the floods
-                that have occurred over the past decade.
+                permits, codes, and other general municipality questions. Paula
+                also has experience as a Certified Floodplain Manager and used
+                her knowledge and skills to assist residents affected by the
+                floods that have occurred over the past decade.
               </p>
             </div>
             <div className='bioImgContainer'>
