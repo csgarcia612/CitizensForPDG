@@ -44,9 +44,15 @@ class Header extends Component {
           <NavLink to='/contact' className='navLinks' activeClassName='active'>
             Contact & Volunteer
           </NavLink>
-          <NavLink to='/' className='donateBtn'>
+          <a
+            href='https://secure.actblue.com/donate/pdg4dupage'
+            className='donateBtn'
+            target='_blank'
+            rel='noopener noreferrer'
+            title='ActBlue - Donate To Citizens For Paula Deacon Garcia - https://secure.actblue.com/donate/pdg4dupage'
+          >
             Donate
-          </NavLink>
+          </a>
         </div>
         <div className='mobileMenuContainer'>
           <div className='mobileMenuBtnContainer'>
@@ -72,7 +78,13 @@ class Header extends Component {
                 <a href='/contact'>Contact & Volunteer</a>
               </li>
               <li>
-                <a href='/' className='donateBtn'>
+                <a
+                  href='https://secure.actblue.com/donate/pdg4dupage'
+                  className='donateBtn'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='ActBlue - Donate To Citizens For Paula Deacon Garcia - https://secure.actblue.com/donate/pdg4dupage'
+                >
                   Donate
                 </a>
               </li>

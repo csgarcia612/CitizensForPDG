@@ -125,6 +125,31 @@ export default class About extends Component {
               <img className='bioImg' src={coupleImg} alt='Paula and Larry' />
             </div>
           </div>
+          <div className='mobileBioSectionContainer2'>
+            <div className='mobileBioParagraphContainer2'>
+              <p className='mobileBioParagraph2'>
+                Paula’s extensive experience in being a facilitator will be an
+                asset to the DuPage County Board as she takes the time to listen
+                to the needs and problems of the citizens of the county and
+                works diligently to find effective ways to solve them.
+              </p>
+            </div>
+            <div className='mobileBioImgContainer2'>
+              <img
+                className='mobileBioImg2'
+                src={pdgGroup3}
+                alt='Neighborhood Discussion'
+              />
+            </div>
+            <div className='mobileBioParagraphContainer2'>
+              <p className='mobileBioParagraph2'>
+                Paula loves living in a neighborhood where people care about
+                each other and do not hesitate to drop everything and help
+                someone in need. She truly desires to continue to help people
+                and to bring that level of caring to the county level.
+              </p>
+            </div>
+          </div>
           <div className='bioSectionContainer2'>
             <div className='bioParagraphContainer2'>
               <p className='bioParagraph2'>

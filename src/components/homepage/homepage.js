@@ -44,7 +44,11 @@ export default class Homepage extends Component {
           </div>
           <div className='newsEntryContainer'>
             <div className='entryImgContainer'>
-              <img className='entryImg' src={breakingNews} alt='' />
+              <img
+                className='entryImg'
+                src={breakingNews}
+                alt='breaking news logo'
+              />
             </div>
             <div className='entryTitleContainer'>
               <p className='entryTitle'>
@@ -66,6 +70,30 @@ export default class Homepage extends Component {
                 Paula's donation page on ActBlue will be active around Tuesday,
                 September 3, 2019. Please feel free to check out her website and
                 Facebook page.
+              </p>
+            </div>
+          </div>
+          <div className='newsEntryContainer'>
+            <div className='entryImgContainer'>
+              <img
+                className='entryImg'
+                src={breakingNews}
+                alt='breaking news logo'
+              />
+            </div>
+            <div className='entryTitleContainer'>
+              <p className='entryTitle'>ActBlue Donation Page Now Active</p>
+            </div>
+            <div className='entryDateContainer'>
+              <p className='entryDate'>Friday, September 06, 2019</p>
+            </div>
+            <div className='entryParagraphContainer'>
+              <p className='entryParagraph'>
+                The ActBlue donation page for Citizens For Paula Deacon Garcia
+                is now active. Paula is extremely grateful for any donations
+                made to the campaign, but no one should feel obligated to do so.
+                All support is appreciated, whether it be donations,
+                volunteering, or simply voting for Paula in the election.
               </p>
             </div>
           </div>
