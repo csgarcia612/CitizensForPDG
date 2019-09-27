@@ -196,7 +196,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 90vw;
 
         .entryImgContainer {
           margin: 15px 0px;
@@ -270,7 +270,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 90vw;
 
         .entryImgContainer {
           margin: 15px 0px;
@@ -344,7 +344,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 90vw;
 
         .entryImgContainer {
           margin: 15px 0px;
@@ -352,6 +352,12 @@
           .entryImg {
             height: 150px;
             border-radius: 15px;
+          }
+
+          .entrySpecialImg {
+            height: initial;
+            width: 90vw;
+            border-radius: 5px;
           }
         }
 
@@ -418,7 +424,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 90vw;
 
         .entryImgContainer {
           margin: 15px 0px;
@@ -426,6 +432,12 @@
           .entryImg {
             height: 100px;
             border-radius: 15px;
+          }
+
+          .entrySpecialImg {
+            height: initial;
+            width: 90vw;
+            border-radius: 5px;
           }
         }
 
