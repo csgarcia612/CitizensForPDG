@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './footer.scss';
 import facebookIcon from '../../images/facebook_icon.png';
+import instagramIcon from '../../images/instagram_icon.png';
 
 class Footer extends Component {
   constructor() {
@@ -35,6 +36,19 @@ class Footer extends Component {
             <img
               className='socialMediaIcon'
               src={facebookIcon}
+              alt='Facebook Icon'
+            />
+          </a>
+          <a
+            className='socialMediaLink'
+            href='https://www.instagram.com/garciapauladeacon/'
+            target='_blank'
+            rel='noopener noreferrer'
+            title='https://www.instagram.com/garciapauladeacon/'
+          >
+            <img
+              className='socialMediaIcon'
+              src={instagramIcon}
               alt='Facebook Icon'
             />
           </a>
