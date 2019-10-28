@@ -3,6 +3,7 @@ import './homepage.scss';
 import breakingNews from '../../images/breakingNews.jpg';
 import pdgGroup2 from '../../images/homepageHeaderImg.jpg';
 import candidateSpotlight from '../../images/candidateSpotlight.png';
+import fundraiserFoodPantry from '../../images/Fundraiser-Food-Pantry.jpg';
 
 export default class Homepage extends Component {
   render() {
@@ -43,6 +44,63 @@ export default class Homepage extends Component {
           <div className='campaignNewsTitleContainer'>
             <p className='campaignNewsTitle'>Campaign News</p>
           </div>
+          <div className='newsEntryContainer'>
+            <div className='entryImgContainer'>
+              <img
+                className='entrySpecialImg2'
+                src={fundraiserFoodPantry}
+                alt='food pantry fundraiser logo'
+              />
+            </div>
+            <div className='entryTitleContainer'>
+              <p className='entryTitle'>PDG4DuPage Fundraiser & Food Drive</p>
+            </div>
+            <div className='entryDateContainer'>
+              <p className='entryDate'>Monday, October 28, 2019</p>
+            </div>
+            <div className='entryParagraphContainer'>
+              <p className='entryParagraph2'>
+                Come have a bite with Paula and take a bite out of hunger in
+                DuPage - Fundraiser for Paula Deacon Garcia for DuPage County
+                Board District 2.
+                <br />
+                <br />
+                Paula is running for office to make a change, but near and dear
+                to my heart is making changes in people's lives. Please come for
+                appetizers, cash bar and bring an item to donate to the Lisle
+                Township Food Pantry.
+                <br />
+                <br />
+                ** Items to bring: Canned Soup, Macaroni and Cheese, Chili,
+                Pasta with Meat, Canned Fruit, Peanut Butter, Jelly / Jam,
+                Canned Tuna / Chicken / Sardines, Coffee, Ketchup, Mustard,
+                Salad Dressings, Laundry Detergent.
+                <br />
+                <br />
+                <a
+                  className='newsEntryLink'
+                  href='https://www.facebook.com/events/393125444945290/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='https://www.facebook.com/events/393125444945290/'
+                >
+                  Event Facebook Page
+                </a>
+                <br />
+                <br />
+                <a
+                  className='newsEntryLink'
+                  href='https://secure.actblue.com/donate/pdg4dupage-fundraiser'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='https://secure.actblue.com/donate/pdg4dupage-fundraiser'
+                >
+                  ActBlue Ticket Page
+                </a>
+              </p>
+            </div>
+          </div>
+          <span className='newsSeparator' />
           <div className='newsEntryContainer'>
             <div className='entryTitleContainer'>
               <p className='entryTitle'>

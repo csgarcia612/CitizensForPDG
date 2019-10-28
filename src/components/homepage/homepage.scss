@@ -113,6 +113,11 @@
           height: 1000px;
           border-radius: 5px;
         }
+
+        .entrySpecialImg2 {
+          height: 500px;
+          border-radius: 5px;
+        }
       }
 
       .entryTitleContainer {
@@ -148,6 +153,24 @@
           font-size: 24px;
           text-align: left;
           letter-spacing: 1px;
+        }
+
+        .entryParagraph2 {
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 24px;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+
+        .newsEntryLink {
+          font-size: 30px;
+          font-family: sans-serif;
+          font-weight: bold;
+          color: #20638c;
+          text-decoration: none;
+          cursor: pointer;
+          outline: none;
         }
       }
     }
