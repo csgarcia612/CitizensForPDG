@@ -1,11 +1,36 @@
 import React, { Component } from 'react';
 import './homepage.scss';
-import breakingNews from '../../images/breakingNews.jpg';
+// import breakingNews from '../../images/breakingNews.jpg';
 import pdgGroup2 from '../../images/homepageHeaderImg.jpg';
-import candidateSpotlight from '../../images/candidateSpotlight.png';
-import fundraiserFoodPantry from '../../images/Fundraiser-Food-Pantry.jpg';
+// import candidateSpotlight from '../../images/candidateSpotlight.png';
+// import fundraiserFoodPantry from '../../images/Fundraiser-Food-Pantry.jpg';
 
 export default class Homepage extends Component {
+  constructor() {
+    super();
+    this.state = {
+      viewportWidth: 500
+    };
+  }
+
+  componentDidMount() {
+    this.checkViewport();
+  }
+
+  checkViewport = () => {
+    let currentWidth = window.innerWidth;
+
+    // console.log('***Current Width: ', currentWidth);
+
+    if (currentWidth < 500) {
+      let mobileWidth = currentWidth - 75;
+
+      this.setState({
+        viewportWidth: mobileWidth
+      });
+    }
+  };
+
   render() {
     return (
       <div className='homepageContainer'>
@@ -42,9 +67,34 @@ export default class Homepage extends Component {
         <span className='separator' />
         <div className='campaignNewsContainer'>
           <div className='campaignNewsTitleContainer'>
-            <p className='campaignNewsTitle'>Campaign News</p>
+            <p className='campaignNewsTitle'>Facebook Feed</p>
           </div>
-          <div className='newsEntryContainer'>
+          <div
+            className='facebookFeedsContainer'
+            style={{ width: this.state.viewportWidth + 'px' }}
+          >
+            <div
+              className='fb-page'
+              data-href='https://www.facebook.com/pdg4Dupage/'
+              data-tabs='timeline, events'
+              data-width='500'
+              data-height='750'
+              data-small-header='true'
+              data-adapt-container-width='true'
+              data-hide-cover='true'
+              data-show-facepile='false'
+            >
+              <blockquote
+                cite='https://www.facebook.com/pdg4Dupage/'
+                className='fb-xfbml-parse-ignore'
+              >
+                <a href='https://www.facebook.com/pdg4Dupage/'>
+                  Citizens for Paula Deacon Garcia
+                </a>
+              </blockquote>
+            </div>
+          </div>
+          {/* <div className='newsEntryContainer'>
             <div className='entryImgContainer'>
               <img
                 className='entrySpecialImg2'
@@ -181,7 +231,7 @@ export default class Homepage extends Component {
                 Facebook page.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );
