@@ -9,7 +9,7 @@ export default class Homepage extends Component {
   constructor() {
     super();
     this.state = {
-      viewportWidth: 500
+      viewportWidth: 0
     };
   }
 
@@ -20,13 +20,21 @@ export default class Homepage extends Component {
   checkViewport = () => {
     let currentWidth = window.innerWidth;
 
-    // console.log('***Current Width: ', currentWidth);
+    // console.log('***Init Width: ', this.state.viewportWidth);
+
+    // console.log('***Inner Width: ', currentWidth);
 
     if (currentWidth < 500) {
-      let mobileWidth = currentWidth - 75;
+      let mobileWidth = currentWidth - 100;
+
+      // console.log('***Mobile Width: ', mobileWidth);
 
       this.setState({
         viewportWidth: mobileWidth
+      });
+    } else {
+      this.setState({
+        viewportWidth: 500
       });
     }
   };

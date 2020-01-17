@@ -27,6 +27,11 @@
     position: relative;
     z-index: 999;
 
+    a.active {
+      font-style: italic;
+      color: #a61f38;
+    }
+
     .navLinks {
       margin-right: 25px;
       font-size: 24px;

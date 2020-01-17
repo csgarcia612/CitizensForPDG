@@ -25,9 +25,12 @@ class Header extends Component {
           <img className='siteLogo' src={PDGLogo} alt='candidate logo' />
         </div>
         <div className='menuContainer'>
-          <NavLink exact to='/' className='navLinks' activeClassName='active'>
+          {/* <NavLink exact to='/' className='navLinks' activeClassName='active'>
             Home
-          </NavLink>
+          </NavLink> */}
+          <a href='/' className='navLinks'>
+            Home
+          </a>
           <NavLink to='/issues' className='navLinks' activeClassName='active'>
             Issues
           </NavLink>

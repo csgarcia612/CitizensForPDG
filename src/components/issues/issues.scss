@@ -223,7 +223,143 @@
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (min-width: 414px) and (max-width: 599px) {
+  .issuesPageContainer {
+    .mobileIssueSectionContainer {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+
+      .mobileIssueImgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+
+        .mobileIssueImg {
+          margin-bottom: 15px;
+          height: 100px;
+          border-radius: 10px;
+        }
+
+        .mobileIssueImgTitle {
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          letter-spacing: 2px;
+        }
+      }
+
+      .mobileIssueParagraphContainer {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+        .mobileIssueParagraph {
+          margin: 10px;
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 18px;
+          text-align: left;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .mobileSeparator {
+      display: flex;
+      position: relative;
+      width: 90%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      margin: 30px 0px 30px 0px;
+    }
+
+    .issueSectionContainer {
+      display: none;
+    }
+
+    .separator {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 413px) {
+  .issuesPageContainer {
+    .mobileIssueSectionContainer {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+
+      .mobileIssueImgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+
+        .mobileIssueImg {
+          margin-bottom: 15px;
+          height: 100px;
+          border-radius: 10px;
+        }
+
+        .mobileIssueImgTitle {
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          letter-spacing: 2px;
+        }
+      }
+
+      .mobileIssueParagraphContainer {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+        .mobileIssueParagraph {
+          margin: 10px;
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 18px;
+          text-align: left;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .mobileSeparator {
+      display: flex;
+      position: relative;
+      width: 90%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      margin: 30px 0px 30px 0px;
+    }
+
+    .issueSectionContainer {
+      display: none;
+    }
+
+    .separator {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 359px) {
   .issuesPageContainer {
     .mobileIssueSectionContainer {
       display: flex;
