@@ -12,7 +12,11 @@ export default class Issues extends Component {
       <div className='issuesPageContainer'>
         <div className='mobileIssueSectionContainer'>
           <div className='mobileIssueImgContainer'>
-            <img className='mobileIssueImg' src={openGovernment} alt='' />
+            <img
+              className='mobileIssueImg'
+              src={openGovernment}
+              alt='Magnifying glass enlarging the word accountability on a page'
+            />
             <p className='mobileIssueImgTitle'>Accountability</p>
           </div>
           <div className='mobileIssueParagraphContainer'>
@@ -45,7 +49,11 @@ export default class Issues extends Component {
         <span className='mobileSeparator' />
         <div className='mobileIssueSectionContainer'>
           <div className='mobileIssueImgContainer'>
-            <img className='mobileIssueImg' src={flooding} alt='' />
+            <img
+              className='mobileIssueImg'
+              src={flooding}
+              alt='Heavily flooded roadway'
+            />
             <p className='mobileIssueImgTitle'>Climate Change</p>
           </div>
           <div className='mobileIssueParagraphContainer'>
@@ -71,7 +79,11 @@ export default class Issues extends Component {
         <span className='mobileSeparator' />
         <div className='mobileIssueSectionContainer'>
           <div className='mobileIssueImgContainer'>
-            <img className='mobileIssueImg' src={mentalHealth} alt='' />
+            <img
+              className='mobileIssueImg'
+              src={mentalHealth}
+              alt='Stop The Stigma written on a chalkboard above crossed out words Mental-Health Problem'
+            />
             <p className='mobileIssueImgTitle'>Mental Health</p>
           </div>
           <div className='mobileIssueParagraphContainer'>
@@ -88,7 +100,11 @@ export default class Issues extends Component {
         <span className='mobileSeparator' />
         <div className='mobileIssueSectionContainer'>
           <div className='mobileIssueImgContainer'>
-            <img className='mobileIssueImg' src={seniorCare} alt='' />
+            <img
+              className='mobileIssueImg'
+              src={seniorCare}
+              alt='Younger hands holding older hands'
+            />
             <p className='mobileIssueImgTitle'>Senior Care</p>
           </div>
           <div className='mobileIssueParagraphContainer'>
@@ -111,7 +127,11 @@ export default class Issues extends Component {
         <span className='mobileSeparator' />
         <div className='mobileIssueSectionContainer'>
           <div className='mobileIssueImgContainer'>
-            <img className='mobileIssueImg' src={jobMarket} alt='' />
+            <img
+              className='mobileIssueImg'
+              src={jobMarket}
+              alt="You're Hired written on chalkboard"
+            />
             <p className='mobileIssueImgTitle'>Job Growth</p>
           </div>
           <div className='mobileIssueParagraphContainer'>
@@ -129,7 +149,11 @@ export default class Issues extends Component {
 
         <div className='issueSectionContainer'>
           <div className='issueImgContainer'>
-            <img className='issueImg' src={openGovernment} alt='' />
+            <img
+              className='issueImg'
+              src={openGovernment}
+              alt='Magnifying glass enlarging the word accountability on a page'
+            />
             <p className='issueImgTitle'>Accountability</p>
           </div>
           <div className='issueParagraphContainer'>
@@ -181,14 +205,22 @@ export default class Issues extends Component {
             </p>
           </div>
           <div className='issueImgContainer'>
-            <img className='issueImg' src={flooding} alt='' />
+            <img
+              className='issueImg'
+              src={flooding}
+              alt='Heavily flooded roadway'
+            />
             <p className='issueImgTitle'>Climate Change</p>
           </div>
         </div>
         <span className='separator' />
         <div className='issueSectionContainer'>
           <div className='issueImgContainer'>
-            <img className='issueImg' src={mentalHealth} alt='' />
+            <img
+              className='issueImg'
+              src={mentalHealth}
+              alt='Stop The Stigma written on a chalkboard above crossed out words Mental-Health Problem'
+            />
             <p className='issueImgTitle'>Mental Health</p>
           </div>
           <div className='issueParagraphContainer'>
@@ -221,14 +253,22 @@ export default class Issues extends Component {
             </p>
           </div>
           <div className='issueImgContainer'>
-            <img className='issueImg' src={seniorCare} alt='' />
+            <img
+              className='issueImg'
+              src={seniorCare}
+              alt='Younger hands holding older hands'
+            />
             <p className='issueImgTitle'>Senior Care</p>
           </div>
         </div>
         <span className='separator' />
         <div className='issueSectionContainer'>
           <div className='issueImgContainer'>
-            <img className='issueImg' src={jobMarket} alt='' />
+            <img
+              className='issueImg'
+              src={jobMarket}
+              alt="You're Hired written on chalkboard"
+            />
             <p className='issueImgTitle'>Job Growth</p>
           </div>
           <div className='issueParagraphContainer'>

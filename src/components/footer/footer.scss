@@ -62,9 +62,18 @@
       text-align: center;
 
       .developerLink {
+        font-weight: bold;
         text-decoration: none;
         outline: none;
-        color: red;
+        color: #ffffff;
+        text-shadow: 0.75px 0.75px 0 #e10000, 0.75px -0.75px 0 #e10000,
+          -0.75px 0.75px 0 #e10000, -0.75px -0.75px 0 #e10000,
+          0.75px 0px 0 #e10000, 0px 0.75px 0 #e10000, -0.75px 0px 0 #e10000,
+          0px -0.75px 0 #e10000;
+        // color: rgb(225, 0, 0);
+        // text-shadow: 0.5px 0.5px 0 #ffffff, 0.5px -0.5px 0 #ffffff,
+        //   -0.5px 0.5px 0 #ffffff, -0.5px -0.5px 0 #ffffff, 0.5px 0px 0 #ffffff,
+        //   0px 0.5px 0 #ffffff, -0.5px 0px 0 #ffffff, 0px -0.5px 0 #ffffff;
         cursor: pointer;
         margin: 0px 0px 0px 5px;
       }

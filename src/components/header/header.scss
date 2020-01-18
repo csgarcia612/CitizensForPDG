@@ -27,19 +27,14 @@
     position: relative;
     z-index: 999;
 
-    a.active {
-      font-style: italic;
-      color: #a61f38;
-    }
-
     .navLinks {
       margin-right: 25px;
       font-size: 24px;
       font-family: sans-serif;
       font-weight: bold;
+      color: #20638c;
       text-decoration: none;
       text-align: center;
-      color: #20638c;
       cursor: pointer;
       outline: none;
     }
@@ -49,8 +44,16 @@
     }
 
     .active {
+      margin-right: 25px;
+      font-size: 24px;
+      font-family: sans-serif;
+      font-weight: bold;
       font-style: italic;
       color: #a61f38;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
     }
 
     .donateBtn {

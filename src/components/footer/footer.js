@@ -49,7 +49,7 @@ class Footer extends Component {
             <img
               className='socialMediaIcon'
               src={instagramIcon}
-              alt='Facebook Icon'
+              alt='Instagram Icon'
             />
           </a>
         </div>

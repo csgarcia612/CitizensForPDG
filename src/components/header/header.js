@@ -7,9 +7,20 @@ class Header extends Component {
   constructor() {
     super();
     this.state = {
-      showMobileMenu: false
+      showMobileMenu: false,
+      currentPathname: '/'
     };
   }
+
+  checkPathname = () => {
+    setTimeout(() => {
+      console.log('***Current Pathname: ', window.location.pathname);
+
+      this.setState({
+        currentPathname: window.location.pathname
+      });
+    }, 0);
+  };
 
   toggleMobileMenu = () => {
     this.setState({
@@ -18,33 +29,57 @@ class Header extends Component {
   };
 
   render() {
-    const { showMobileMenu } = this.state;
+    const { showMobileMenu, currentPathname } = this.state;
     return (
       <div className='headerContainer'>
         <div className='siteLogoContainer'>
-          <img className='siteLogo' src={PDGLogo} alt='candidate logo' />
+          <img
+            className='siteLogo'
+            src={PDGLogo}
+            alt='Paula Deacon Garcia For County Board District 2'
+          />
         </div>
         <div className='menuContainer'>
           {/* <NavLink exact to='/' className='navLinks' activeClassName='active'>
             Home
           </NavLink> */}
-          <a href='/' className='navLinks'>
+          <a
+            href='/'
+            className={currentPathname === '/' ? 'active' : 'navLinks'}
+            onClick={this.checkPathname}
+          >
             Home
           </a>
-          <NavLink to='/issues' className='navLinks' activeClassName='active'>
+          <NavLink
+            to='/issues'
+            className='navLinks'
+            activeClassName='active'
+            onClick={this.checkPathname}
+          >
             Issues
           </NavLink>
-          <NavLink to='/about' className='navLinks' activeClassName='active'>
+          <NavLink
+            to='/about'
+            className='navLinks'
+            activeClassName='active'
+            onClick={this.checkPathname}
+          >
             About
           </NavLink>
           <NavLink
             to='/votinginformation'
             className='navLinks'
             activeClassName='active'
+            onClick={this.checkPathname}
           >
             District & Voting
           </NavLink>
-          <NavLink to='/contact' className='navLinks' activeClassName='active'>
+          <NavLink
+            to='/contact'
+            className='navLinks'
+            activeClassName='active'
+            onClick={this.checkPathname}
+          >
             Contact & Volunteer
           </NavLink>
           <a

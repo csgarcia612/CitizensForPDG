@@ -36,7 +36,7 @@ export default class Voting extends Component {
             <img
               className='districtImg'
               src={countyDistrictMap}
-              alt='Map of DuPage County, District Two'
+              alt='Detailed map of DuPage County, District 2'
             />
           </div>
         </div>

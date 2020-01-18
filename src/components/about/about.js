@@ -24,7 +24,7 @@ export default class About extends Component {
               <img
                 className='mobileBioImg'
                 src={headshot}
-                alt='Paula Deacon Garcia Headshot'
+                alt='Paula Deacon Garcia headshot'
               />
             </div>
             <div className='mobileBioParagraphContainer'>
@@ -51,7 +51,7 @@ export default class About extends Component {
               <img
                 className='mobileBioImg'
                 src={coupleImg}
-                alt='Paula and Larry'
+                alt='Paula with her husband Larry'
               />
             </div>
             <div className='mobileBioParagraphContainer'>
@@ -79,7 +79,7 @@ export default class About extends Component {
               <img
                 className='bioImg'
                 src={headshot}
-                alt='Paula Deacon Garcia Headshot'
+                alt='Paula Deacon Garcia headshot'
               />
             </div>
             <div className='bioParagraphContainer'>
@@ -122,7 +122,11 @@ export default class About extends Component {
               </p>
             </div>
             <div className='bioImgContainer'>
-              <img className='bioImg' src={coupleImg} alt='Paula and Larry' />
+              <img
+                className='bioImg'
+                src={coupleImg}
+                alt='Paula and her husband Larry'
+              />
             </div>
           </div>
           <div className='mobileBioSectionContainer2'>
@@ -138,7 +142,7 @@ export default class About extends Component {
               <img
                 className='mobileBioImg2'
                 src={pdgGroup3}
-                alt='Neighborhood Discussion'
+                alt='Paula speaking with friends and neighbors'
               />
             </div>
             <div className='mobileBioParagraphContainer2'>
@@ -163,7 +167,7 @@ export default class About extends Component {
               <img
                 className='bioImg2'
                 src={pdgGroup3}
-                alt='Neighborhood Discussion'
+                alt='Paula speaking with friends and neighbors'
               />
             </div>
             <div className='bioParagraphContainer2'>
@@ -187,19 +191,19 @@ export default class About extends Component {
                 <img
                   className='mobilePhilanthropyImg'
                   src={communityGarden1}
-                  alt='Community Gardeners'
+                  alt='Paula and a volunteer gardener at the community garden'
                 />
                 <img
                   className='mobilePhilanthropyImg'
                   src={communityGarden2}
-                  alt='Community Garden Harvest'
+                  alt='Paula with boxes of harvested vegetables from the community garden'
                 />
               </div>
               <div className='mobileImgRow2'>
                 <img
                   className='mobilePhilanthropyImg'
                   src={communityGarden3}
-                  alt='Community Garden Award'
+                  alt='Paula and volunteers receiving an award for work done at the community garden'
                 />
               </div>
             </div>
@@ -233,7 +237,7 @@ export default class About extends Component {
               <img
                 className='mobilePhilanthropyImg'
                 src={pads1}
-                alt='PADS Training'
+                alt='Paula and a friend going through training at PADS (Public Action to Deliver Shelter)'
               />
             </div>
             <div className='mobilePhilanthropyParagraphContainer'>
@@ -252,7 +256,7 @@ export default class About extends Component {
               <img
                 className='mobilePhilanthropyImg'
                 src={hsoLogo}
-                alt='HSO Logo'
+                alt='HSO (Home and School Organization) Logo'
               />
             </div>
             <div className='mobilePhilanthropyParagraphContainer'>
@@ -278,7 +282,7 @@ export default class About extends Component {
               <img
                 className='mobilePhilanthropyImg2'
                 src={packLeader}
-                alt='Cub Scouts'
+                alt='Paula in uniform as a Cub Scouts den mother'
               />
             </div>
             <div className='mobilePhilanthropyParagraphContainer'>
@@ -296,7 +300,7 @@ export default class About extends Component {
               <img
                 className='mobilePhilanthropyImg2'
                 src={roadwayPetition}
-                alt='Speaking At Village Board'
+                alt='Paula speaking at a Village of Lisle board meeting'
               />
             </div>
             <div className='mobilePhilanthropyParagraphContainer'>
@@ -321,19 +325,19 @@ export default class About extends Component {
                 <img
                   className='philanthropyImg'
                   src={communityGarden1}
-                  alt='Community Gardeners'
+                  alt='Paula and a volunteer gardener at the community garden'
                 />
                 <img
                   className='philanthropyImg'
                   src={communityGarden2}
-                  alt='Community Garden Harvest'
+                  alt='Paula with boxes of harvested vegetables from the community garden'
                 />
               </div>
               <div className='imgRow2'>
                 <img
                   className='philanthropyImg'
                   src={communityGarden3}
-                  alt='Community Garden Award'
+                  alt='Paula and volunteers receiving an award for work done at the community garden'
                 />
               </div>
             </div>
@@ -377,13 +381,17 @@ export default class About extends Component {
               <img
                 className='philanthropyImg'
                 src={pads1}
-                alt='PADS Training'
+                alt='Paula and a friend going through training at PADS (Public Action to Deliver Shelter)'
               />
             </div>
           </div>
           <div className='philanthropySectionContainer'>
             <div className='philanthropyImgContainer'>
-              <img className='philanthropyImg' src={hsoLogo} alt='HSO Logo' />
+              <img
+                className='philanthropyImg'
+                src={hsoLogo}
+                alt='HSO (Home and School Organization) Logo'
+              />
             </div>
             <div className='philanthropyParagraphContainer'>
               <p className='philanthropyParagraph'>
@@ -417,7 +425,7 @@ export default class About extends Component {
               <img
                 className='philanthropyImg2'
                 src={packLeader}
-                alt='Cub Scouts'
+                alt='Paula in uniform as a Cub Scouts den mother'
               />
             </div>
           </div>
@@ -426,7 +434,7 @@ export default class About extends Component {
               <img
                 className='philanthropyImg2'
                 src={roadwayPetition}
-                alt='Speaking At Village Board'
+                alt='Paula speaking at a Village of Lisle board meeting'
               />
             </div>
             <div className='philanthropyParagraphContainer'>
