@@ -5,10 +5,10 @@
   align-items: center;
   background-color: #20638c;
   width: 100%;
-  padding: 30px 20px;
+  height: 100%;
 
   .authorizationContainer {
-    margin: 0px 0px 10px 0px;
+    margin: 10px 10px 10px 10px;
 
     .authorization {
       font-family: sans-serif;
@@ -32,7 +32,7 @@
   }
 
   .reportsContainer {
-    margin: 10px 0px 25px 0px;
+    margin: 10px 10px 25px 10px;
 
     .reports {
       font-family: sans-serif;
@@ -60,6 +60,7 @@
       letter-spacing: 2px;
       color: white;
       text-align: center;
+      margin-bottom: 10px;
 
       .developerLink {
         font-weight: bold;

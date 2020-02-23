@@ -14,7 +14,7 @@ class Header extends Component {
 
   checkPathname = () => {
     setTimeout(() => {
-      console.log('***Current Pathname: ', window.location.pathname);
+      // console.log('***Current Pathname: ', window.location.pathname);
 
       this.setState({
         currentPathname: window.location.pathname

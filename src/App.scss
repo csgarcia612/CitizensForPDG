@@ -47,12 +47,14 @@ html {
         display: flex;
         position: relative;
         width: 100vw;
+        min-height: calc(100vh - 300px);
         margin-top: 75px;
       }
 
       footer {
         display: flex;
         width: 100vw;
+        height: 225px;
         justify-content: center;
         align-items: center;
       }
@@ -79,12 +81,14 @@ html {
           display: flex;
           position: relative;
           width: 100vw;
+          min-height: fit-content;
           margin-top: 105px;
         }
 
         footer {
           display: flex;
           width: 100vw;
+          height: auto;
           justify-content: center;
           align-items: center;
         }

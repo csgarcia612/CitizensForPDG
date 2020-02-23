@@ -40,9 +40,95 @@ export default class Homepage extends Component {
   };
 
   render() {
+    // eslint-disable-next-line
+    let countdownClock = setInterval(() => {
+      let endDateTime = new Date('mar 17, 2020 00:00:00').getTime();
+
+      let currentDateTime = new Date().getTime();
+
+      let remaining = endDateTime - currentDateTime;
+
+      let days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+      let hours = Math.floor(
+        (remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      let minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+
+      if (days < 10) {
+        days = '0' + days;
+      }
+
+      if (hours < 10) {
+        hours = '0' + hours;
+      }
+
+      if (minutes < 10) {
+        minutes = '0' + minutes;
+      }
+
+      if (seconds < 10) {
+        seconds = '0' + seconds;
+      }
+
+      // console.log(
+      //   '***Remaining Time : ',
+      //   `${days} Days - ${hours} Hours - ${minutes} Minutes - ${seconds} Seconds`
+      // );
+
+      if (window.location.pathname === '/') {
+        document.getElementById('days').innerHTML = days;
+        document.getElementById('hours').innerHTML = hours;
+        document.getElementById('minutes').innerHTML = minutes;
+        document.getElementById('seconds').innerHTML = seconds;
+      }
+    }, 1000);
+
     return (
       <div className='homepageContainer'>
         <div className='homepageHeaderContainer'>
+          <div className='countdownMainContainer'>
+            <div className='voteCountdownContainer'>
+              <div className='counterMainContainer'>
+                <div className='counterContainer'>
+                  <p className='counterNum' id='days'></p>
+                </div>
+                <div className='counterTitleContainer'>
+                  <p className='counterTitle'>Days</p>
+                </div>
+              </div>
+              <div className='counterMainContainer'>
+                <div className='counterContainer'>
+                  <p className='counterNum' id='hours'></p>
+                </div>
+                <div className='counterTitleContainer'>
+                  <p className='counterTitle'>Hours</p>
+                </div>
+              </div>
+              <div className='counterMainContainer'>
+                <div className='counterContainer'>
+                  <p className='counterNum' id='minutes'></p>
+                </div>
+                <div className='counterTitleContainer'>
+                  <p className='counterTitle'>Minutes</p>
+                </div>
+              </div>
+              <div className='counterMainContainer'>
+                <div className='counterContainer'>
+                  <p className='counterNum' id='seconds'></p>
+                </div>
+                <div className='counterTitleContainer'>
+                  <p className='counterTitle'>Seconds</p>
+                </div>
+              </div>
+            </div>
+            <div className='voteMsgContainer'>
+              <p className='voteMsg'>
+                Until the Illinois General Primary Election : Tuesday, March 17,
+                2020
+              </p>
+            </div>
+          </div>
           <img className='homepageHeaderImg' src={pdgGroup2} alt='' />
         </div>
         <div className='reasonContainer'>
