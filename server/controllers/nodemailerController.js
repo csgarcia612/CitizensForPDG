@@ -3,15 +3,26 @@ dotenv.config();
 const nodemailer = require('nodemailer');
 const config = require('../config');
 
+// let transporter = nodemailer.createTransport({
+//   host: 'smtp.gmail.com',
+//   auth: {
+//     user: config.gmailUsername,
+//     pass: config.gmailSecret
+//   }
+// });
+
 let transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
   auth: {
-    user: config.gmailUsername,
-    pass: config.gmailSecret
-  }
+    type: 'OAuth2',
+    clientId: config.gmailClientId,
+    clientSecret: config.gmailClientSecret,
+  },
 });
 
-transporter.verify(function(error, success) {
+transporter.verify(function (error, success) {
   if (error) {
     console.log('*** Error with connection to Gmail: ', error);
   } else {
@@ -21,18 +32,24 @@ transporter.verify(function(error, success) {
 
 module.exports = {
   sendEmail: (req, res, next) => {
-    console.log(req.body);
+    // console.log(req.body);
     const {
       contactName,
       contactEmailAddress,
       contactPhoneNumber,
       contactSubject,
-      contactMessage
+      contactMessage,
     } = req.body;
     const mailOptions = {
       from: 'pdg4dupage.gmail.com',
       to: 'CitizensforPaulaDeaconGarcia@gmail.com',
       subject: 'Message From Citizens For Paula Deacon Garcia Website',
+      auth: {
+        user: config.gmailUsername,
+        refreshToken: config.gmailRefreshToken,
+        accessToken: config.gmailAccessToken,
+        expires: 3598,
+      },
       text: `Message from ${contactName} at ${contactEmailAddress} and ${contactPhoneNumber}. The subject of the message is: ${contactSubject}. The message is as follows: ${contactMessage}`,
       // html: `
       //     <!doctype html>
@@ -325,10 +342,10 @@ module.exports = {
                   </tr>
               </table>
           </body>
-      </html>`
+      </html>`,
     };
 
-    transporter.sendMail(mailOptions, function(error, info) {
+    transporter.sendMail(mailOptions, function (error, info) {
       if (error) {
         console.log('Error occurred with sending email', error);
 
@@ -339,5 +356,5 @@ module.exports = {
         res.status(200).send('Email Sent');
       }
     });
-  }
+  },
 };

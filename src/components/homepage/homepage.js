@@ -9,7 +9,7 @@ export default class Homepage extends Component {
   constructor() {
     super();
     this.state = {
-      viewportWidth: 0
+      viewportWidth: 0,
     };
   }
 
@@ -30,11 +30,11 @@ export default class Homepage extends Component {
       // console.log('***Mobile Width: ', mobileWidth);
 
       this.setState({
-        viewportWidth: mobileWidth
+        viewportWidth: mobileWidth,
       });
     } else {
       this.setState({
-        viewportWidth: 500
+        viewportWidth: 500,
       });
     }
   };
@@ -42,7 +42,7 @@ export default class Homepage extends Component {
   render() {
     // eslint-disable-next-line
     // let countdownClock = setInterval(() => {
-    //   let endDateTime = new Date('mar 17, 2020 00:00:00').getTime();
+    //   let endDateTime = new Date('aug 5, 2020 00:00:00').getTime();
 
     //   let currentDateTime = new Date().getTime();
 
@@ -129,6 +129,17 @@ export default class Homepage extends Component {
               </p>
             </div>
           </div> */}
+          <div className='specialMsgMainContainer'>
+            <div className='specialMsgContainer'>
+              <p className='specialMsg'>
+                Mark You Calendars For : Wednesday, August 5, 2020
+              </p>
+              <span className='specialMsgSpan' />
+              <p className='specialMsg'>
+                First Day Voters Can Request Mail-In Ballots
+              </p>
+            </div>
+          </div>
           <img className='homepageHeaderImg' src={pdgGroup2} alt='' />
         </div>
         <div className='reasonContainer'>
