@@ -39,14 +39,24 @@ export default class Homepage extends Component {
     }
   };
 
+  // checkLeapYear = (year) => {
+  //   if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // };
+
   render() {
-    // eslint-disable-next-line
+    // eslint - disable - next - line;
     // let countdownClock = setInterval(() => {
     //   let endDateTime = new Date('aug 5, 2020 00:00:00').getTime();
 
     //   let currentDateTime = new Date().getTime();
 
     //   let remaining = endDateTime - currentDateTime;
+
+    //   let daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
     //   let days = Math.floor(remaining / (1000 * 60 * 60 * 24));
     //   let hours = Math.floor(
