@@ -207,7 +207,7 @@ module.exports = {
       <html>
           <head>
               <meta charset="utf-8">
-              <title>New Email Test</title>
+              <title>New Email From PDG4DuPage Contact Page</title>
               <style>
                   body {
                     -webkit-text-size-adjust: 100%; 

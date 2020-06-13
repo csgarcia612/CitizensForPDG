@@ -142,7 +142,7 @@ export default class Homepage extends Component {
           <div className='specialMsgMainContainer'>
             <div className='specialMsgContainer'>
               <p className='specialMsg'>
-                Mark You Calendars For : Wednesday, August 5, 2020
+                Mark Your Calendars For : Wednesday, August 5, 2020
               </p>
               <span className='specialMsgSpan' />
               <p className='specialMsg'>
