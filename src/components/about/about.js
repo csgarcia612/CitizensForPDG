@@ -210,10 +210,10 @@ export default class About extends Component {
             <div className='mobilePhilanthropyParagraphContainer'>
               <p className='mobilePhilanthropyParagraph'>
                 Starting around 3 years ago, Paula became a co-chair of the
-                Lisle Township Food Pantry Vegetable Garden. At the time the
-                garden was in need of some additional TLC and thanks to the
-                volunteers who gave their time, the garden was producing in no
-                time.
+                Lisle Township Food Pantry Vegetable Garden, and is now the sole
+                chairperson. At the time the garden was in need of some
+                additional TLC and thanks to the volunteers who gave their time,
+                the garden was producing in no time.
               </p>
               <p className='mobilePhilanthropyParagraph'>
                 All harvested vegetables are donated to the Food Pantry that
@@ -344,10 +344,10 @@ export default class About extends Component {
             <div className='philanthropyParagraphContainer'>
               <p className='philanthropyParagraph'>
                 Starting around 3 years ago, Paula became a co-chair of the
-                Lisle Township Food Pantry Vegetable Garden. At the time the
-                garden was in need of some additional TLC and thanks to the
-                volunteers who gave their time, the garden was producing in no
-                time.
+                Lisle Township Food Pantry Vegetable Garden, and is now the sole
+                chairperson. At the time the garden was in need of some
+                additional TLC and thanks to the volunteers who gave their time,
+                the garden was producing in no time.
               </p>
               <p className='philanthropyParagraph'>
                 All harvested vegetables are donated to the Food Pantry that

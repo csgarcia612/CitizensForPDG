@@ -140,15 +140,23 @@ export default class Homepage extends Component {
             </div>
           </div> */}
           <div className='specialMsgMainContainer'>
-            <div className='specialMsgContainer'>
-              <p className='specialMsg'>
-                Mark Your Calendars For : Wednesday, August 5, 2020
-              </p>
-              <span className='specialMsgSpan' />
-              <p className='specialMsg'>
-                First Day Voters Can Request Mail-In Ballots
-              </p>
-            </div>
+            <a
+              className='ballotRequestLink'
+              href='https://www.dupageco.org/election/votebymail/'
+              target='_blank'
+              rel='noopener noreferrer'
+              title='Mail-In Ballot Request Form - dupageco.org/election/votebymail'
+            >
+              <div className='specialMsgContainer'>
+                <p className='specialMsg'>
+                  Sign Up Date Updated : Request Your Mail-In Ballot Now
+                </p>
+                <span className='specialMsgSpan' />
+                <p className='specialMsg'>
+                  Click Here To Request A Mail-In Ballot
+                </p>
+              </div>
+            </a>
           </div>
           <img className='homepageHeaderImg' src={pdgGroup2} alt='' />
         </div>
