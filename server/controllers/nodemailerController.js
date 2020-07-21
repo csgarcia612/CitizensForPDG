@@ -42,7 +42,8 @@ module.exports = {
     } = req.body;
     const mailOptions = {
       from: 'pdg4dupage.gmail.com',
-      to: 'CitizensforPaulaDeaconGarcia@gmail.com',
+      // to: 'CitizensforPaulaDeaconGarcia@gmail.com',
+      to: 'csgarcia.dev@gmail.com',
       subject: 'Message From Citizens For Paula Deacon Garcia Website',
       auth: {
         user: config.gmailUsername,
