@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import './homepage.scss';
-// import breakingNews from '../../images/breakingNews.jpg';
 import pdgGroup2 from '../../images/homepageHeaderImg.jpg';
+// import placeholder from '../../images/placeholder.png';
+import endorsement1 from '../../images/Cynthia_Endorsement.jpg';
+import endorsement2 from '../../images/Labor_Council_Endorsement.jpg';
+import endorsement3 from '../../images/LTDO_Endorsement.jpg';
+import endorsement4 from '../../images/Durbin_Banner.png';
+// import breakingNews from '../../images/breakingNews.jpg';
 // import candidateSpotlight from '../../images/candidateSpotlight.png';
 // import fundraiserFoodPantry from '../../images/Fundraiser-Food-Pantry.jpg';
 
@@ -188,36 +193,103 @@ export default class Homepage extends Component {
           </div>
         </div>
         <span className='separator' />
-        <div className='campaignNewsContainer'>
-          <div className='campaignNewsTitleContainer'>
-            <p className='campaignNewsTitle'>Facebook Feed</p>
-          </div>
-          <div
-            className='facebookFeedsContainer'
-            style={{ width: this.state.viewportWidth + 'px' }}
-          >
-            <div
-              className='fb-page'
-              data-href='https://www.facebook.com/pdg4Dupage/'
-              data-tabs='timeline, events'
-              data-width='500'
-              data-height='750'
-              data-small-header='true'
-              data-adapt-container-width='true'
-              data-hide-cover='true'
-              data-show-facepile='false'
-            >
-              <blockquote
-                cite='https://www.facebook.com/pdg4Dupage/'
-                className='fb-xfbml-parse-ignore'
-              >
-                <a href='https://www.facebook.com/pdg4Dupage/'>
-                  Citizens for Paula Deacon Garcia
-                </a>
-              </blockquote>
+        <div className='endorsementFacebookContainer'>
+          <div className='endorsementMainContainer'>
+            <div className='endorsementTitleContainer'>
+              <p className='endorsementTitle'>Honored To Be Endorsed By</p>
+            </div>
+            <div className='endorsementContainer'>
+              <div className='endorserContainer1'>
+                <div className='endorserImgContainer'>
+                  <img
+                    className='endorserImg'
+                    src={endorsement4}
+                    alt='endorser logo'
+                  />
+                </div>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>U.S. Senator</p>
+                  <p className='endorserTitle'>Dick Durbin</p>
+                </div>
+              </div>
+              <div className='endorserContainer2'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>Lisle Township</p>
+                  <p className='endorserTitle'>Democratic Organization</p>
+                </div>
+                <div className='endorserImgContainer'>
+                  <img
+                    className='endorserImg'
+                    src={endorsement3}
+                    alt='endorser logo'
+                  />
+                </div>
+              </div>
+              <div className='endorserContainer1'>
+                <div className='endorserImgContainer'>
+                  <img
+                    className='endorserImg'
+                    src={endorsement2}
+                    alt='endorser logo'
+                  />
+                </div>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>North Central Illinois</p>
+                  <p className='endorserTitle'>Labor Council AFL-CIO</p>
+                </div>
+              </div>
+              <div className='endorserContainer2'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>Cynthia Borbas</p>
+                  <p className='endorserTitle'>Chair - DuPage Democrats</p>
+                </div>
+                <div className='endorserImgContainer'>
+                  <img
+                    className='endorserImg'
+                    src={endorsement1}
+                    alt='endorser logo'
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          {/* <div className='newsEntryContainer'>
+          <span className='verticalSeparator' />
+          <div className='facebookFeedsMainContainer'>
+            <div className='facebookFeedsTitleContainer'>
+              <p className='facebookFeedsTitle'>Facebook Feed</p>
+            </div>
+            <div
+              className='facebookFeedsContainer'
+              style={{ width: this.state.viewportWidth + 'px' }}
+            >
+              <div
+                className='fb-page'
+                data-href='https://www.facebook.com/pdg4Dupage/'
+                data-tabs='timeline, events'
+                data-width='500'
+                data-height='1150'
+                data-small-header='true'
+                data-adapt-container-width='true'
+                data-hide-cover='true'
+                data-show-facepile='false'
+              >
+                <blockquote
+                  cite='https://www.facebook.com/pdg4Dupage/'
+                  className='fb-xfbml-parse-ignore'
+                >
+                  <a href='https://www.facebook.com/pdg4Dupage/'>
+                    Citizens for Paula Deacon Garcia
+                  </a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className='campaignNewsContainer'>
+          <div className='campaignNewsTitleContainer'>
+            <p className='campaignNewsTitle'>Honored To Be Endorsed By</p>
+          </div>
+          <div className='newsEntryContainer'>
             <div className='entryImgContainer'>
               <img
                 className='entrySpecialImg2'
@@ -354,8 +426,8 @@ export default class Homepage extends Component {
                 Facebook page.
               </p>
             </div>
-          </div> */}
-        </div>
+          </div>
+        </div> */}
       </div>
     );
   }

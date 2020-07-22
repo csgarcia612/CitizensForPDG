@@ -280,118 +280,278 @@
     margin: 30px 0px 30px 0px;
   }
 
-  .campaignNewsContainer {
+  .endorsementFacebookContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
     justify-content: center;
     align-items: center;
     width: 90%;
 
-    .campaignNewsTitleContainer {
-      margin-bottom: 25px;
+    .endorsementMainContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50%;
+      height: 100%;
 
-      .campaignNewsTitle {
-        font-family: sans-serif;
-        font-size: 50px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        color: #20638c;
+      .endorsementTitleContainer {
+        display: flex;
+        position: relative;
+        width: 60%;
+        margin-bottom: 25px;
+
+        .endorsementTitle {
+          font-family: sans-serif;
+          font-size: 50px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
+          text-align: center;
+        }
+      }
+
+      .endorsementContainer {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+
+        .endorserContainer1 {
+          display: flex;
+          position: relative;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 50px;
+
+          .endorserImgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .endorserImg {
+              display: flex;
+              position: relative;
+              width: 300px;
+              margin-right: 20px;
+            }
+          }
+
+          .endorserTitleContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .endorserTitle {
+              line-height: 36px;
+              font-family: sans-serif;
+              font-size: 30px;
+              text-align: center;
+              letter-spacing: 1px;
+            }
+          }
+        }
+
+        .endorserContainer2 {
+          display: flex;
+          position: relative;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 50px;
+
+          .endorserImgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .endorserImg {
+              display: flex;
+              position: relative;
+              width: 300px;
+              margin-left: 20px;
+            }
+          }
+
+          .endorserTitleContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .endorserTitle {
+              line-height: 36px;
+              font-family: sans-serif;
+              font-size: 30px;
+              text-align: center;
+              letter-spacing: 1px;
+            }
+          }
+        }
       }
     }
 
-    // .newsEntryContainer {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   align-items: center;
-    //   width: 90%;
+    .verticalSeparator {
+      display: flex;
+      position: relative;
+      width: 5px;
+      height: 90%;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      margin: 0px 30px 0px 30px;
+    }
 
-    //   .entryImgContainer {
-    //     margin: 15px 0px;
+    .facebookFeedsMainContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50%;
+      height: 100%;
 
-    //     .entryImg {
-    //       height: 250px;
-    //       border-radius: 15px;
-    //     }
+      .facebookFeedsTitleContainer {
+        margin-bottom: 25px;
 
-    //     .entrySpecialImg {
-    //       height: 1000px;
-    //       border-radius: 5px;
-    //     }
+        .facebookFeedsTitle {
+          font-family: sans-serif;
+          font-size: 50px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
+        }
+      }
 
-    //     .entrySpecialImg2 {
-    //       height: 500px;
-    //       border-radius: 5px;
-    //     }
-    //   }
-
-    //   .entryTitleContainer {
-    //     margin: 15px 0px;
-
-    //     .entryTitle {
-    //       line-height: 30px;
-    //       font-family: sans-serif;
-    //       font-size: 24px;
-    //       font-weight: bold;
-    //       text-align: center;
-    //       letter-spacing: 1px;
-    //     }
-    //   }
-
-    //   .entryDateContainer {
-    //     margin: 15px 0px;
-
-    //     .entryDate {
-    //       line-height: 30px;
-    //       font-family: sans-serif;
-    //       font-size: 24px;
-    //       font-style: italic;
-    //       text-align: center;
-    //       letter-spacing: 1px;
-    //     }
-    //   }
-
-    //   .entryParagraphContainer {
-    //     .entryParagraph {
-    //       line-height: 30px;
-    //       font-family: sans-serif;
-    //       font-size: 24px;
-    //       text-align: left;
-    //       letter-spacing: 1px;
-    //     }
-
-    //     .entryParagraph2 {
-    //       line-height: 30px;
-    //       font-family: sans-serif;
-    //       font-size: 24px;
-    //       text-align: center;
-    //       letter-spacing: 1px;
-    //     }
-
-    //     .newsEntryLink {
-    //       font-size: 30px;
-    //       font-family: sans-serif;
-    //       font-weight: bold;
-    //       color: #20638c;
-    //       text-decoration: none;
-    //       cursor: pointer;
-    //       outline: none;
-    //     }
-    //   }
-    // }
-
-    // .newsSeparator {
-    //   display: flex;
-    //   position: relative;
-    //   width: 90%;
-    //   height: 5px;
-    //   border-radius: 5px;
-    //   background-color: #a61f38;
-    //   box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
-    //   margin: 30px 0px 30px 0px;
-    // }
+      .facebookFeedsContainer {
+      }
+    }
   }
+
+  // .campaignNewsContainer {
+  //   display: flex;
+  //   flex-direction: column;
+  //   position: relative;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 90%;
+
+  //   .campaignNewsTitleContainer {
+  //     margin-bottom: 25px;
+
+  //     .campaignNewsTitle {
+  //       font-family: sans-serif;
+  //       font-size: 50px;
+  //       font-weight: bold;
+  //       letter-spacing: 2px;
+  //       color: #20638c;
+  //     }
+  //   }
+
+  // .newsEntryContainer {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 90%;
+
+  //   .entryImgContainer {
+  //     margin: 15px 0px;
+
+  //     .entryImg {
+  //       height: 250px;
+  //       border-radius: 15px;
+  //     }
+
+  //     .entrySpecialImg {
+  //       height: 1000px;
+  //       border-radius: 5px;
+  //     }
+
+  //     .entrySpecialImg2 {
+  //       height: 500px;
+  //       border-radius: 5px;
+  //     }
+  //   }
+
+  //   .entryTitleContainer {
+  //     margin: 15px 0px;
+
+  //     .entryTitle {
+  //       line-height: 30px;
+  //       font-family: sans-serif;
+  //       font-size: 24px;
+  //       font-weight: bold;
+  //       text-align: center;
+  //       letter-spacing: 1px;
+  //     }
+  //   }
+
+  //   .entryDateContainer {
+  //     margin: 15px 0px;
+
+  //     .entryDate {
+  //       line-height: 30px;
+  //       font-family: sans-serif;
+  //       font-size: 24px;
+  //       font-style: italic;
+  //       text-align: center;
+  //       letter-spacing: 1px;
+  //     }
+  //   }
+
+  //   .entryParagraphContainer {
+  //     .entryParagraph {
+  //       line-height: 30px;
+  //       font-family: sans-serif;
+  //       font-size: 24px;
+  //       text-align: left;
+  //       letter-spacing: 1px;
+  //     }
+
+  //     .entryParagraph2 {
+  //       line-height: 30px;
+  //       font-family: sans-serif;
+  //       font-size: 24px;
+  //       text-align: center;
+  //       letter-spacing: 1px;
+  //     }
+
+  //     .newsEntryLink {
+  //       font-size: 30px;
+  //       font-family: sans-serif;
+  //       font-weight: bold;
+  //       color: #20638c;
+  //       text-decoration: none;
+  //       cursor: pointer;
+  //       outline: none;
+  //     }
+  //   }
+  // }
+
+  // .newsSeparator {
+  //   display: flex;
+  //   position: relative;
+  //   width: 90%;
+  //   height: 5px;
+  //   border-radius: 5px;
+  //   background-color: #a61f38;
+  //   box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+  //   margin: 30px 0px 30px 0px;
+  // }
+  // }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -411,54 +571,164 @@
       }
     }
 
-    .campaignNewsContainer {
-      .campaignNewsTitleContainer {
-        margin-bottom: 20px;
+    .endorsementFacebookContainer {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
 
-        .campaignNewsTitle {
-          font-size: 40px;
+      .endorsementMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+
+        .endorsementTitleContainer {
+          display: flex;
+          position: relative;
+          width: 60%;
+          margin-bottom: 20px;
+
+          .endorsementTitle {
+            font-family: sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+            text-align: center;
+          }
+        }
+
+        .endorsementContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 100%;
+
+          .endorserContainer1 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 40px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 250px;
+                margin-right: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 24px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
+
+          .endorserContainer2 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 50px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 250px;
+                margin-left: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 24px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
         }
       }
 
-      // .newsEntryContainer {
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: center;
-      //   align-items: center;
-      //   width: 90vw;
+      .verticalSeparator {
+        display: flex;
+        position: relative;
+        width: 5px;
+        height: 90%;
+        border-radius: 5px;
+        background-color: #20638c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+        margin: 0px 30px 0px 30px;
+      }
 
-      //   .entryImgContainer {
-      //     margin: 15px 0px;
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        height: 100%;
 
-      //     .entryImg {
-      //       height: 200px;
-      //       border-radius: 15px;
-      //     }
-      //   }
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
 
-      //   .entryTitleContainer {
-      //     margin: 15px 0px;
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
 
-      //     .entryTitle {
-      //       line-height: 30px;
-      //       font-size: 22px;
-      //     }
-      //   }
-
-      //   .entryDateContainer {
-      //     .entryDate {
-      //       line-height: 30px;
-      //       font-size: 22px;
-      //     }
-      //   }
-
-      //   .entryParagraphContainer {
-      //     .entryParagraph {
-      //       line-height: 30px;
-      //       font-size: 22px;
-      //     }
-      //   }
-      // }
+        .facebookFeedsContainer {
+        }
+      }
     }
   }
 }
@@ -639,54 +909,166 @@
       }
     }
 
-    .campaignNewsContainer {
-      .campaignNewsTitleContainer {
-        margin-bottom: 20px;
+    .endorsementFacebookContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
 
-        .campaignNewsTitle {
-          font-size: 30px;
+      .endorsementMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .endorsementTitleContainer {
+          display: flex;
+          position: relative;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .endorsementTitle {
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+            text-align: center;
+          }
+        }
+
+        .endorsementContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 100%;
+
+          .endorserContainer1 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 250px;
+                margin-right: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 24px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
+
+          .endorserContainer2 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 250px;
+                margin-left: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 24px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
         }
       }
 
-      // .newsEntryContainer {
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: center;
-      //   align-items: center;
-      //   width: 90vw;
+      .verticalSeparator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #20638c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+        margin: 30px 0px 30px 0px;
+      }
 
-      //   .entryImgContainer {
-      //     margin: 15px 0px;
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-      //     .entryImg {
-      //       height: 150px;
-      //       border-radius: 15px;
-      //     }
-      //   }
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
 
-      //   .entryTitleContainer {
-      //     margin: 15px 0px;
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
 
-      //     .entryTitle {
-      //       line-height: 30px;
-      //       font-size: 20px;
-      //     }
-      //   }
-
-      //   .entryDateContainer {
-      //     .entryDate {
-      //       line-height: 30px;
-      //       font-size: 20px;
-      //     }
-      //   }
-
-      //   .entryParagraphContainer {
-      //     .entryParagraph {
-      //       line-height: 30px;
-      //       font-size: 20px;
-      //     }
-      //   }
-      // }
+        .facebookFeedsContainer {
+        }
+      }
     }
   }
 }
@@ -868,60 +1250,166 @@
       }
     }
 
-    .campaignNewsContainer {
-      .campaignNewsTitleContainer {
-        margin-bottom: 20px;
+    .endorsementFacebookContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
 
-        .campaignNewsTitle {
-          font-size: 30px;
+      .endorsementMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .endorsementTitleContainer {
+          display: flex;
+          position: relative;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .endorsementTitle {
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+            text-align: center;
+          }
+        }
+
+        .endorsementContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 100%;
+
+          .endorserContainer1 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 250px;
+                margin-right: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
+
+          .endorserContainer2 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 250px;
+                margin-left: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
         }
       }
 
-      // .newsEntryContainer {
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: center;
-      //   align-items: center;
-      //   width: 90vw;
+      .verticalSeparator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #20638c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+        margin: 30px 0px 30px 0px;
+      }
 
-      //   .entryImgContainer {
-      //     margin: 15px 0px;
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-      //     .entryImg {
-      //       height: 150px;
-      //       border-radius: 15px;
-      //     }
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
 
-      //     .entrySpecialImg {
-      //       height: initial;
-      //       width: 90vw;
-      //       border-radius: 5px;
-      //     }
-      //   }
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
 
-      //   .entryTitleContainer {
-      //     margin: 15px 0px;
-
-      //     .entryTitle {
-      //       line-height: 30px;
-      //       font-size: 20px;
-      //     }
-      //   }
-
-      //   .entryDateContainer {
-      //     .entryDate {
-      //       line-height: 30px;
-      //       font-size: 20px;
-      //     }
-      //   }
-
-      //   .entryParagraphContainer {
-      //     .entryParagraph {
-      //       line-height: 30px;
-      //       font-size: 20px;
-      //     }
-      //   }
-      // }
+        .facebookFeedsContainer {
+        }
+      }
     }
   }
 }
@@ -1105,60 +1593,166 @@
       }
     }
 
-    .campaignNewsContainer {
-      .campaignNewsTitleContainer {
-        margin-bottom: 20px;
+    .endorsementFacebookContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
 
-        .campaignNewsTitle {
-          font-size: 24px;
+      .endorsementMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .endorsementTitleContainer {
+          display: flex;
+          position: relative;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .endorsementTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+            text-align: center;
+          }
+        }
+
+        .endorsementContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 100%;
+
+          .endorserContainer1 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 200px;
+                margin-right: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
+
+          .endorserContainer2 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 200px;
+                margin-left: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
         }
       }
 
-      // .newsEntryContainer {
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: center;
-      //   align-items: center;
-      //   width: 90vw;
+      .verticalSeparator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #20638c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+        margin: 30px 0px 30px 0px;
+      }
 
-      //   .entryImgContainer {
-      //     margin: 15px 0px;
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-      //     .entryImg {
-      //       height: 100px;
-      //       border-radius: 15px;
-      //     }
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
 
-      //     .entrySpecialImg {
-      //       height: initial;
-      //       width: 90vw;
-      //       border-radius: 5px;
-      //     }
-      //   }
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
 
-      //   .entryTitleContainer {
-      //     margin: 15px 0px;
-
-      //     .entryTitle {
-      //       line-height: 30px;
-      //       font-size: 18px;
-      //     }
-      //   }
-
-      //   .entryDateContainer {
-      //     .entryDate {
-      //       line-height: 30px;
-      //       font-size: 18px;
-      //     }
-      //   }
-
-      //   .entryParagraphContainer {
-      //     .entryParagraph {
-      //       line-height: 30px;
-      //       font-size: 18px;
-      //     }
-      //   }
-      // }
+        .facebookFeedsContainer {
+        }
+      }
     }
   }
 }
@@ -1342,12 +1936,165 @@
       }
     }
 
-    .campaignNewsContainer {
-      .campaignNewsTitleContainer {
-        margin-bottom: 20px;
+    .endorsementFacebookContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
 
-        .campaignNewsTitle {
-          font-size: 24px;
+      .endorsementMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .endorsementTitleContainer {
+          display: flex;
+          position: relative;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .endorsementTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+            text-align: center;
+          }
+        }
+
+        .endorsementContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 100%;
+
+          .endorserContainer1 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 175px;
+                margin-right: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
+
+          .endorserContainer2 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 175px;
+                margin-left: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+
+      .verticalSeparator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #20638c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+        margin: 10px 0px 20px 0px;
+      }
+
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
+
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
+
+        .facebookFeedsContainer {
         }
       }
     }
@@ -1534,12 +2281,165 @@
       }
     }
 
-    .campaignNewsContainer {
-      .campaignNewsTitleContainer {
-        margin-bottom: 20px;
+    .endorsementFacebookContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
 
-        .campaignNewsTitle {
-          font-size: 24px;
+      .endorsementMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .endorsementTitleContainer {
+          display: flex;
+          position: relative;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .endorsementTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+            text-align: center;
+          }
+        }
+
+        .endorsementContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 100%;
+
+          .endorserContainer1 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 175px;
+                margin-right: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
+
+          .endorserContainer2 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .endorserImgContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserImg {
+                display: flex;
+                position: relative;
+                width: 175px;
+                margin-left: 15px;
+              }
+            }
+
+            .endorserTitleContainer {
+              display: flex;
+              position: relative;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .endorserTitle {
+                line-height: 30px;
+                font-family: sans-serif;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+
+      .verticalSeparator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #20638c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+        margin: 10px 0px 20px 0px;
+      }
+
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
+
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
+
+        .facebookFeedsContainer {
         }
       }
     }
