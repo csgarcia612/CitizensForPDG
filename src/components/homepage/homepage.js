@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import './homepage.scss';
 import pdgGroup2 from '../../images/homepageHeaderImg.jpg';
-// import placeholder from '../../images/placeholder.png';
-import endorsement1 from '../../images/Cynthia_Endorsement.jpg';
-import endorsement2 from '../../images/Labor_Council_Endorsement.jpg';
-import endorsement3 from '../../images/LTDO_Endorsement.jpg';
-import endorsement4 from '../../images/Durbin_Banner.png';
-// import breakingNews from '../../images/breakingNews.jpg';
-// import candidateSpotlight from '../../images/candidateSpotlight.png';
-// import fundraiserFoodPantry from '../../images/Fundraiser-Food-Pantry.jpg';
 
 export default class Homepage extends Component {
   constructor() {
@@ -193,241 +185,36 @@ export default class Homepage extends Component {
           </div>
         </div>
         <span className='separator' />
-        <div className='endorsementFacebookContainer'>
-          <div className='endorsementMainContainer'>
-            <div className='endorsementTitleContainer'>
-              <p className='endorsementTitle'>Honored To Be Endorsed By</p>
-            </div>
-            <div className='endorsementContainer'>
-              <div className='endorserContainer1'>
-                <div className='endorserImgContainer'>
-                  <img
-                    className='endorserImg'
-                    src={endorsement4}
-                    alt='endorser logo'
-                  />
-                </div>
-                <div className='endorserTitleContainer'>
-                  <p className='endorserTitle'>U.S. Senator</p>
-                  <p className='endorserTitle'>Dick Durbin</p>
-                </div>
-              </div>
-              <div className='endorserContainer2'>
-                <div className='endorserTitleContainer'>
-                  <p className='endorserTitle'>Lisle Township</p>
-                  <p className='endorserTitle'>Democratic Organization</p>
-                </div>
-                <div className='endorserImgContainer'>
-                  <img
-                    className='endorserImg'
-                    src={endorsement3}
-                    alt='endorser logo'
-                  />
-                </div>
-              </div>
-              <div className='endorserContainer1'>
-                <div className='endorserImgContainer'>
-                  <img
-                    className='endorserImg'
-                    src={endorsement2}
-                    alt='endorser logo'
-                  />
-                </div>
-                <div className='endorserTitleContainer'>
-                  <p className='endorserTitle'>North Central Illinois</p>
-                  <p className='endorserTitle'>Labor Council AFL-CIO</p>
-                </div>
-              </div>
-              <div className='endorserContainer2'>
-                <div className='endorserTitleContainer'>
-                  <p className='endorserTitle'>Cynthia Borbas</p>
-                  <p className='endorserTitle'>Chair - DuPage Democrats</p>
-                </div>
-                <div className='endorserImgContainer'>
-                  <img
-                    className='endorserImg'
-                    src={endorsement1}
-                    alt='endorser logo'
-                  />
-                </div>
-              </div>
-            </div>
+        <div className='facebookFeedsMainContainer'>
+          <div className='facebookFeedsTitleContainer'>
+            <p className='facebookFeedsTitle'>Facebook Feed</p>
           </div>
-          <span className='verticalSeparator' />
-          <div className='facebookFeedsMainContainer'>
-            <div className='facebookFeedsTitleContainer'>
-              <p className='facebookFeedsTitle'>Facebook Feed</p>
-            </div>
+          <div
+            className='facebookFeedsContainer'
+            style={{ width: this.state.viewportWidth + 'px' }}
+          >
             <div
-              className='facebookFeedsContainer'
-              style={{ width: this.state.viewportWidth + 'px' }}
+              className='fb-page'
+              data-href='https://www.facebook.com/pdg4Dupage/'
+              data-tabs='timeline, events'
+              data-width='500'
+              data-height='1150'
+              data-small-header='true'
+              data-adapt-container-width='true'
+              data-hide-cover='true'
+              data-show-facepile='false'
             >
-              <div
-                className='fb-page'
-                data-href='https://www.facebook.com/pdg4Dupage/'
-                data-tabs='timeline, events'
-                data-width='500'
-                data-height='1150'
-                data-small-header='true'
-                data-adapt-container-width='true'
-                data-hide-cover='true'
-                data-show-facepile='false'
+              <blockquote
+                cite='https://www.facebook.com/pdg4Dupage/'
+                className='fb-xfbml-parse-ignore'
               >
-                <blockquote
-                  cite='https://www.facebook.com/pdg4Dupage/'
-                  className='fb-xfbml-parse-ignore'
-                >
-                  <a href='https://www.facebook.com/pdg4Dupage/'>
-                    Citizens for Paula Deacon Garcia
-                  </a>
-                </blockquote>
-              </div>
+                <a href='https://www.facebook.com/pdg4Dupage/'>
+                  Citizens for Paula Deacon Garcia
+                </a>
+              </blockquote>
             </div>
           </div>
         </div>
-        {/* <div className='campaignNewsContainer'>
-          <div className='campaignNewsTitleContainer'>
-            <p className='campaignNewsTitle'>Honored To Be Endorsed By</p>
-          </div>
-          <div className='newsEntryContainer'>
-            <div className='entryImgContainer'>
-              <img
-                className='entrySpecialImg2'
-                src={fundraiserFoodPantry}
-                alt='food pantry fundraiser logo'
-              />
-            </div>
-            <div className='entryTitleContainer'>
-              <p className='entryTitle'>PDG4DuPage Fundraiser & Food Drive</p>
-            </div>
-            <div className='entryDateContainer'>
-              <p className='entryDate'>Monday, October 28, 2019</p>
-            </div>
-            <div className='entryParagraphContainer'>
-              <p className='entryParagraph2'>
-                Come have a bite with Paula and take a bite out of hunger in
-                DuPage - Fundraiser for Paula Deacon Garcia for DuPage County
-                Board District 2.
-                <br />
-                <br />
-                Paula is running for office to make a change, but near and dear
-                to my heart is making changes in people's lives. Please come for
-                appetizers, cash bar and bring an item to donate to the Lisle
-                Township Food Pantry.
-                <br />
-                <br />
-                ** Items to bring: Canned Soup, Macaroni and Cheese, Chili,
-                Pasta with Meat, Canned Fruit, Peanut Butter, Jelly / Jam,
-                Canned Tuna / Chicken / Sardines, Coffee, Ketchup, Mustard,
-                Salad Dressings, Laundry Detergent.
-                <br />
-                <br />
-                <a
-                  className='newsEntryLink'
-                  href='https://www.facebook.com/events/393125444945290/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='https://www.facebook.com/events/393125444945290/'
-                >
-                  Event Facebook Page
-                </a>
-                <br />
-                <br />
-                <a
-                  className='newsEntryLink'
-                  href='https://secure.actblue.com/donate/pdg4dupage-fundraiser'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  title='https://secure.actblue.com/donate/pdg4dupage-fundraiser'
-                >
-                  ActBlue Ticket Page
-                </a>
-              </p>
-            </div>
-          </div>
-          <span className='newsSeparator' />
-          <div className='newsEntryContainer'>
-            <div className='entryTitleContainer'>
-              <p className='entryTitle'>
-                Democratic Party of DuPage County Candidate Spotlight
-              </p>
-            </div>
-            <div className='entryDateContainer'>
-              <p className='entryDate'>Thursday, September 26, 2019</p>
-            </div>
-            <div className='entryParagraphContainer'>
-              <p className='entryParagraph'>
-                The Democratic Party of DuPage County just sent out an email
-                newsletter that includes a Candidate Spotlight piece on Paula.
-                The below image is the specific section from the newsletter.
-              </p>
-            </div>
-            <div className='entryImgContainer'>
-              <img
-                className='entrySpecialImg'
-                src={candidateSpotlight}
-                alt='News Entry Special Insert'
-              />
-            </div>
-          </div>
-          <span className='newsSeparator' />
-          <div className='newsEntryContainer'>
-            <div className='entryImgContainer'>
-              <img
-                className='entryImg'
-                src={breakingNews}
-                alt='breaking news logo'
-              />
-            </div>
-            <div className='entryTitleContainer'>
-              <p className='entryTitle'>ActBlue Donation Page Now Active</p>
-            </div>
-            <div className='entryDateContainer'>
-              <p className='entryDate'>Friday, September 06, 2019</p>
-            </div>
-            <div className='entryParagraphContainer'>
-              <p className='entryParagraph'>
-                The ActBlue donation page for Citizens For Paula Deacon Garcia
-                is now active. Paula is extremely grateful for any donations
-                made to the campaign, but no one should feel obligated to do so.
-                All support is appreciated, whether it be donations,
-                volunteering, or simply voting for Paula in the election.
-              </p>
-            </div>
-          </div>
-          <span className='newsSeparator' />
-          <div className='newsEntryContainer'>
-            <div className='entryImgContainer'>
-              <img
-                className='entryImg'
-                src={breakingNews}
-                alt='breaking news logo'
-              />
-            </div>
-            <div className='entryTitleContainer'>
-              <p className='entryTitle'>
-                Paula Deacon Garcia Running For County Board
-              </p>
-            </div>
-            <div className='entryDateContainer'>
-              <p className='entryDate'>Monday, August 26, 2019</p>
-            </div>
-            <div className='entryParagraphContainer'>
-              <p className='entryParagraph'>
-                After much deliberation and with the support of her family and
-                friends, Lisle native, Paula Deacon Garcia has decided to run
-                for the DuPage County Board. She will be running to fill one of
-                the seats for District 2. Paula is excited to bring her passion
-                for helping others and unique perspective to the county level.
-                <br />
-                <br />
-                Paula's donation page on ActBlue will be active around Tuesday,
-                September 3, 2019. Please feel free to check out her website and
-                Facebook page.
-              </p>
-            </div>
-          </div>
-        </div> */}
       </div>
     );
   }

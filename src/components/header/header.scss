@@ -82,20 +82,20 @@
   .headerContainer {
     .menuContainer {
       .navLinks {
-        margin-right: 20px;
-        font-size: 22px;
+        margin-right: 15px;
+        font-size: 20px;
       }
 
       .navLinks:hover {
-        font-size: 25px;
-      }
-
-      .donateBtn {
         font-size: 22px;
       }
 
+      .donateBtn {
+        font-size: 20px;
+      }
+
       .donateBtn:hover {
-        font-size: 25px;
+        font-size: 22px;
       }
     }
   }

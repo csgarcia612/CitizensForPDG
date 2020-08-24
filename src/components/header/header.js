@@ -8,7 +8,7 @@ class Header extends Component {
     super();
     this.state = {
       showMobileMenu: false,
-      currentPathname: '/'
+      currentPathname: '/',
     };
   }
 
@@ -17,14 +17,14 @@ class Header extends Component {
       // console.log('***Current Pathname: ', window.location.pathname);
 
       this.setState({
-        currentPathname: window.location.pathname
+        currentPathname: window.location.pathname,
       });
     }, 0);
   };
 
   toggleMobileMenu = () => {
     this.setState({
-      showMobileMenu: !this.state.showMobileMenu
+      showMobileMenu: !this.state.showMobileMenu,
     });
   };
 
@@ -75,6 +75,14 @@ class Header extends Component {
             District & Voting
           </NavLink>
           <NavLink
+            to='/endorsements'
+            className='navLinks'
+            activeClassName='active'
+            onClick={this.checkPathname}
+          >
+            Endorsements
+          </NavLink>
+          <NavLink
             to='/contact'
             className='navLinks'
             activeClassName='active'
@@ -111,6 +119,9 @@ class Header extends Component {
               </li>
               <li>
                 <a href='/votinginformation'>District & Voting</a>
+              </li>
+              <li>
+                <a href='/endorsements'>Endorsements</a>
               </li>
               <li>
                 <a href='/contact'>Contact & Volunteer</a>
