@@ -119,7 +119,7 @@ export default class Endorsements extends Component {
             </div>
             <div className='endorserTitleContainer'>
               <p className='endorserTitle'>North Central Illinois</p>
-              <p className='endorserTitle'>Labor Council ALF-CIO</p>
+              <p className='endorserTitle'>Labor Council AFL-CIO</p>
             </div>
           </div>
           <div className='endorserContainerShort1'>
