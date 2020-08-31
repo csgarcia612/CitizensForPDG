@@ -145,17 +145,35 @@ export default class Homepage extends Component {
               title='Mail-In Ballot Request Form - dupageco.org/election/votebymail'
             >
               <div className='specialMsgContainer'>
-                <p className='specialMsg'>
+                {/* <p className='specialMsg'>
                   Sign Up Date Updated : Request Your Mail-In Ballot Now
                 </p>
-                <span className='specialMsgSpan' />
+                <span className='specialMsgSpan' /> */}
                 <p className='specialMsg'>
                   Click Here To Request A Mail-In Ballot
                 </p>
               </div>
             </a>
+
+            <a
+              className='ballotTrackLink'
+              href='https://dupage.ballottrax.net/voter/'
+              target='_blank'
+              rel='noopener noreferrer'
+              title='Mail-In Ballot Tracking - dupage.ballottrax.net/voter'
+            >
+              <div className='specialMsgContainer'>
+                <p className='specialMsg'>
+                  Click Here To Track Your Mail-In Ballot
+                </p>
+              </div>
+            </a>
           </div>
-          <img className='homepageHeaderImg' src={pdgGroup2} alt='' />
+          <img
+            className='homepageHeaderImg'
+            src={pdgGroup2}
+            alt='group discussion'
+          />
         </div>
         <div className='reasonContainer'>
           <div className='reasonTitleContainer'>
@@ -185,33 +203,67 @@ export default class Homepage extends Component {
           </div>
         </div>
         <span className='separator' />
-        <div className='facebookFeedsMainContainer'>
-          <div className='facebookFeedsTitleContainer'>
-            <p className='facebookFeedsTitle'>Facebook Feed</p>
+        <div className='mediaMainContainer'>
+          <div className='campaignVideosMainContainer'>
+            <div className='campaignVideosTitleContainer'>
+              <p className='campaignVideosTitle'>Campaign Videos</p>
+            </div>
+            <div className='campaignVideoContainer'>
+              <div className='videoTitleContainer'>
+                <p className='videoTitle'>Meet Paula Deacon Garcia</p>
+              </div>
+              <iframe
+                className='campaignVideo'
+                title='Meet Paula'
+                src='https://www.youtube-nocookie.com/embed/texHQc2kxwo'
+                frameBorder='0'
+                allow='accelerometer; encrypted-media; gyroscope;'
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className='campaignVideoContainer'>
+              <div className='videoTitleContainer'>
+                <p className='videoTitle'>League of Women Voters Q & A</p>
+              </div>
+              <iframe
+                className='campaignVideo'
+                title='LWV Q and A'
+                src='https://www.youtube-nocookie.com/embed/M9cCFgCeSW4'
+                frameBorder='0'
+                allow='accelerometer; encrypted-media; gyroscope;'
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-          <div
-            className='facebookFeedsContainer'
-            style={{ width: this.state.viewportWidth + 'px' }}
-          >
+          <span className='separator' />
+          <div className='facebookFeedsMainContainer'>
+            <div className='facebookFeedsTitleContainer'>
+              <p className='facebookFeedsTitle'>Facebook Feed</p>
+            </div>
             <div
-              className='fb-page'
-              data-href='https://www.facebook.com/pdg4Dupage/'
-              data-tabs='timeline, events'
-              data-width='500'
-              data-height='1150'
-              data-small-header='true'
-              data-adapt-container-width='true'
-              data-hide-cover='true'
-              data-show-facepile='false'
+              className='facebookFeedsContainer'
+              style={{ width: this.state.viewportWidth + 'px' }}
             >
-              <blockquote
-                cite='https://www.facebook.com/pdg4Dupage/'
-                className='fb-xfbml-parse-ignore'
+              <div
+                className='fb-page'
+                data-href='https://www.facebook.com/pdg4Dupage/'
+                data-tabs='timeline, events'
+                data-width='500'
+                data-height='1150'
+                data-small-header='true'
+                data-adapt-container-width='true'
+                data-hide-cover='true'
+                data-show-facepile='false'
               >
-                <a href='https://www.facebook.com/pdg4Dupage/'>
-                  Citizens for Paula Deacon Garcia
-                </a>
-              </blockquote>
+                <blockquote
+                  cite='https://www.facebook.com/pdg4Dupage/'
+                  className='fb-xfbml-parse-ignore'
+                >
+                  <a href='https://www.facebook.com/pdg4Dupage/'>
+                    Citizens for Paula Deacon Garcia
+                  </a>
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>

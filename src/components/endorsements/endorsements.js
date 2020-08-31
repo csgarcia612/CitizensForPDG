@@ -9,6 +9,7 @@ import HowardEndorsement from '../../images/Howard_Banner.jpg';
 import CastenEndorsement from '../../images/Casten_Banner.jpg';
 import StavaMurrayEndorsement from '../../images/Stava_Murray_Banner.jpg';
 import YTDOEndorsement from '../../images/YTDO_Banner.png';
+import ConroyEndorsement from '../../images/Conroy_Banner.jpg';
 
 export default class Endorsements extends Component {
   render() {
@@ -18,6 +19,19 @@ export default class Endorsements extends Component {
           <p className='endorsementsTitle'>Honored To Be Endorsed By</p>
         </div>
         <div className='endorsementsMainContainer'>
+          <div className='endorserContainerTall2'>
+            <div className='endorserImgContainer'>
+              <img
+                className='endorserImg'
+                src={ConroyEndorsement}
+                alt='Deb Conroy Logo'
+              />
+            </div>
+            <div className='endorserTitleContainer'>
+              <p className='endorserTitle'>IL Representative</p>
+              <p className='endorserTitle'>Deb Conroy</p>
+            </div>
+          </div>
           <div className='endorserContainerTall1'>
             <div className='endorserTitleContainer'>
               <p className='endorserTitle'>IL Representative</p>

@@ -109,21 +109,25 @@
     .specialMsgMainContainer {
       display: flex;
       position: relative;
-      flex-direction: column;
+      flex-direction: row;
       width: 100%;
-      height: 110px;
+      // height: 110px;
+      height: 90px;
       background-image: url('../../images/countdownFlag.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      justify-content: center;
+      // justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
 
       .ballotRequestLink {
         display: flex;
         position: relative;
         flex-direction: column;
-        width: 750px;
-        height: 85px;
+        // width: 750px;
+        // height: 85px;
+        width: 450px;
+        height: 55px;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -134,9 +138,10 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 750px;
-          height: 85px;
-          margin: 0px 10px 0px 10px;
+          // width: 750px;
+          // height: 85px;
+          width: 450px;
+          height: 55px;
           background-color: blue;
           border-style: solid;
           border-width: 1.5px;
@@ -170,8 +175,10 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        width: 750px;
-        height: 85px;
+        // width: 750px;
+        // height: 85px;
+        width: 450px;
+        height: 55px;
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -182,9 +189,10 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 750px;
-          height: 85px;
-          margin: 0px 10px 0px 10px;
+          // width: 750px;
+          // height: 85px;
+          width: 450px;
+          height: 55px;
           background-color: red;
           border-style: solid;
           border-width: 1.5px;
@@ -210,6 +218,74 @@
             border-radius: 5px;
             border-color: white;
             border-width: 0.5px;
+          }
+        }
+      }
+
+      .ballotTrackLink {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 450px;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        .specialMsgContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 450px;
+          height: 55px;
+          background-color: blue;
+          border-style: solid;
+          border-width: 1.5px;
+          border-color: white;
+          border-radius: 10px;
+
+          .specialMsg {
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 1px;
+            color: white;
+          }
+        }
+      }
+
+      .ballotTrackLink:active {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 450px;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        .specialMsgContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 450px;
+          height: 55px;
+          background-color: red;
+          border-style: solid;
+          border-width: 1.5px;
+          border-color: white;
+          border-radius: 10px;
+
+          .specialMsg {
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 1px;
+            color: white;
           }
         }
       }
@@ -280,28 +356,97 @@
     margin: 30px 0px 30px 0px;
   }
 
-  .facebookFeedsMainContainer {
+  .mediaMainContainer {
     display: flex;
-    flex-direction: column;
     position: relative;
-    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
-    height: 100%;
 
-    .facebookFeedsTitleContainer {
-      margin-bottom: 25px;
+    .campaignVideosMainContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
 
-      .facebookFeedsTitle {
-        font-family: sans-serif;
-        font-size: 50px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        color: #20638c;
+      .campaignVideosTitleContainer {
+        margin-bottom: 35px;
+
+        .campaignVideosTitle {
+          font-family: sans-serif;
+          font-size: 50px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
+        }
+      }
+
+      .campaignVideoContainer {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 75px;
+
+        .videoTitleContainer {
+          display: flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .videoTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: black;
+          }
+        }
+
+        .campaignVideo {
+          width: 576px;
+          height: 324px;
+        }
       }
     }
 
-    .facebookFeedsContainer {
+    .separator {
+      display: flex;
+      position: relative;
+      width: 5px;
+      height: 96%;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+    }
+
+    .facebookFeedsMainContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+
+      .facebookFeedsTitleContainer {
+        margin-bottom: 35px;
+
+        .facebookFeedsTitle {
+          font-family: sans-serif;
+          font-size: 50px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
+        }
+      }
+
+      .facebookFeedsContainer {
+      }
     }
   }
 }
@@ -323,28 +468,75 @@
       }
     }
 
-    .facebookFeedsMainContainer {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      justify-content: flex-start;
+    .mediaMainContainer {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
       align-items: center;
-      width: 50%;
-      height: 100%;
 
-      .facebookFeedsTitleContainer {
-        margin-bottom: 20px;
+      .campaignVideosMainContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
 
-        .facebookFeedsTitle {
-          font-family: sans-serif;
-          font-size: 35px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          color: #20638c;
+        .campaignVideosTitleContainer {
+          margin-bottom: 20px;
+
+          .campaignVideosTitle {
+            font-size: 35px;
+          }
+        }
+
+        .campaignVideoContainer {
+          margin-bottom: 75px;
+
+          .videoTitleContainer {
+            margin-bottom: 10px;
+
+            .videoTitle {
+              font-size: 24px;
+            }
+          }
+
+          .campaignVideo {
+            width: 464px;
+            height: 261px;
+          }
         }
       }
 
-      .facebookFeedsContainer {
+      .separator {
+        display: flex;
+        position: relative;
+        width: 5px;
+        height: 96%;
+        border-radius: 5px;
+        background-color: #20638c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      }
+
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
+
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
+
+        .facebookFeedsContainer {
+        }
       }
     }
   }
@@ -399,21 +591,22 @@
       .specialMsgMainContainer {
         display: flex;
         position: relative;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         height: 110px;
         background-image: url('../../images/countdownFlag.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        justify-content: center;
+        // justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
         .ballotRequestLink {
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 655px;
-          height: 85px;
+          width: 325px;
+          height: 75px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -424,9 +617,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 655px;
-            height: 85px;
-            margin: 0px 10px 0px 10px;
+            width: 325px;
+            height: 75px;
             background-color: blue;
             border-style: solid;
             border-width: 1.5px;
@@ -439,6 +631,7 @@
               font-size: 24px;
               letter-spacing: 1px;
               color: white;
+              line-height: 30px;
             }
 
             .specialMsgSpan {
@@ -460,8 +653,8 @@
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 655px;
-          height: 85px;
+          width: 325px;
+          height: 75px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -472,9 +665,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 655px;
-            height: 85px;
-            margin: 0px 10px 0px 10px;
+            width: 325px;
+            height: 75px;
             background-color: red;
             border-style: solid;
             border-width: 1.5px;
@@ -487,6 +679,7 @@
               font-size: 24px;
               letter-spacing: 1px;
               color: white;
+              line-height: 30px;
             }
 
             .specialMsgSpan {
@@ -500,6 +693,76 @@
               border-radius: 5px;
               border-color: white;
               border-width: 0.5px;
+            }
+          }
+        }
+
+        .ballotTrackLink {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 325px;
+          height: 75px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 325px;
+            height: 75px;
+            background-color: blue;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 24px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 30px;
+            }
+          }
+        }
+
+        .ballotTrackLink:active {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 325px;
+          height: 75px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 325px;
+            height: 75px;
+            background-color: red;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 24px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 30px;
             }
           }
         }
@@ -526,28 +789,80 @@
       }
     }
 
-    .facebookFeedsMainContainer {
+    .mediaMainContainer {
       display: flex;
-      flex-direction: column;
       position: relative;
-      justify-content: flex-start;
-      align-items: center;
+      flex-direction: column;
       width: 100%;
-      height: auto;
+      justify-content: center;
+      align-items: center;
 
-      .facebookFeedsTitleContainer {
-        margin-bottom: 20px;
+      .campaignVideosMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-        .facebookFeedsTitle {
-          font-family: sans-serif;
-          font-size: 30px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          color: #20638c;
+        .campaignVideosTitleContainer {
+          margin-bottom: 20px;
+
+          .campaignVideosTitle {
+            font-size: 35px;
+          }
+        }
+
+        .campaignVideoContainer {
+          margin-bottom: 0px;
+
+          .videoTitleContainer {
+            margin-bottom: 10px;
+
+            .videoTitle {
+              font-size: 24px;
+            }
+          }
+
+          .campaignVideo {
+            width: 576px;
+            height: 324px;
+          }
         }
       }
 
-      .facebookFeedsContainer {
+      .separator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        margin: 30px 0px 30px 0px;
+      }
+
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
+
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
+
+        .facebookFeedsContainer {
+        }
       }
     }
   }
@@ -603,21 +918,22 @@
       .specialMsgMainContainer {
         display: flex;
         position: relative;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         height: 95px;
         background-image: url('../../images/countdownFlag.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        justify-content: center;
+        // justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
         .ballotRequestLink {
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 565px;
-          height: 85px;
+          width: 250px;
+          height: 75px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -628,9 +944,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 545px;
+            width: 250px;
             height: 75px;
-            margin: 0px 10px 0px 10px;
             background-color: blue;
             border-style: solid;
             border-width: 1.5px;
@@ -643,6 +958,7 @@
               font-size: 20px;
               letter-spacing: 1px;
               color: white;
+              line-height: 26px;
             }
 
             .specialMsgSpan {
@@ -664,7 +980,7 @@
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 545px;
+          width: 250px;
           height: 75px;
           justify-content: center;
           align-items: center;
@@ -676,9 +992,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 545px;
+            width: 250px;
             height: 75px;
-            margin: 0px 10px 0px 10px;
             background-color: red;
             border-style: solid;
             border-width: 1.5px;
@@ -691,6 +1006,7 @@
               font-size: 20px;
               letter-spacing: 1px;
               color: white;
+              line-height: 26px;
             }
 
             .specialMsgSpan {
@@ -704,6 +1020,76 @@
               border-radius: 5px;
               border-color: white;
               border-width: 0.5px;
+            }
+          }
+        }
+
+        .ballotTrackLink {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 250px;
+          height: 75px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 75px;
+            background-color: blue;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 20px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 26px;
+            }
+          }
+        }
+
+        .ballotTrackLink:active {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 250px;
+          height: 75px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 75px;
+            background-color: red;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 24px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 26px;
             }
           }
         }
@@ -730,28 +1116,80 @@
       }
     }
 
-    .facebookFeedsMainContainer {
+    .mediaMainContainer {
       display: flex;
-      flex-direction: column;
       position: relative;
-      justify-content: flex-start;
-      align-items: center;
+      flex-direction: column;
       width: 100%;
-      height: auto;
+      justify-content: center;
+      align-items: center;
 
-      .facebookFeedsTitleContainer {
-        margin-bottom: 20px;
+      .campaignVideosMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-        .facebookFeedsTitle {
-          font-family: sans-serif;
-          font-size: 30px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          color: #20638c;
+        .campaignVideosTitleContainer {
+          margin-bottom: 20px;
+
+          .campaignVideosTitle {
+            font-size: 30px;
+          }
+        }
+
+        .campaignVideoContainer {
+          margin-bottom: 0px;
+
+          .videoTitleContainer {
+            margin-bottom: 10px;
+
+            .videoTitle {
+              font-size: 20px;
+            }
+          }
+
+          .campaignVideo {
+            width: 560px;
+            height: 315px;
+          }
         }
       }
 
-      .facebookFeedsContainer {
+      .separator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        margin: 30px 0px 30px 0px;
+      }
+
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
+
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
+
+        .facebookFeedsContainer {
+        }
       }
     }
   }
@@ -807,21 +1245,22 @@
       .specialMsgMainContainer {
         display: flex;
         position: relative;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         height: 110px;
         background-image: url('../../images/countdownFlag.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        justify-content: center;
+        // justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
         .ballotRequestLink {
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 400px;
-          height: 90px;
+          width: 200px;
+          height: 75px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -832,9 +1271,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 400px;
-            height: 90px;
-            margin: 0px 10px 0px 10px;
+            width: 200px;
+            height: 75px;
             background-color: blue;
             border-style: solid;
             border-width: 1.5px;
@@ -845,9 +1283,9 @@
               flex-wrap: wrap;
               text-align: center;
               font-size: 18px;
-              line-height: 20px;
               letter-spacing: 1px;
               color: white;
+              line-height: 24px;
             }
 
             .specialMsgSpan {
@@ -869,8 +1307,8 @@
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 400px;
-          height: 90px;
+          width: 200px;
+          height: 75px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -881,9 +1319,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 400px;
-            height: 90px;
-            margin: 0px 10px 0px 10px;
+            width: 200px;
+            height: 75px;
             background-color: red;
             border-style: solid;
             border-width: 1.5px;
@@ -894,9 +1331,9 @@
               flex-wrap: wrap;
               text-align: center;
               font-size: 18px;
-              line-height: 20px;
               letter-spacing: 1px;
               color: white;
+              line-height: 24px;
             }
 
             .specialMsgSpan {
@@ -910,6 +1347,76 @@
               border-radius: 5px;
               border-color: white;
               border-width: 0.5px;
+            }
+          }
+        }
+
+        .ballotTrackLink {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 200px;
+          height: 75px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 75px;
+            background-color: blue;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 18px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .ballotTrackLink:active {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 200px;
+          height: 75px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 75px;
+            background-color: red;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 18px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 24px;
             }
           }
         }
@@ -936,28 +1443,80 @@
       }
     }
 
-    .facebookFeedsMainContainer {
+    .mediaMainContainer {
       display: flex;
-      flex-direction: column;
       position: relative;
-      justify-content: flex-start;
-      align-items: center;
+      flex-direction: column;
       width: 100%;
-      height: auto;
+      justify-content: center;
+      align-items: center;
 
-      .facebookFeedsTitleContainer {
-        margin-bottom: 20px;
+      .campaignVideosMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-        .facebookFeedsTitle {
-          font-family: sans-serif;
-          font-size: 24px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          color: #20638c;
+        .campaignVideosTitleContainer {
+          margin-bottom: 20px;
+
+          .campaignVideosTitle {
+            font-size: 24px;
+          }
+        }
+
+        .campaignVideoContainer {
+          margin-bottom: 0px;
+
+          .videoTitleContainer {
+            margin-bottom: 10px;
+
+            .videoTitle {
+              font-size: 20px;
+            }
+          }
+
+          .campaignVideo {
+            width: 400px;
+            height: 225px;
+          }
         }
       }
 
-      .facebookFeedsContainer {
+      .separator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        margin: 30px 0px 30px 0px;
+      }
+
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
+
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
+
+        .facebookFeedsContainer {
+        }
       }
     }
   }
@@ -1013,21 +1572,22 @@
       .specialMsgMainContainer {
         display: flex;
         position: relative;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         height: 110px;
         background-image: url('../../images/countdownFlag.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        justify-content: center;
+        // justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
         .ballotRequestLink {
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 345px;
-          height: 90px;
+          width: 135px;
+          height: 85px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -1038,9 +1598,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 345px;
-            height: 90px;
-            margin: 0px 10px 0px 10px;
+            width: 135px;
+            height: 85px;
             background-color: blue;
             border-style: solid;
             border-width: 1.5px;
@@ -1051,7 +1610,7 @@
               flex-wrap: wrap;
               text-align: center;
               font-size: 18px;
-              line-height: 20px;
+              line-height: 24px;
               letter-spacing: 1px;
               color: white;
             }
@@ -1075,8 +1634,8 @@
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 345px;
-          height: 90px;
+          width: 135px;
+          height: 85px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -1087,9 +1646,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 345px;
-            height: 90px;
-            margin: 0px 10px 0px 10px;
+            width: 135px;
+            height: 85px;
             background-color: red;
             border-style: solid;
             border-width: 1.5px;
@@ -1100,7 +1658,7 @@
               flex-wrap: wrap;
               text-align: center;
               font-size: 18px;
-              line-height: 20px;
+              line-height: 24px;
               letter-spacing: 1px;
               color: white;
             }
@@ -1116,6 +1674,76 @@
               border-radius: 5px;
               border-color: white;
               border-width: 0.5px;
+            }
+          }
+        }
+
+        .ballotTrackLink {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 140px;
+          height: 85px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 85px;
+            background-color: blue;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 18px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .ballotTrackLink:active {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 140px;
+          height: 85px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 85px;
+            background-color: red;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 18px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 24px;
             }
           }
         }
@@ -1142,28 +1770,80 @@
       }
     }
 
-    .facebookFeedsMainContainer {
+    .mediaMainContainer {
       display: flex;
-      flex-direction: column;
       position: relative;
-      justify-content: flex-start;
-      align-items: center;
+      flex-direction: column;
       width: 100%;
-      height: auto;
+      justify-content: center;
+      align-items: center;
 
-      .facebookFeedsTitleContainer {
-        margin-bottom: 20px;
+      .campaignVideosMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-        .facebookFeedsTitle {
-          font-family: sans-serif;
-          font-size: 24px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          color: #20638c;
+        .campaignVideosTitleContainer {
+          margin-bottom: 20px;
+
+          .campaignVideosTitle {
+            font-size: 24px;
+          }
+        }
+
+        .campaignVideoContainer {
+          margin-bottom: 0px;
+
+          .videoTitleContainer {
+            margin-bottom: 10px;
+
+            .videoTitle {
+              font-size: 20px;
+            }
+          }
+
+          .campaignVideo {
+            width: 336px;
+            height: 189px;
+          }
         }
       }
 
-      .facebookFeedsContainer {
+      .separator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        margin: 30px 0px 30px 0px;
+      }
+
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
+
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
+
+        .facebookFeedsContainer {
+        }
       }
     }
   }
@@ -1220,21 +1900,22 @@
       .specialMsgMainContainer {
         display: flex;
         position: relative;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
-        height: 125px;
+        height: 110px;
         background-image: url('../../images/countdownFlag.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        justify-content: center;
+        // justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
         .ballotRequestLink {
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 300px;
-          height: 110px;
+          width: 135px;
+          height: 85px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -1245,9 +1926,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 300px;
-            height: 110px;
-            margin: 0px 10px 0px 10px;
+            width: 135px;
+            height: 85px;
             background-color: blue;
             border-style: solid;
             border-width: 1.5px;
@@ -1258,7 +1938,7 @@
               flex-wrap: wrap;
               text-align: center;
               font-size: 18px;
-              line-height: 22px;
+              line-height: 24px;
               letter-spacing: 1px;
               color: white;
             }
@@ -1282,8 +1962,8 @@
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 300px;
-          height: 110px;
+          width: 135px;
+          height: 85px;
           justify-content: center;
           align-items: center;
           text-decoration: none;
@@ -1294,9 +1974,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 300px;
-            height: 110px;
-            margin: 0px 10px 0px 10px;
+            width: 135px;
+            height: 85px;
             background-color: red;
             border-style: solid;
             border-width: 1.5px;
@@ -1307,7 +1986,7 @@
               flex-wrap: wrap;
               text-align: center;
               font-size: 18px;
-              line-height: 22px;
+              line-height: 24px;
               letter-spacing: 1px;
               color: white;
             }
@@ -1323,6 +2002,76 @@
               border-radius: 5px;
               border-color: white;
               border-width: 0.5px;
+            }
+          }
+        }
+
+        .ballotTrackLink {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 140px;
+          height: 85px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 85px;
+            background-color: blue;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 18px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .ballotTrackLink:active {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 140px;
+          height: 85px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .specialMsgContainer {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 85px;
+            background-color: red;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            border-radius: 10px;
+
+            .specialMsg {
+              flex-wrap: wrap;
+              text-align: center;
+              font-size: 18px;
+              letter-spacing: 1px;
+              color: white;
+              line-height: 24px;
             }
           }
         }
@@ -1349,28 +2098,80 @@
       }
     }
 
-    .facebookFeedsMainContainer {
+    .mediaMainContainer {
       display: flex;
-      flex-direction: column;
       position: relative;
-      justify-content: flex-start;
-      align-items: center;
+      flex-direction: column;
       width: 100%;
-      height: auto;
+      justify-content: center;
+      align-items: center;
 
-      .facebookFeedsTitleContainer {
-        margin-bottom: 20px;
+      .campaignVideosMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-        .facebookFeedsTitle {
-          font-family: sans-serif;
-          font-size: 24px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          color: #20638c;
+        .campaignVideosTitleContainer {
+          margin-bottom: 20px;
+
+          .campaignVideosTitle {
+            font-size: 24px;
+          }
+        }
+
+        .campaignVideoContainer {
+          margin-bottom: 0px;
+
+          .videoTitleContainer {
+            margin-bottom: 10px;
+
+            .videoTitle {
+              font-size: 20px;
+            }
+          }
+
+          .campaignVideo {
+            width: 304px;
+            height: 171px;
+          }
         }
       }
 
-      .facebookFeedsContainer {
+      .separator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        margin: 30px 0px 30px 0px;
+      }
+
+      .facebookFeedsMainContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .facebookFeedsTitleContainer {
+          margin-bottom: 20px;
+
+          .facebookFeedsTitle {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #20638c;
+          }
+        }
+
+        .facebookFeedsContainer {
+        }
       }
     }
   }
