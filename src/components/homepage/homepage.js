@@ -137,37 +137,54 @@ export default class Homepage extends Component {
             </div>
           </div> */}
           <div className='specialMsgMainContainer'>
-            <a
-              className='ballotRequestLink'
-              href='https://www.dupageco.org/election/votebymail/'
-              target='_blank'
-              rel='noopener noreferrer'
-              title='Mail-In Ballot Request Form - dupageco.org/election/votebymail'
-            >
-              <div className='specialMsgContainer'>
-                {/* <p className='specialMsg'>
+            <div className='specialMsgRow1'>
+              <a
+                className='ballotRequestLink'
+                href='https://www.dupageco.org/election/votebymail/'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='Mail-In Ballot Request Form - dupageco.org/election/votebymail'
+              >
+                <div className='specialMsgContainer'>
+                  {/* <p className='specialMsg'>
                   Sign Up Date Updated : Request Your Mail-In Ballot Now
                 </p>
                 <span className='specialMsgSpan' /> */}
-                <p className='specialMsg'>
-                  Click Here To Request A Mail-In Ballot
-                </p>
-              </div>
-            </a>
+                  <p className='specialMsg'>
+                    Click Here To Request A Mail-In Ballot
+                  </p>
+                </div>
+              </a>
 
-            <a
-              className='ballotTrackLink'
-              href='https://dupage.ballottrax.net/voter/'
-              target='_blank'
-              rel='noopener noreferrer'
-              title='Mail-In Ballot Tracking - dupage.ballottrax.net/voter'
-            >
-              <div className='specialMsgContainer'>
-                <p className='specialMsg'>
-                  Click Here To Track Your Mail-In Ballot
-                </p>
-              </div>
-            </a>
+              <a
+                className='ballotTrackLink'
+                href='https://dupage.ballottrax.net/voter/'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='Mail-In Ballot Tracking - dupage.ballottrax.net/voter'
+              >
+                <div className='specialMsgContainer'>
+                  <p className='specialMsg'>
+                    Click Here To Track Your Mail-In Ballot
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div className='specialMsgRow2'>
+              <a
+                className='yardSignLink'
+                href='https://secure.actblue.com/donate/votedontjustvent'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='Special Fundraiser Yard Sign - secure.actblue.com/donate/votedontjustvent'
+              >
+                <div className='specialMsgContainer'>
+                  <p className='specialMsg'>
+                    Click Here For Yard Sign Fundraiser
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
           <img
             className='homepageHeaderImg'
