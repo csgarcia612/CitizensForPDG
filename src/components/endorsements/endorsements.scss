@@ -42,20 +42,48 @@
       margin: 25px 0px;
       padding-left: 100px;
 
-      .endorserTitleContainer {
+      .endorserInfoMainContainer {
         display: flex;
         position: relative;
         flex-direction: column;
-        margin: 0px 50px;
+        justify-content: center;
+        align-items: center;
 
-        .endorserTitle {
-          font-family: sans-serif;
-          font-size: 45px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          line-height: 65px;
-          color: black;
-          text-align: center;
+        .endorserTitleContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0px 50px;
+
+          .endorserTitle {
+            font-family: sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 65px;
+            color: black;
+            text-align: center;
+          }
+        }
+
+        .endorserQuoteContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 85%;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+
+          .endorserQuote {
+            font-family: sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 26px;
+            color: black;
+          }
         }
       }
 
@@ -65,11 +93,17 @@
         flex-direction: column;
         margin: 0px 10px;
 
-        .endorserImg {
-          display: flex;
-          position: relative;
-          width: 300px;
-          border-radius: 10px;
+        .endorserSiteLink {
+          outline: none;
+          text-decoration: none;
+          cursor: pointer;
+
+          .endorserImg {
+            display: flex;
+            position: relative;
+            width: 300px;
+            border-radius: 10px;
+          }
         }
       }
     }
@@ -84,20 +118,48 @@
       margin: 25px 0px;
       padding-right: 100px;
 
-      .endorserTitleContainer {
+      .endorserInfoMainContainer {
         display: flex;
         position: relative;
         flex-direction: column;
-        margin: 0px 50px;
+        justify-content: center;
+        align-items: center;
 
-        .endorserTitle {
-          font-family: sans-serif;
-          font-size: 45px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          line-height: 65px;
-          color: black;
-          text-align: center;
+        .endorserTitleContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0px 50px;
+
+          .endorserTitle {
+            font-family: sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 65px;
+            color: black;
+            text-align: center;
+          }
+        }
+
+        .endorserQuoteContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 85%;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+
+          .endorserQuote {
+            font-family: sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 26px;
+            color: black;
+          }
         }
       }
 
@@ -107,11 +169,17 @@
         flex-direction: column;
         margin: 0px 10px;
 
-        .endorserImg {
-          display: flex;
-          position: relative;
-          width: 300px;
-          border-radius: 10px;
+        .endorserSiteLink {
+          outline: none;
+          text-decoration: none;
+          cursor: pointer;
+
+          .endorserImg {
+            display: flex;
+            position: relative;
+            width: 300px;
+            border-radius: 10px;
+          }
         }
       }
     }
@@ -126,20 +194,48 @@
       margin: 50px 0px;
       padding-left: 100px;
 
-      .endorserTitleContainer {
+      .endorserInfoMainContainer {
         display: flex;
         position: relative;
         flex-direction: column;
-        margin: 0px 50px;
+        justify-content: center;
+        align-items: center;
 
-        .endorserTitle {
-          font-family: sans-serif;
-          font-size: 45px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          line-height: 65px;
-          color: black;
-          text-align: center;
+        .endorserTitleContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0px 50px;
+
+          .endorserTitle {
+            font-family: sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 65px;
+            color: black;
+            text-align: center;
+          }
+        }
+
+        .endorserQuoteContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 85%;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+
+          .endorserQuote {
+            font-family: sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 26px;
+            color: black;
+          }
         }
       }
 
@@ -149,11 +245,17 @@
         flex-direction: column;
         margin: 0px 10px;
 
-        .endorserImg {
-          display: flex;
-          position: relative;
-          width: 300px;
-          border-radius: 10px;
+        .endorserSiteLink {
+          outline: none;
+          text-decoration: none;
+          cursor: pointer;
+
+          .endorserImg {
+            display: flex;
+            position: relative;
+            width: 300px;
+            border-radius: 10px;
+          }
         }
       }
     }
@@ -168,20 +270,48 @@
       margin: 50px 0px;
       padding-right: 100px;
 
-      .endorserTitleContainer {
+      .endorserInfoMainContainer {
         display: flex;
         position: relative;
         flex-direction: column;
-        margin: 0px 50px;
+        justify-content: center;
+        align-items: center;
 
-        .endorserTitle {
-          font-family: sans-serif;
-          font-size: 45px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          line-height: 65px;
-          color: black;
-          text-align: center;
+        .endorserTitleContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0px 50px;
+
+          .endorserTitle {
+            font-family: sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 65px;
+            color: black;
+            text-align: center;
+          }
+        }
+
+        .endorserQuoteContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          width: 85%;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+
+          .endorserQuote {
+            font-family: sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 26px;
+            color: black;
+          }
         }
       }
 
@@ -191,11 +321,17 @@
         flex-direction: column;
         margin: 0px 10px;
 
-        .endorserImg {
-          display: flex;
-          position: relative;
-          width: 300px;
-          border-radius: 10px;
+        .endorserSiteLink {
+          outline: none;
+          text-decoration: none;
+          cursor: pointer;
+
+          .endorserImg {
+            display: flex;
+            position: relative;
+            width: 300px;
+            border-radius: 10px;
+          }
         }
       }
     }
@@ -216,23 +352,41 @@
       .endorserContainerTall1 {
         flex-direction: row;
         margin: 20px 0px;
-        padding-left: 75px;
+        padding-left: 25px;
 
-        .endorserTitleContainer {
-          margin: 0px 50px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 50px;
 
-          .endorserTitle {
-            font-size: 35px;
-            line-height: 55px;
+            .endorserTitle {
+              font-size: 35px;
+              line-height: 55px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 25px;
+
+            .endorserQuote {
+              font-size: 20px;
+              line-height: 26px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 250px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 250px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -240,23 +394,41 @@
       .endorserContainerTall2 {
         flex-direction: row;
         margin: 20px 0px;
-        padding-right: 75px;
+        padding-right: 25px;
 
-        .endorserTitleContainer {
-          margin: 0px 50px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 50px;
 
-          .endorserTitle {
-            font-size: 35px;
-            line-height: 55px;
+            .endorserTitle {
+              font-size: 35px;
+              line-height: 55px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 25px;
+
+            .endorserQuote {
+              font-size: 20px;
+              line-height: 26px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 250px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 250px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -266,21 +438,39 @@
         margin: 45px 0px;
         padding-left: 75px;
 
-        .endorserTitleContainer {
-          margin: 0px 50px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 50px;
 
-          .endorserTitle {
-            font-size: 35px;
-            line-height: 55px;
+            .endorserTitle {
+              font-size: 35px;
+              line-height: 55px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 25px;
+
+            .endorserQuote {
+              font-size: 20px;
+              line-height: 26px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 300px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 300px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -290,21 +480,39 @@
         margin: 45px 0px;
         padding-right: 75px;
 
-        .endorserTitleContainer {
-          margin: 0px 50px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 50px;
 
-          .endorserTitle {
-            font-size: 35px;
-            line-height: 55px;
+            .endorserTitle {
+              font-size: 35px;
+              line-height: 55px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 25px;
+
+            .endorserQuote {
+              font-size: 20px;
+              line-height: 26px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 300px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 300px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -326,23 +534,41 @@
       .endorserContainerTall1 {
         flex-direction: row;
         margin: 15px 0px;
-        padding-left: 50px;
+        padding-left: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px 25px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 25px;
 
-          .endorserTitle {
-            font-size: 25px;
-            line-height: 45px;
+            .endorserTitle {
+              font-size: 25px;
+              line-height: 40px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 18px;
+              line-height: 24px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 200px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 200px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -350,23 +576,41 @@
       .endorserContainerTall2 {
         flex-direction: row;
         margin: 15px 0px;
-        padding-right: 50px;
+        padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px 25px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 25px;
 
-          .endorserTitle {
-            font-size: 25px;
-            line-height: 45px;
+            .endorserTitle {
+              font-size: 25px;
+              line-height: 40px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 18px;
+              line-height: 24px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 200px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 200px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -374,23 +618,41 @@
       .endorserContainerShort1 {
         flex-direction: row;
         margin: 30px 0px;
-        padding-left: 50px;
+        padding-left: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px 25px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 25px;
 
-          .endorserTitle {
-            font-size: 25px;
-            line-height: 45px;
+            .endorserTitle {
+              font-size: 25px;
+              line-height: 40px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 18px;
+              line-height: 24px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 250px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 250px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -398,23 +660,41 @@
       .endorserContainerShort2 {
         flex-direction: row;
         margin: 30px 0px;
-        padding-right: 50px;
+        padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px 25px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 25px;
 
-          .endorserTitle {
-            font-size: 25px;
-            line-height: 45px;
+            .endorserTitle {
+              font-size: 25px;
+              line-height: 40px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 18px;
+              line-height: 24px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 250px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 250px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -436,23 +716,41 @@
       .endorserContainerTall1 {
         flex-direction: row;
         margin: 15px 0px;
-        padding-left: 50px;
+        padding-left: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px 25px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 25px;
 
-          .endorserTitle {
-            font-size: 20px;
-            line-height: 40px;
+            .endorserTitle {
+              font-size: 20px;
+              line-height: 35px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 150px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 150px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -460,23 +758,41 @@
       .endorserContainerTall2 {
         flex-direction: row;
         margin: 15px 0px;
-        padding-right: 50px;
+        padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px 25px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 25px;
 
-          .endorserTitle {
-            font-size: 20px;
-            line-height: 40px;
+            .endorserTitle {
+              font-size: 20px;
+              line-height: 35px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 150px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 150px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -484,23 +800,41 @@
       .endorserContainerShort1 {
         flex-direction: row;
         margin: 30px 0px;
-        padding-left: 50px;
+        padding-left: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px 25px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 25px;
 
-          .endorserTitle {
-            font-size: 20px;
-            line-height: 40px;
+            .endorserTitle {
+              font-size: 20px;
+              line-height: 35px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 175px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 175px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -508,23 +842,41 @@
       .endorserContainerShort2 {
         flex-direction: row;
         margin: 30px 0px;
-        padding-right: 50px;
+        padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px 25px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px 25px;
 
-          .endorserTitle {
-            font-size: 20px;
-            line-height: 40px;
+            .endorserTitle {
+              font-size: 20px;
+              line-height: 35px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
           margin: 0px 10px;
 
-          .endorserImg {
-            width: 175px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 175px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -544,9 +896,30 @@
 
     .endorsementsMainContainer {
       .endorserContainerTall1 {
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin: 15px 0px;
         padding-left: 0px;
+
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
+
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
 
         .endorserTitleContainer {
           margin: 0px;
@@ -558,83 +931,143 @@
         }
 
         .endorserImgContainer {
-          margin: 0px 0px 0px 20px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 150px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 150px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerTall2 {
-        flex-direction: row;
+        flex-direction: column;
         margin: 15px 0px;
         padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 18px;
-            line-height: 28px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 20px 0px 0px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 150px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 150px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerShort1 {
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin: 30px 0px;
         padding-left: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 18px;
-            line-height: 28px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 0px 0px 20px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 175px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 175px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerShort2 {
-        flex-direction: row;
+        flex-direction: column;
         margin: 30px 0px;
         padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 18px;
-            line-height: 28px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 20px 0px 0px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 175px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 175px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -654,97 +1087,178 @@
 
     .endorsementsMainContainer {
       .endorserContainerTall1 {
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin: 15px 0px;
         padding-left: 0px;
+
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
+
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
 
         .endorserTitleContainer {
           margin: 0px;
 
           .endorserTitle {
-            font-size: 16px;
-            line-height: 26px;
+            font-size: 18px;
+            line-height: 28px;
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 0px 0px 10px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 140px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 150px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerTall2 {
-        flex-direction: row;
+        flex-direction: column;
         margin: 15px 0px;
         padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 16px;
-            line-height: 26px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 10px 0px 0px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 140px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 150px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerShort1 {
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin: 30px 0px;
         padding-left: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 16px;
-            line-height: 26px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 0px 0px 10px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 160px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 175px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerShort2 {
-        flex-direction: row;
+        flex-direction: column;
         margin: 30px 0px;
         padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 16px;
-            line-height: 26px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 10px 0px 0px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 160px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 175px;
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -764,97 +1278,178 @@
 
     .endorsementsMainContainer {
       .endorserContainerTall1 {
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin: 15px 0px;
         padding-left: 0px;
+
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
+
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
 
         .endorserTitleContainer {
           margin: 0px;
 
           .endorserTitle {
-            font-size: 16px;
-            line-height: 26px;
+            font-size: 18px;
+            line-height: 28px;
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 0px 0px 10px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 125px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 150px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerTall2 {
-        flex-direction: row;
+        flex-direction: column;
         margin: 15px 0px;
         padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 16px;
-            line-height: 26px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 10px 0px 0px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 125px;
-            border-radius: 10px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 150px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerShort1 {
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin: 30px 0px;
         padding-left: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 16px;
-            line-height: 26px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 0px 0px 10px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 140px;
-            border-radius: 5px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 175px;
+              border-radius: 10px;
+            }
           }
         }
       }
 
       .endorserContainerShort2 {
-        flex-direction: row;
+        flex-direction: column;
         margin: 30px 0px;
         padding-right: 0px;
 
-        .endorserTitleContainer {
-          margin: 0px;
+        .endorserInfoMainContainer {
+          .endorserTitleContainer {
+            margin: 0px;
 
-          .endorserTitle {
-            font-size: 16px;
-            line-height: 26px;
+            .endorserTitle {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+
+          .endorserQuoteContainer {
+            width: 95%;
+            margin-top: 10px;
+
+            .endorserQuote {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
 
         .endorserImgContainer {
-          margin: 0px 10px 0px 0px;
+          margin: 0px;
 
-          .endorserImg {
-            width: 140px;
-            border-radius: 5px;
+          .endorserSiteLink {
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+
+            .endorserImg {
+              width: 175px;
+              border-radius: 10px;
+            }
           }
         }
       }
