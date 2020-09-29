@@ -12,6 +12,8 @@ import StavaMurrayEndorsement from '../../images/Stava_Murray_Banner.jpg';
 import YTDOEndorsement from '../../images/YTDO_Banner.png';
 import ConroyEndorsement from '../../images/Conroy_Banner.jpg';
 import FosterEndorsement from '../../images/Foster_Banner2.jpg';
+import IADOEndorsement from '../../images/IADO_Banner.jpg';
+import DuckworthEndorsement from '../../images/Duckworth_Banner.jpg';
 
 export default class Endorsements extends Component {
   render() {
@@ -21,6 +23,71 @@ export default class Endorsements extends Component {
           <p className='endorsementsTitle'>Honored To Be Endorsed By</p>
         </div>
         <div className='endorsementsMainContainer'>
+          <div className='endorserContainerTall1'>
+            <div className='endorserInfoMainContainer'>
+              <div className='endorserTitleContainer'>
+                <p className='endorserTitle'>US Senator</p>
+                <p className='endorserTitle'>Tammy Duckworth</p>
+              </div>
+              {/* <div className='endorserQuoteContainer'>
+                <p className='endorserQuote'>
+                  "I am thrilled to endorse Paula Deacon Garcia for DuPage
+                  County Board. Given her top notch qualifications, I know she
+                  will be an effective and responsive board member. Her
+                  expertise, data-based decision making and character will allow
+                  her to add value on day one. I look forward to partnering with
+                  Paula for the good of the county, our state and our country."
+                </p>
+              </div> */}
+            </div>
+            <div className='endorserImgContainer'>
+              <a
+                className='endorserSiteLink'
+                href='https://www.duckworth.senate.gov/'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='Tammy Duckworth - duckworth.senate.gov'
+              >
+                <img
+                  className='endorserImg'
+                  src={DuckworthEndorsement}
+                  alt='Tammy Duckworth Logo'
+                />
+              </a>
+            </div>
+          </div>
+          <div className='endorserContainerShort2'>
+            <div className='endorserImgContainer'>
+              <a
+                className='endorserSiteLink'
+                href='https://www.iado.org/'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='Indo-American Democratic Organization - iado.org'
+              >
+                <img
+                  className='endorserImg'
+                  src={IADOEndorsement}
+                  alt='IADO Logo'
+                />
+              </a>
+            </div>
+            <div className='endorserInfoMainContainer'>
+              <div className='endorserTitleContainer'>
+                <p className='endorserTitle'>Indo-American</p>
+                <p className='endorserTitle'>Democratic Organization</p>
+              </div>
+              <div className='endorserQuoteContainer'>
+                <p className='endorserQuote'>
+                  "For your service to your community and your commitment and
+                  track record of advocating a progressive agenda for immigrant
+                  and working families, we’re confident that your candidacy is
+                  aligned with the values and interests of Illinois’ 290,000+
+                  South Asian Americans and voters in your constituency."
+                </p>
+              </div>
+            </div>
+          </div>
           <div className='endorserContainerTall1'>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
