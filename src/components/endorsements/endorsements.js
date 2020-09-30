@@ -14,6 +14,7 @@ import ConroyEndorsement from '../../images/Conroy_Banner.jpg';
 import FosterEndorsement from '../../images/Foster_Banner2.jpg';
 import IADOEndorsement from '../../images/IADO_Banner.jpg';
 import DuckworthEndorsement from '../../images/Duckworth_Banner.jpg';
+import DailyHeraldEndorsement from '../../images/DH_Banner2.jpg';
 
 export default class Endorsements extends Component {
   render() {
@@ -23,22 +24,123 @@ export default class Endorsements extends Component {
           <p className='endorsementsTitle'>Honored To Be Endorsed By</p>
         </div>
         <div className='endorsementsMainContainer'>
+          <div className='endorserContainerTall2'>
+            <div className='endorserImgContainer'>
+              <a
+                className='endorserSiteLink'
+                href='https://www.dailyherald.com/discuss/20200930/endorsement-our-choices-for-dupage-county-board-districts-1-6'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='Daily Herald : DuPage County Board 2020 Endorsements - https://www.dailyherald.com/discuss/20200930/endorsement-our-choices-for-dupage-county-board-districts-1-6'
+              >
+                <img
+                  className='endorserImg'
+                  src={DailyHeraldEndorsement}
+                  alt='Daily Herald Logo'
+                />
+              </a>
+            </div>
+            <div className='endorserInfoMainContainer'>
+              <div className='endorserTitleContainer'>
+                <p className='endorserTitle'>Daily Herald</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://www.dailyherald.com/discuss/20200930/endorsement-our-choices-for-dupage-county-board-districts-1-6'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Daily Herald : 2020 Endorsements for DuPage County Board - https://www.dailyherald.com/discuss/20200930/endorsement-our-choices-for-dupage-county-board-districts-1-6'
+                >
+                  <p className='endorserSiteLinkTitle'>
+                    DuPage County Board Endorsements Article
+                  </p>
+                </a>
+                <a
+                  className='endorserSiteLink'
+                  href='https://www.dailyherald.com/news/20200929/paula-deacon-garcia-candidate-profile-dupage-county-board-district-2'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Daily Herald : Candidate Profile Article - https://www.dailyherald.com/news/20200929/paula-deacon-garcia-candidate-profile-dupage-county-board-district-2'
+                >
+                  <p className='endorserSiteLinkTitle'>
+                    Candidate Profile Article
+                  </p>
+                </a>
+              </div>
+              <div className='endorserQuoteContainer-Split'>
+                <p className='endorserQuote'>
+                  "Democrat Paula Deacon Garcia of Lisle challenges Republican
+                  incumbent Sean Noonan of Elmhurst.
+                </p>
+                <br />
+                <p className='endorserQuote'>
+                  Public safety and public health are top priorities for Noonan,
+                  a Bloomingdale police officer who has represented the district
+                  since 2012, while Deacon Garcia, who has worked for a local
+                  municipality's building and customer service department for
+                  more than two decades, cites stormwater management, economic
+                  recovery for businesses affected by COVID-19, mental health
+                  and overall health and safety as her top reasons for running
+                  in her first election.
+                </p>
+                <br />
+                <p className='endorserQuote'>
+                  While Noonan thinks the board should stay at 18 members,
+                  Deacon Garcia believes that reducing the board to 12 could
+                  produce many cost savings. She believes voters should have had
+                  the chance to have their voices heard at the ballot box on
+                  that issue.
+                </p>
+                <br />
+                <p className='endorserQuote'>
+                  When it comes to efficiencies, Deacon Garcia proposes more
+                  cross training to save money in the recorder's and clerk's
+                  offices, while Noonan would like to see a study to determine
+                  if there might be benefits from merging the Office of
+                  Emergency Management with the Sheriff's Office. Deacon Garcia
+                  would like to create a social media task force to improve
+                  information available to the public online, in turn creating
+                  more transparency, and to host budget workshops for the public
+                  so residents could understand where the county's money is
+                  going.
+                </p>
+                <br />
+                <p className='endorserQuote'>
+                  Both candidates pledge to strive for bipartisanship through
+                  cooperation and listening, with the goal of doing what's best
+                  for the residents of DuPage, but Deacon Garcia stands out for
+                  her energy and forward thinking. Noonan is a likable
+                  candidate, but in two terms hasn't distinguished himself as a
+                  champion for the causes he advocates. We think Deacon Garcia
+                  will be more forceful and that makes her our choice."
+                </p>
+              </div>
+            </div>
+          </div>
           <div className='endorserContainerTall1'>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>US Senator</p>
                 <p className='endorserTitle'>Tammy Duckworth</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://www.duckworth.senate.gov/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Tammy Duckworth - duckworth.senate.gov'
+                >
+                  <p className='endorserSiteLinkTitle'>duckworth.senate.gov</p>
+                </a>
               </div>
-              {/* <div className='endorserQuoteContainer'>
+              <div className='endorserQuoteContainer'>
                 <p className='endorserQuote'>
-                  "I am thrilled to endorse Paula Deacon Garcia for DuPage
-                  County Board. Given her top notch qualifications, I know she
-                  will be an effective and responsive board member. Her
-                  expertise, data-based decision making and character will allow
-                  her to add value on day one. I look forward to partnering with
-                  Paula for the good of the county, our state and our country."
+                  "DuPage County deserves a County Board with leaders who will
+                  listen to residents, support working families, embrace
+                  civility, work for budget transparency and bring science-based
+                  solutions to mitigate climate change's impact. I believe Paula
+                  Deacon Garcia will be that voice on the DuPage County Board
+                  and she has my full support."
                 </p>
-              </div> */}
+              </div>
             </div>
             <div className='endorserImgContainer'>
               <a
@@ -76,6 +178,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>Indo-American</p>
                 <p className='endorserTitle'>Democratic Organization</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://www.iado.org/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Indo-American Democratic Organization - iado.org'
+                >
+                  <p className='endorserSiteLinkTitle'>iado.org</p>
+                </a>
               </div>
               <div className='endorserQuoteContainer'>
                 <p className='endorserQuote'>
@@ -93,6 +204,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>US Representative</p>
                 <p className='endorserTitle'>Bill Foster</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://billfoster.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Bill Foster - billfoster.com'
+                >
+                  <p className='endorserSiteLinkTitle'>billfoster.com</p>
+                </a>
               </div>
               <div className='endorserQuoteContainer'>
                 <p className='endorserQuote'>
@@ -141,6 +261,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>IL Representative</p>
                 <p className='endorserTitle'>Deb Conroy</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://www.debconroy.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Deb Conroy - debconroy.com'
+                >
+                  <p className='endorserSiteLinkTitle'>debconroy.com</p>
+                </a>
               </div>
               <div className='endorserQuoteContainer'>
                 <p className='endorserQuote'>
@@ -157,6 +286,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>IL Representative</p>
                 <p className='endorserTitle'>Anne Stava-Murray</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://www.teamstavamurray.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Anne Stava-Murray - teamstavamurray.com'
+                >
+                  <p className='endorserSiteLinkTitle'>teamstavamurray.com</p>
+                </a>
               </div>
               <div className='endorserQuoteContainer'>
                 <p className='endorserQuote'>
@@ -204,6 +342,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>IL Representative</p>
                 <p className='endorserTitle'>Terra Costa Howard</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://tchfor48.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Terra Costa Howard - tchfor48.com'
+                >
+                  <p className='endorserSiteLinkTitle'>tchfor48.com</p>
+                </a>
               </div>
               <div className='endorserQuoteContainer'>
                 <p className='endorserQuote'>
@@ -222,6 +369,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>US Representative</p>
                 <p className='endorserTitle'>Sean Casten</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://castenforcongress.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Sean Casten - castenforcongress.com'
+                >
+                  <p className='endorserSiteLinkTitle'>castenforcongress.com</p>
+                </a>
               </div>
               <div className='endorserQuoteContainer'>
                 <p className='endorserQuote'>
@@ -272,6 +428,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>Downers Grove Township</p>
                 <p className='endorserTitle'>Democrats</p>
+                <a
+                  className='endorserSiteLink'
+                  href='http://www.dgdemocrats.org/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Downers Grove Township Democrats - dgdemocrats.org'
+                >
+                  <p className='endorserSiteLinkTitle'>dgdemocrats.org</p>
+                </a>
               </div>
             </div>
           </div>
@@ -280,6 +445,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>York Township</p>
                 <p className='endorserTitle'>Democratic Organization</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://www.yorkdemocrats.org/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='York Township Democratic Organization - yorkdemocrats.org'
+                >
+                  <p className='endorserSiteLinkTitle'>yorkdemocrats.org</p>
+                </a>
               </div>
             </div>
             <div className='endorserImgContainer'>
@@ -318,6 +492,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>US Senator</p>
                 <p className='endorserTitle'>Dick Durbin</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://www.durbinforsenate.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Dick Durbin - durbinforsenate.com'
+                >
+                  <p className='endorserSiteLinkTitle'>durbinforsenate.com</p>
+                </a>
               </div>
             </div>
           </div>
@@ -326,6 +509,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>Lisle Township</p>
                 <p className='endorserTitle'>Democratic Organization</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://ltdo.org/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Lisle Township Democratic Organization - ltdo.org'
+                >
+                  <p className='endorserSiteLinkTitle'>ltdo.org</p>
+                </a>
               </div>
             </div>
             <div className='endorserImgContainer'>
@@ -364,6 +556,17 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>North Central Illinois</p>
                 <p className='endorserTitle'>Labor Council AFL-CIO</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://il.aflcio.org/north-central-illinois-labor-council-afl-cio'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='North Central IL Labor Council, AFL-CIO - il.aflcio.org/north-central-illinois-labor-council-afl-cio'
+                >
+                  <p className='endorserSiteLinkTitle'>
+                    il.aflcio.org/north-central-illinois-labor-council-afl-cio
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -372,6 +575,15 @@ export default class Endorsements extends Component {
               <div className='endorserTitleContainer'>
                 <p className='endorserTitle'>Cynthia Borbas</p>
                 <p className='endorserTitle'>Chair - DuPage Democrats</p>
+                <a
+                  className='endorserSiteLink'
+                  href='https://cynthiaborbas.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title='Cynthia Borbas - cynthiaborbas.com'
+                >
+                  <p className='endorserSiteLinkTitle'>cynthiaborbas.com</p>
+                </a>
               </div>
               <div className='endorserQuoteContainer'>
                 <p className='endorserQuote'>

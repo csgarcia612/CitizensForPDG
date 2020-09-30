@@ -227,12 +227,14 @@ export default class Homepage extends Component {
             </div>
             <div className='campaignVideoContainer'>
               <div className='videoTitleContainer'>
-                <p className='videoTitle'>Meet Paula Deacon Garcia</p>
+                <p className='videoTitle'>
+                  2020 Democratic Candidates for DuPage County Board
+                </p>
               </div>
               <iframe
                 className='campaignVideo'
                 title='Meet Paula'
-                src='https://www.youtube-nocookie.com/embed/texHQc2kxwo'
+                src='https://www.youtube-nocookie.com/embed/IOjlm_RHcVw'
                 frameBorder='0'
                 allow='accelerometer; encrypted-media; gyroscope;'
                 allowFullScreen
@@ -246,6 +248,19 @@ export default class Homepage extends Component {
                 className='campaignVideo'
                 title='LWV Q and A'
                 src='https://www.youtube-nocookie.com/embed/M9cCFgCeSW4'
+                frameBorder='0'
+                allow='accelerometer; encrypted-media; gyroscope;'
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className='campaignVideoContainer'>
+              <div className='videoTitleContainer'>
+                <p className='videoTitle'>Meet Paula Deacon Garcia</p>
+              </div>
+              <iframe
+                className='campaignVideo'
+                title='Meet Paula'
+                src='https://www.youtube-nocookie.com/embed/texHQc2kxwo'
                 frameBorder='0'
                 allow='accelerometer; encrypted-media; gyroscope;'
                 allowFullScreen
