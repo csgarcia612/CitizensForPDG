@@ -26,19 +26,11 @@ export default class Endorsements extends Component {
         <div className='endorsementsMainContainer'>
           <div className='endorserContainerTall2'>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://www.dailyherald.com/discuss/20200930/endorsement-our-choices-for-dupage-county-board-districts-1-6'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Daily Herald : DuPage County Board 2020 Endorsements - https://www.dailyherald.com/discuss/20200930/endorsement-our-choices-for-dupage-county-board-districts-1-6'
-              >
-                <img
-                  className='endorserImg'
-                  src={DailyHeraldEndorsement}
-                  alt='Daily Herald Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={DailyHeraldEndorsement}
+                alt='Daily Herald Logo'
+              />
             </div>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
@@ -143,36 +135,20 @@ export default class Endorsements extends Component {
               </div>
             </div>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://www.duckworth.senate.gov/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Tammy Duckworth - duckworth.senate.gov'
-              >
-                <img
-                  className='endorserImg'
-                  src={DuckworthEndorsement}
-                  alt='Tammy Duckworth Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={DuckworthEndorsement}
+                alt='Tammy Duckworth Logo'
+              />
             </div>
           </div>
           <div className='endorserContainerShort2'>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://www.iado.org/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Indo-American Democratic Organization - iado.org'
-              >
-                <img
-                  className='endorserImg'
-                  src={IADOEndorsement}
-                  alt='IADO Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={IADOEndorsement}
+                alt='IADO Logo'
+              />
             </div>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
@@ -226,36 +202,20 @@ export default class Endorsements extends Component {
               </div>
             </div>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://billfoster.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Bill Foster - billfoster.com'
-              >
-                <img
-                  className='endorserImg'
-                  src={FosterEndorsement}
-                  alt='Bill Foster Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={FosterEndorsement}
+                alt='Bill Foster Logo'
+              />
             </div>
           </div>
           <div className='endorserContainerTall2'>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://www.debconroy.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Deb Conroy - debconroy.com'
-              >
-                <img
-                  className='endorserImg'
-                  src={ConroyEndorsement}
-                  alt='Deb Conroy Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={ConroyEndorsement}
+                alt='Deb Conroy Logo'
+              />
             </div>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
@@ -307,36 +267,20 @@ export default class Endorsements extends Component {
               </div>
             </div>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://www.teamstavamurray.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Anne Stava-Murray - teamstavamurray.com'
-              >
-                <img
-                  className='endorserImg'
-                  src={StavaMurrayEndorsement}
-                  alt='Anne Stava-Murray Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={StavaMurrayEndorsement}
+                alt='Anne Stava-Murray Logo'
+              />
             </div>
           </div>
           <div className='endorserContainerTall2'>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://tchfor48.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Terra Costa Howard - tchfor48.com'
-              >
-                <img
-                  className='endorserImg'
-                  src={HowardEndorsement}
-                  alt='Terra Costa Howard Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={HowardEndorsement}
+                alt='Terra Costa Howard Logo'
+              />
             </div>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
@@ -393,36 +337,20 @@ export default class Endorsements extends Component {
               </div>
             </div>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://castenforcongress.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Sean Casten - castenforcongress.com'
-              >
-                <img
-                  className='endorserImg'
-                  src={CastenEndorsement}
-                  alt='Sean Casten Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={CastenEndorsement}
+                alt='Sean Casten Logo'
+              />
             </div>
           </div>
           <div className='endorserContainerShort2'>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='http://www.dgdemocrats.org/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Downers Grove Township Democrats - dgdemocrats.org'
-              >
-                <img
-                  className='endorserImg'
-                  src={DGTDEndorsement}
-                  alt='DGTD Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={DGTDEndorsement}
+                alt='DGTD Logo'
+              />
             </div>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
@@ -457,36 +385,20 @@ export default class Endorsements extends Component {
               </div>
             </div>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://www.yorkdemocrats.org/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='York Township Democratic Organization - yorkdemocrats.org'
-              >
-                <img
-                  className='endorserImg'
-                  src={YTDOEndorsement}
-                  alt='YTDO Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={YTDOEndorsement}
+                alt='YTDO Logo'
+              />
             </div>
           </div>
           <div className='endorserContainerTall2'>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://www.durbinforsenate.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Dick Durbin - durbinforsenate.com'
-              >
-                <img
-                  className='endorserImg'
-                  src={DurbinEndorsement}
-                  alt='Dick Durbin Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={DurbinEndorsement}
+                alt='Dick Durbin Logo'
+              />
             </div>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
@@ -521,36 +433,20 @@ export default class Endorsements extends Component {
               </div>
             </div>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://ltdo.org/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Lisle Township Democratic Organization - ltdo.org'
-              >
-                <img
-                  className='endorserImg'
-                  src={LTDOEndorsement}
-                  alt='LTDO Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={LTDOEndorsement}
+                alt='LTDO Logo'
+              />
             </div>
           </div>
           <div className='endorserContainerShort2'>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://il.aflcio.org/north-central-illinois-labor-council-afl-cio'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='North Central IL Labor Council, AFL-CIO - il.aflcio.org/north-central-illinois-labor-council-afl-cio'
-              >
-                <img
-                  className='endorserImg'
-                  src={LaborCouncilEndorsement}
-                  alt='NCILC AFL-CIO Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={LaborCouncilEndorsement}
+                alt='NCILC AFL-CIO Logo'
+              />
             </div>
             <div className='endorserInfoMainContainer'>
               <div className='endorserTitleContainer'>
@@ -600,19 +496,11 @@ export default class Endorsements extends Component {
               </div>
             </div>
             <div className='endorserImgContainer'>
-              <a
-                className='endorserSiteLink'
-                href='https://cynthiaborbas.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                title='Cynthia Borbas - cynthiaborbas.com'
-              >
-                <img
-                  className='endorserImg'
-                  src={BorbasEndorsement}
-                  alt='Cynthia Borbas Logo'
-                />
-              </a>
+              <img
+                className='endorserImg'
+                src={BorbasEndorsement}
+                alt='Cynthia Borbas Logo'
+              />
             </div>
           </div>
         </div>

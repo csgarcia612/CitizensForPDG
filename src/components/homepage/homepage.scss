@@ -134,7 +134,7 @@
           flex-direction: column;
           // width: 750px;
           // height: 85px;
-          width: 450px;
+          width: 475px;
           height: 55px;
           justify-content: center;
           align-items: center;
@@ -148,7 +148,7 @@
             align-items: center;
             // width: 750px;
             // height: 85px;
-            width: 450px;
+            width: 475px;
             height: 55px;
             background-color: blue;
             border-style: solid;
@@ -157,10 +157,14 @@
             border-radius: 10px;
 
             .specialMsg {
+              display: flex;
+              position: relative;
               flex-wrap: wrap;
-              text-align: center;
+              font-family: sans-serif;
               font-size: 24px;
               letter-spacing: 1px;
+              line-height: 30px;
+              text-align: center;
               color: white;
             }
 
@@ -185,7 +189,7 @@
           flex-direction: column;
           // width: 750px;
           // height: 85px;
-          width: 450px;
+          width: 475px;
           height: 55px;
           justify-content: center;
           align-items: center;
@@ -199,7 +203,7 @@
             align-items: center;
             // width: 750px;
             // height: 85px;
-            width: 450px;
+            width: 475px;
             height: 55px;
             background-color: red;
             border-style: solid;
@@ -208,10 +212,14 @@
             border-radius: 10px;
 
             .specialMsg {
+              display: flex;
+              position: relative;
               flex-wrap: wrap;
-              text-align: center;
+              font-family: sans-serif;
               font-size: 24px;
               letter-spacing: 1px;
+              line-height: 30px;
+              text-align: center;
               color: white;
             }
 
@@ -234,7 +242,7 @@
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 450px;
+          width: 475px;
           height: 55px;
           justify-content: center;
           align-items: center;
@@ -246,7 +254,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 450px;
+            width: 475px;
             height: 55px;
             background-color: blue;
             border-style: solid;
@@ -255,10 +263,14 @@
             border-radius: 10px;
 
             .specialMsg {
+              display: flex;
+              position: relative;
               flex-wrap: wrap;
-              text-align: center;
+              font-family: sans-serif;
               font-size: 24px;
               letter-spacing: 1px;
+              line-height: 30px;
+              text-align: center;
               color: white;
             }
           }
@@ -268,7 +280,7 @@
           display: flex;
           position: relative;
           flex-direction: column;
-          width: 450px;
+          width: 475px;
           height: 55px;
           justify-content: center;
           align-items: center;
@@ -280,7 +292,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 450px;
+            width: 475px;
             height: 55px;
             background-color: red;
             border-style: solid;
@@ -289,10 +301,14 @@
             border-radius: 10px;
 
             .specialMsg {
+              display: flex;
+              position: relative;
               flex-wrap: wrap;
-              text-align: center;
+              font-family: sans-serif;
               font-size: 24px;
               letter-spacing: 1px;
+              line-height: 30px;
+              text-align: center;
               color: white;
             }
           }
@@ -337,10 +353,14 @@
             border-radius: 10px;
 
             .specialMsg {
+              display: flex;
+              position: relative;
               flex-wrap: wrap;
-              text-align: center;
+              font-family: sans-serif;
               font-size: 24px;
               letter-spacing: 1px;
+              line-height: 30px;
+              text-align: center;
               color: white;
             }
 
@@ -388,10 +408,14 @@
             border-radius: 10px;
 
             .specialMsg {
+              display: flex;
+              position: relative;
               flex-wrap: wrap;
-              text-align: center;
+              font-family: sans-serif;
               font-size: 24px;
               letter-spacing: 1px;
+              line-height: 30px;
+              text-align: center;
               color: white;
             }
 
@@ -523,8 +547,10 @@
           .videoTitle {
             font-family: sans-serif;
             font-size: 24px;
+            line-height: 30px;
             font-weight: bold;
             letter-spacing: 1px;
+            text-align: center;
             color: black;
           }
         }
@@ -616,6 +642,8 @@
 
             .videoTitle {
               font-size: 24px;
+              line-height: 30px;
+              text-align: center;
             }
           }
 
@@ -1026,13 +1054,14 @@
         }
 
         .campaignVideoContainer {
-          margin-bottom: 0px;
+          margin-bottom: 50px;
 
           .videoTitleContainer {
             margin-bottom: 10px;
 
             .videoTitle {
               font-size: 24px;
+              line-height: 30px;
             }
           }
 
@@ -1048,7 +1077,7 @@
         position: relative;
         width: 90%;
         height: 5px;
-        margin: 30px 0px 30px 0px;
+        margin: 0px 0px 30px 0px;
       }
 
       .facebookFeedsMainContainer {
@@ -1154,7 +1183,7 @@
             display: flex;
             position: relative;
             flex-direction: column;
-            width: 250px;
+            width: 275px;
             height: 75px;
             justify-content: center;
             align-items: center;
@@ -1166,7 +1195,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              width: 250px;
+              width: 275px;
               height: 75px;
               background-color: blue;
               border-style: solid;
@@ -1202,7 +1231,7 @@
             display: flex;
             position: relative;
             flex-direction: column;
-            width: 250px;
+            width: 275px;
             height: 75px;
             justify-content: center;
             align-items: center;
@@ -1214,7 +1243,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              width: 250px;
+              width: 275px;
               height: 75px;
               background-color: red;
               border-style: solid;
@@ -1250,7 +1279,7 @@
             display: flex;
             position: relative;
             flex-direction: column;
-            width: 250px;
+            width: 275px;
             height: 75px;
             justify-content: center;
             align-items: center;
@@ -1262,7 +1291,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              width: 250px;
+              width: 275px;
               height: 75px;
               background-color: blue;
               border-style: solid;
@@ -1285,7 +1314,7 @@
             display: flex;
             position: relative;
             flex-direction: column;
-            width: 250px;
+            width: 275px;
             height: 75px;
             justify-content: center;
             align-items: center;
@@ -1297,7 +1326,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              width: 250px;
+              width: 275px;
               height: 75px;
               background-color: red;
               border-style: solid;
@@ -1332,7 +1361,7 @@
             flex-direction: column;
             // width: 750px;
             // height: 85px;
-            width: 250px;
+            width: 275px;
             height: 75px;
             justify-content: center;
             align-items: center;
@@ -1346,7 +1375,7 @@
               align-items: center;
               // width: 750px;
               // height: 85px;
-              width: 250px;
+              width: 275px;
               height: 75px;
               background-color: blue;
               border-style: solid;
@@ -1371,7 +1400,7 @@
             flex-direction: column;
             // width: 750px;
             // height: 85px;
-            width: 250px;
+            width: 275px;
             height: 75px;
             justify-content: center;
             align-items: center;
@@ -1385,7 +1414,7 @@
               align-items: center;
               // width: 750px;
               // height: 85px;
-              width: 250px;
+              width: 275px;
               height: 75px;
               background-color: red;
               border-style: solid;
@@ -1453,13 +1482,14 @@
         }
 
         .campaignVideoContainer {
-          margin-bottom: 0px;
+          margin-bottom: 50px;
 
           .videoTitleContainer {
             margin-bottom: 10px;
 
             .videoTitle {
               font-size: 20px;
+              line-height: 25px;
             }
           }
 
@@ -1475,7 +1505,7 @@
         position: relative;
         width: 90%;
         height: 5px;
-        margin: 30px 0px 30px 0px;
+        margin: 0px 0px 30px 0px;
       }
 
       .facebookFeedsMainContainer {
@@ -1880,13 +1910,14 @@
         }
 
         .campaignVideoContainer {
-          margin-bottom: 0px;
+          margin-bottom: 50px;
 
           .videoTitleContainer {
             margin-bottom: 10px;
 
             .videoTitle {
               font-size: 20px;
+              line-height: 25px;
             }
           }
 
@@ -1902,7 +1933,7 @@
         position: relative;
         width: 90%;
         height: 5px;
-        margin: 30px 0px 30px 0px;
+        margin: 0px 0px 30px 0px;
       }
 
       .facebookFeedsMainContainer {
@@ -2008,7 +2039,7 @@
             display: flex;
             position: relative;
             flex-direction: column;
-            width: 135px;
+            width: 140px;
             height: 85px;
             justify-content: center;
             align-items: center;
@@ -2020,7 +2051,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              width: 135px;
+              width: 140px;
               height: 85px;
               background-color: blue;
               border-style: solid;
@@ -2056,7 +2087,7 @@
             display: flex;
             position: relative;
             flex-direction: column;
-            width: 135px;
+            width: 140px;
             height: 85px;
             justify-content: center;
             align-items: center;
@@ -2068,7 +2099,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              width: 135px;
+              width: 140px;
               height: 85px;
               background-color: red;
               border-style: solid;
@@ -2186,7 +2217,7 @@
             flex-direction: column;
             // width: 750px;
             // height: 85px;
-            width: 185px;
+            width: 200px;
             height: 65px;
             justify-content: center;
             align-items: center;
@@ -2200,7 +2231,7 @@
               align-items: center;
               // width: 750px;
               // height: 85px;
-              width: 185px;
+              width: 200px;
               height: 65px;
               background-color: blue;
               border-style: solid;
@@ -2225,7 +2256,7 @@
             flex-direction: column;
             // width: 750px;
             // height: 85px;
-            width: 185px;
+            width: 200px;
             height: 65px;
             justify-content: center;
             align-items: center;
@@ -2239,7 +2270,7 @@
               align-items: center;
               // width: 750px;
               // height: 85px;
-              width: 185px;
+              width: 200px;
               height: 65px;
               background-color: red;
               border-style: solid;
@@ -2307,13 +2338,14 @@
         }
 
         .campaignVideoContainer {
-          margin-bottom: 0px;
+          margin-bottom: 30px;
 
           .videoTitleContainer {
             margin-bottom: 10px;
 
             .videoTitle {
-              font-size: 20px;
+              font-size: 18px;
+              line-height: 25px;
             }
           }
 
@@ -2329,7 +2361,7 @@
         position: relative;
         width: 90%;
         height: 5px;
-        margin: 30px 0px 30px 0px;
+        margin: 0px 0px 30px 0px;
       }
 
       .facebookFeedsMainContainer {
@@ -2435,7 +2467,7 @@
             display: flex;
             position: relative;
             flex-direction: column;
-            width: 135px;
+            width: 140px;
             height: 85px;
             justify-content: center;
             align-items: center;
@@ -2447,7 +2479,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              width: 135px;
+              width: 140px;
               height: 85px;
               background-color: blue;
               border-style: solid;
@@ -2483,7 +2515,7 @@
             display: flex;
             position: relative;
             flex-direction: column;
-            width: 135px;
+            width: 140px;
             height: 85px;
             justify-content: center;
             align-items: center;
@@ -2495,7 +2527,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              width: 135px;
+              width: 140px;
               height: 85px;
               background-color: red;
               border-style: solid;
@@ -2613,7 +2645,7 @@
             flex-direction: column;
             // width: 750px;
             // height: 85px;
-            width: 185px;
+            width: 200px;
             height: 65px;
             justify-content: center;
             align-items: center;
@@ -2627,7 +2659,7 @@
               align-items: center;
               // width: 750px;
               // height: 85px;
-              width: 185px;
+              width: 200px;
               height: 65px;
               background-color: blue;
               border-style: solid;
@@ -2652,7 +2684,7 @@
             flex-direction: column;
             // width: 750px;
             // height: 85px;
-            width: 185px;
+            width: 200px;
             height: 65px;
             justify-content: center;
             align-items: center;
@@ -2666,7 +2698,7 @@
               align-items: center;
               // width: 750px;
               // height: 85px;
-              width: 185px;
+              width: 200px;
               height: 65px;
               background-color: red;
               border-style: solid;
@@ -2734,13 +2766,14 @@
         }
 
         .campaignVideoContainer {
-          margin-bottom: 0px;
+          margin-bottom: 30px;
 
           .videoTitleContainer {
             margin-bottom: 10px;
 
             .videoTitle {
-              font-size: 20px;
+              font-size: 18px;
+              line-height: 25px;
             }
           }
 
@@ -2756,7 +2789,7 @@
         position: relative;
         width: 90%;
         height: 5px;
-        margin: 30px 0px 30px 0px;
+        margin: 0px 0px 30px 0px;
       }
 
       .facebookFeedsMainContainer {
