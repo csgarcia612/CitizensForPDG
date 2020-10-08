@@ -240,7 +240,7 @@ export default class Homepage extends Component {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className='campaignVideoContainer'>
+            {/* <div className='campaignVideoContainer'>
               <div className='videoTitleContainer'>
                 <p className='videoTitle'>League of Women Voters Q & A</p>
               </div>
@@ -252,7 +252,7 @@ export default class Homepage extends Component {
                 allow='accelerometer; encrypted-media; gyroscope;'
                 allowFullScreen
               ></iframe>
-            </div>
+            </div> */}
             <div className='campaignVideoContainer'>
               <div className='videoTitleContainer'>
                 <p className='videoTitle'>Meet Paula Deacon Garcia</p>
