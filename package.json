@@ -4,18 +4,22 @@
   "private": true,
   "main": "server/index.js",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.3",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "http-proxy-middleware": "^0.20.0",
-    "massive": "^6.6.0",
-    "node-sass": "^4.14.1",
-    "nodemailer": "^6.4.13",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "http-proxy-middleware": "^0.19.1",
+    "massive": "^6.6.5",
+    "node-sass": "^5.0.0",
+    "nodemailer": "^6.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +28,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -37,9 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "ansi-styles": "^3.2.1",
-    "chalk": "^2.4.2"
   }
 }
