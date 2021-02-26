@@ -136,7 +136,7 @@ export default class Homepage extends Component {
               </p>
             </div>
           </div> */}
-          <div className='specialMsgMainContainer'>
+          {/* <div className='specialMsgMainContainer'>
             <div className='specialMsgRow1'>
               <a
                 className='ballotRequestLink'
@@ -146,10 +146,10 @@ export default class Homepage extends Component {
                 title='Mail-In Ballot Request Form - dupageco.org/election/votebymail'
               >
                 <div className='specialMsgContainer'>
-                  {/* <p className='specialMsg'>
+                  <p className='specialMsg'>
                   Sign Up Date Updated : Request Your Mail-In Ballot Now
                 </p>
-                <span className='specialMsgSpan' /> */}
+                <span className='specialMsgSpan' />
                   <p className='specialMsg'>
                     Click Here To Request A Mail-In Ballot
                   </p>
@@ -185,7 +185,7 @@ export default class Homepage extends Component {
                 </div>
               </a>
             </div>
-          </div>
+          </div> */}
           <img
             className='homepageHeaderImg'
             src={pdgGroup2}
