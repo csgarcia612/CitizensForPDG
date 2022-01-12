@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './about.scss';
-import headshot from '../../images/PDG_Headshot1.jpg';
+import headshot from '../../images/PDG_Headshot2.jpg';
 import coupleImg from '../../images/Paula_Larry1.jpg';
 import pdgGroup3 from '../../images/PDG_Group3.jpg';
 import communityGarden1 from '../../images/Community_Garden1.jpg';
@@ -11,11 +11,57 @@ import packLeader from '../../images/packLeader.jpg';
 import roadwayPetition from '../../images/roadwayPetition.jpg';
 import hsoLogo from '../../images/HSOLogo.png';
 
-export default class About extends Component {
+class About extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showBiography: true,
+      showCommunity: false,
+      showAppointments: false,
+    };
+  }
+
+  toggleBioSection = () => {
+    this.setState({
+      showBiography: true,
+      showCommunity: false,
+      showAppointments: false,
+    });
+  };
+
+  toggleCommunitySection = () => {
+    this.setState({
+      showBiography: false,
+      showCommunity: true,
+      showAppointments: false,
+    });
+  };
+
+  toggleAppointmentsSection = () => {
+    this.setState({
+      showBiography: false,
+      showCommunity: false,
+      showAppointments: true,
+    });
+  };
+
   render() {
+    const { showBiography, showCommunity, showAppointments } = this.state;
+
     return (
       <div className='aboutPageContainer'>
-        <div className='bioContainer'>
+        <div className='aboutBtnContainer'>
+          <button className='aboutBtn' onClick={this.toggleBioSection}>
+            Biography
+          </button>
+          <button className='aboutBtn' onClick={this.toggleCommunitySection}>
+            Community Involvement
+          </button>
+          <button className='aboutBtn' onClick={this.toggleAppointmentsSection}>
+            Current Appointments
+          </button>
+        </div>
+        <div className={showBiography ? 'showBioContainer' : 'hideContainer'}>
           <div className='bioTitleContainer'>
             <p className='bioTitle'>Meet Paula</p>
           </div>
@@ -33,7 +79,7 @@ export default class About extends Component {
                 even resides 4 houses away from her childhood home.
               </p>
               <p className='mobileBioParagraph'>
-                She has been happily married to her husband, Larry, for 36 years
+                She has been happily married to her husband, Larry, for 38 years
                 after first meeting while they were both attending college, and
                 has proudly raised 2 children, Chris and Amanda, who are both
                 grown and living full lives themselves. Her daughter Amanda has
@@ -62,15 +108,16 @@ export default class About extends Component {
                 Degree in Communication/Public Relations.
               </p>
               <p className='mobileBioParagraph'>
-                For the past 20 years, Paula has worked for a local municipality
-                in the Development Services Department (Building Department),
-                now reorganized as the Customer Service Department. While at
-                work, Paula’s primary responsibility is to be a facilitator for
-                the residents who come in with questions regarding building
-                permits, codes, and other general municipality questions. Paula
-                also has experience as a Certified Floodplain Manager and used
-                her knowledge and skills to assist residents affected by the
-                floods that have occurred over the past decade.
+                For 21 years, Paula worked for the Village of Lisle. The
+                majority of that time was spent in the Development Services
+                Department (Building Department), now reorganized as the
+                Customer Service Department. While at work, Paula’s primary
+                responsibility was to be a facilitator for the residents who
+                come in with questions regarding building permits, codes, and
+                other general municipality questions. Paula also has experience
+                as a Certified Floodplain Manager and used her knowledge and
+                skills to assist residents affected by the floods that have
+                occurred over the past decade.
               </p>
             </div>
           </div>
@@ -88,7 +135,7 @@ export default class About extends Component {
                 even resides 4 houses away from her childhood home.
               </p>
               <p className='bioParagraph'>
-                She has been happily married to her husband, Larry, for 36 years
+                She has been happily married to her husband, Larry, for 38 years
                 after first meeting while they were both attending college, and
                 has proudly raised 2 children, Chris and Amanda, who are both
                 grown and living full lives themselves. Her daughter Amanda has
@@ -110,15 +157,16 @@ export default class About extends Component {
                 Degree in Communication/Public Relations.
               </p>
               <p className='bioParagraph'>
-                For the past 20 years, Paula has worked for a local municipality
-                in the Development Services Department (Building Department),
-                now reorganized as the Customer Service Department. While at
-                work, Paula’s primary responsibility is to be a facilitator for
-                the residents who come in with questions regarding building
-                permits, codes, and other general municipality questions. Paula
-                also has experience as a Certified Floodplain Manager and used
-                her knowledge and skills to assist residents affected by the
-                floods that have occurred over the past decade.
+                For 21 years, Paula worked for the Village of Lisle. The
+                majority of that time was spent in the Development Services
+                Department (Building Department), now reorganized as the
+                Customer Service Department. While at work, Paula’s primary
+                responsibility was to be a facilitator for the residents who
+                come in with questions regarding building permits, codes, and
+                other general municipality questions. Paula also has experience
+                as a Certified Floodplain Manager and used her knowledge and
+                skills to assist residents affected by the floods that have
+                occurred over the past decade.
               </p>
             </div>
             <div className='bioImgContainer'>
@@ -132,10 +180,11 @@ export default class About extends Component {
           <div className='mobileBioSectionContainer2'>
             <div className='mobileBioParagraphContainer2'>
               <p className='mobileBioParagraph2'>
-                Paula’s extensive experience in being a facilitator will be an
-                asset to the DuPage County Board as she takes the time to listen
-                to the needs and problems of the citizens of the county and
-                works diligently to find effective ways to solve them.
+                Paula’s extensive experience in being a facilitator will
+                continue to be an asset to the DuPage County Board as she takes
+                the time to listen to the needs and problems of the citizens of
+                the county and works diligently to find effective ways to solve
+                them.
               </p>
             </div>
             <div className='mobileBioImgContainer2'>
@@ -157,10 +206,11 @@ export default class About extends Component {
           <div className='bioSectionContainer2'>
             <div className='bioParagraphContainer2'>
               <p className='bioParagraph2'>
-                Paula’s extensive experience in being a facilitator will be an
-                asset to the DuPage County Board as she takes the time to listen
-                to the needs and problems of the citizens of the county and
-                works diligently to find effective ways to solve them.
+                Paula’s extensive experience in being a facilitator will
+                continue to be an asset to the DuPage County Board as she takes
+                the time to listen to the needs and problems of the citizens of
+                the county and works diligently to find effective ways to solve
+                them.
               </p>
             </div>
             <div className='bioImgContainer2'>
@@ -180,8 +230,12 @@ export default class About extends Component {
             </div>
           </div>
         </div>
-        <span className='separator' />
-        <div className='philanthropyContainer'>
+        {/* <span className='separator' /> */}
+        <div
+          className={
+            showCommunity ? 'showPhilanthropyContainer' : 'hideContainer'
+          }
+        >
           <div className='philanthropyTitleContainer'>
             <p className='philanthropyTitle'>Community Involvement</p>
           </div>
@@ -209,11 +263,10 @@ export default class About extends Component {
             </div>
             <div className='mobilePhilanthropyParagraphContainer'>
               <p className='mobilePhilanthropyParagraph'>
-                Starting around 3 years ago, Paula became a co-chair of the
-                Lisle Township Food Pantry Vegetable Garden, and is now the sole
-                chairperson. At the time the garden was in need of some
-                additional TLC and thanks to the volunteers who gave their time,
-                the garden was producing in no time.
+                Starting in 2017, Paula became the chairperson of the Lisle
+                Township Food Pantry Vegetable Garden. At the time the garden
+                was in need of some additional TLC and thanks to the volunteers
+                who gave their time, the garden was producing in no time.
               </p>
               <p className='mobilePhilanthropyParagraph'>
                 All harvested vegetables are donated to the Food Pantry that
@@ -343,11 +396,10 @@ export default class About extends Component {
             </div>
             <div className='philanthropyParagraphContainer'>
               <p className='philanthropyParagraph'>
-                Starting around 3 years ago, Paula became a co-chair of the
-                Lisle Township Food Pantry Vegetable Garden, and is now the sole
-                chairperson. At the time the garden was in need of some
-                additional TLC and thanks to the volunteers who gave their time,
-                the garden was producing in no time.
+                Starting in 2017, Paula became the chairperson of the Lisle
+                Township Food Pantry Vegetable Garden. At the time the garden
+                was in need of some additional TLC and thanks to the volunteers
+                who gave their time, the garden was producing in no time.
               </p>
               <p className='philanthropyParagraph'>
                 All harvested vegetables are donated to the Food Pantry that
@@ -454,7 +506,79 @@ export default class About extends Component {
             </div>
           </div>
         </div>
+        <div
+          className={
+            showAppointments ? 'showAppointmentsContainer' : 'hideContainer'
+          }
+        >
+          <div className='currentAppointmentsTitleContainer'>
+            <p className='currentAppointmentsTitle'>
+              County Board Appointments
+            </p>
+          </div>
+          <div className='currentAppointmentsContainer'>
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>Intergovernmental Committee</p>
+              <p className='appointmentTitle'>Co-Chairperson</p>
+              <p className='appointmentDate'>Appointed In : 2020</p>
+            </div>
+            <span className='separator' />
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>Development Committee</p>
+              <p className='appointmentTitle'>Vice Chairperson</p>
+              <p className='appointmentDate'>Appointed In : 2020</p>
+            </div>
+            <span className='separator' />
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>Animal Services Committee</p>
+              <p className='appointmentTitle'>Committeeperson</p>
+              <p className='appointmentDate'>Appointed In : 2020</p>
+            </div>
+            <span className='separator' />
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>
+                Community Development Committee
+              </p>
+              <p className='appointmentTitle'>Committeeperson</p>
+              <p className='appointmentDate'>Appointed In : 2020</p>
+            </div>
+            <span className='separator' />
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>Financial Committee</p>
+              <p className='appointmentTitle'>Committeeperson</p>
+              <p className='appointmentDate'>Appointed In : 2020</p>
+            </div>
+            <span className='separator' />
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>
+                Judicial and Public Safety Committee
+              </p>
+              <p className='appointmentTitle'>Committeeperson</p>
+              <p className='appointmentDate'>Appointed In : 2020</p>
+            </div>
+            <span className='separator' />
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>Stormwater Committee</p>
+              <p className='appointmentTitle'>Committeeperson</p>
+              <p className='appointmentDate'>Appointed In : 2020</p>
+            </div>
+            <span className='separator' />
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>Ad Hoc Fine Arts Committee</p>
+              <p className='appointmentTitle'>Committeeperson</p>
+              <p className='appointmentDate'>Appointed In : 2021</p>
+            </div>
+            <span className='separator' />
+            <div className='singleAppointmentContainer'>
+              <p className='appointmentGroup'>DuPage County Board of Health</p>
+              <p className='appointmentTitle'>Board Member</p>
+              <p className='appointmentDate'>Appointed In : 2021</p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 }
+
+export default About;

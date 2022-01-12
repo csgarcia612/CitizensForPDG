@@ -18,6 +18,11 @@
     align-items: center;
 
     .issueImgContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
       margin: 25px;
 
       .issueImg {
@@ -100,6 +105,11 @@
       align-items: center;
 
       .mobileIssueImgContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
         margin: 15px;
 
         .mobileIssueImg {

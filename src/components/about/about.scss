@@ -8,11 +8,60 @@
   align-items: center;
   margin-bottom: 20px;
 
-  .bioContainer {
+  .aboutBtnContainer {
     display: flex;
-    width: 95%;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+
+    .aboutBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 20px 0px 20px;
+      background-color: #20638c;
+      border-style: outset;
+      border-width: 5px;
+      border-radius: 10px;
+      width: 165px;
+      height: 60px;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+        1px 1px 1px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .aboutBtn:hover {
+      transform: scale(1.06);
+    }
+
+    .aboutBtn:active {
+      border-style: inset;
+      border-width: 5px;
+      text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),
+        1px 1px 1px rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .hideContainer {
+    display: none;
+  }
+
+  .showBioContainer {
+    display: flex;
     flex-direction: column;
     position: relative;
+    width: 95%;
     justify-content: center;
     align-items: center;
     margin: 10px 0px;
@@ -38,11 +87,15 @@
 
     .bioSectionContainer {
       display: flex;
-      flex-flow: row;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
 
       .bioImgContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin: 15px;
 
         .bioImg {
@@ -51,6 +104,10 @@
         }
       }
       .bioParagraphContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
         margin: 0px 15px;
         width: 70%;
 
@@ -71,11 +128,15 @@
 
     .bioSectionContainer2 {
       display: flex;
-      flex-flow: column;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
       .bioImgContainer2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin: 15px;
 
         .bioImg2 {
@@ -84,6 +145,10 @@
         }
       }
       .bioParagraphContainer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
         margin: 15px 0px;
         width: 90%;
 
@@ -110,7 +175,7 @@
     margin: 30px 0px 30px 0px;
   }
 
-  .philanthropyContainer {
+  .showPhilanthropyContainer {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -139,11 +204,15 @@
 
     .philanthropySectionContainer {
       display: flex;
-      flex-flow: row;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
 
       .philanthropyImgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 25px;
         width: 450px;
 
@@ -164,6 +233,10 @@
       }
 
       .philanthropyImgContainer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 25px;
         width: 250px;
 
@@ -174,6 +247,10 @@
       }
 
       .philanthropyParagraphContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
         width: 60%;
         margin: 15px;
 
@@ -188,16 +265,110 @@
       }
     }
   }
+
+  .showAppointmentsContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+
+    .currentAppointmentsTitleContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+
+      .currentAppointmentsTitle {
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #20638c;
+        text-align: center;
+      }
+    }
+
+    .currentAppointmentsContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+
+      .singleAppointmentContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .appointmentGroup {
+          margin: 10px 0px;
+          font-family: sans-serif;
+          font-size: 25px;
+          font-weight: bold;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+
+        .appointmentTitle {
+          margin: 10px 0px;
+          font-family: sans-serif;
+          font-size: 20px;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+
+        .appointmentDate {
+          margin: 10px 0px;
+          font-family: sans-serif;
+          font-size: 20px;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+
+        .appointmentDescription {
+          margin: 10px 0px;
+          line-height: 30px;
+          font-family: sans-serif;
+          font-size: 20px;
+          text-align: center;
+          letter-spacing: 1px;
+          color: red;
+        }
+      }
+
+      .separator {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #20638c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+        margin: 20px 0px 20px 0px;
+      }
+    }
+
+    .mobileAppointmentsContainer {
+      display: none;
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .aboutPageContainer {
-    .bioContainer {
+    .showBioContainer {
       .bioTitleContainer {
         .bioTitle {
           font-size: 40px;
         }
       }
+
       .bioSectionContainer {
         .bioImgContainer {
           .bioImg {
@@ -227,7 +398,18 @@
       }
     }
 
-    .philanthropyContainer {
+    .separator {
+      display: flex;
+      position: relative;
+      width: 90%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      margin: 30px 0px 30px 0px;
+    }
+
+    .showPhilanthropyContainer {
       .philanthropyTitleContainer {
         .philanthropyTitle {
           font-size: 40px;
@@ -241,23 +423,23 @@
         }
 
         .philanthropyImgContainer2 {
-          margin: 1l 5px;
+          margin: 15px;
           width: 250px;
-
-          .philanthropyImg2 {
-            width: 100%;
-            border-radius: 15px;
-          }
         }
 
         .philanthropyParagraphContainer {
-          width: 60%;
-          margin: 15px;
-
           .philanthropyParagraph {
             line-height: 30px;
             font-size: 20px;
           }
+        }
+      }
+    }
+
+    .showAppointmentsContainer {
+      .currentAppointmentsTitleContainer {
+        .currentAppointmentsTitle {
+          font-size: 40px;
         }
       }
     }
@@ -266,28 +448,113 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .aboutPageContainer {
-    .bioContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .aboutBtnContainer {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      width: 100%;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+      .aboutBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px 0px 20px;
+        background-color: #20638c;
+        border-style: outset;
+        border-width: 5px;
+        border-radius: 10px;
+        width: 165px;
+        height: 60px;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+          1px 1px 1px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .aboutBtn:hover {
+        transform: scale(1.06);
+      }
+
+      .aboutBtn:active {
+        border-style: inset;
+        border-width: 5px;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),
+          1px 1px 1px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .hideContainer {
+      display: none;
+    }
+
+    .showBioContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
       .bioTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
         .bioTitle {
-          font-size: 30px;
+          font-family: sans-serif;
+          font-size: 40px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
         }
       }
 
       .mobileBioSectionContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobileBioImgContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
           margin: 15px;
 
           .mobileBioImg {
-            height: 300px;
+            height: 400px;
             border-radius: 15px;
+            margin: 15px;
           }
         }
         .mobileBioParagraphContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
           margin: 0px 15px;
           width: 90%;
 
@@ -306,25 +573,33 @@
         display: none;
       }
 
-      .bioSectionContainer2 {
+      .mobileBioSectionContainer2 {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .bioImgContainer2 {
+        .mobileBioImgContainer2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
           margin: 15px;
 
-          .bioImg2 {
+          .mobileBioImg2 {
             height: 275px;
             border-radius: 15px;
           }
         }
-        .bioParagraphContainer2 {
+        .mobileBioParagraphContainer2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
           margin: 15px 0px;
           width: 90%;
 
-          .bioParagraph2 {
+          .mobileBioParagraph2 {
             margin: 10px 0px;
             line-height: 35px;
             font-family: sans-serif;
@@ -333,6 +608,10 @@
             letter-spacing: 1px;
           }
         }
+      }
+
+      .bioSectionContainer2 {
+        display: none;
       }
     }
 
@@ -347,7 +626,7 @@
       margin: 30px 0px 30px 0px;
     }
 
-    .philanthropyContainer {
+    .showPhilanthropyContainer {
       display: flex;
       flex-direction: column;
       position: relative;
@@ -356,18 +635,31 @@
       margin: 10px 0px;
 
       .philanthropyTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
         .philanthropyTitle {
-          font-size: 30px;
+          font-family: sans-serif;
+          font-size: 40px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
         }
       }
 
       .mobilePhilanthropySectionContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobilePhilanthropyImgContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           margin: 15px;
           width: 400px;
 
@@ -388,6 +680,10 @@
         }
 
         .mobilePhilanthropyImgContainer2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           margin: 15px;
           width: 250px;
 
@@ -398,6 +694,10 @@
         }
 
         .mobilePhilanthropyParagraphContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
           width: 90%;
           margin: 15px;
 
@@ -413,6 +713,98 @@
       }
 
       .philanthropySectionContainer {
+        display: none;
+      }
+    }
+
+    .showAppointmentsContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .currentAppointmentsTitleContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .currentAppointmentsTitle {
+          font-family: sans-serif;
+          font-size: 40px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
+        }
+      }
+
+      .currentAppointmentsContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+
+        .singleAppointmentContainer {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+
+          .appointmentGroup {
+            margin: 10px 0px;
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentTitle {
+            margin: 10px 0px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDate {
+            margin: 10px 0px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDescription {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: red;
+          }
+        }
+
+        .separator {
+          display: flex;
+          position: relative;
+          width: 90%;
+          height: 5px;
+          border-radius: 5px;
+          background-color: #20638c;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+          margin: 20px 0px 20px 0px;
+        }
+      }
+
+      .mobileAppointmentsContainer {
         display: none;
       }
     }
@@ -421,28 +813,113 @@
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .aboutPageContainer {
-    .bioContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .aboutBtnContainer {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      width: 100%;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+      .aboutBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px 0px 20px;
+        background-color: #20638c;
+        border-style: outset;
+        border-width: 5px;
+        border-radius: 10px;
+        width: 165px;
+        height: 60px;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+          1px 1px 1px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .aboutBtn:hover {
+        transform: scale(1.06);
+      }
+
+      .aboutBtn:active {
+        border-style: inset;
+        border-width: 5px;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),
+          1px 1px 1px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .hideContainer {
+      display: none;
+    }
+
+    .showBioContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
       .bioTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
         .bioTitle {
-          font-size: 30px;
+          font-family: sans-serif;
+          font-size: 35px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
         }
       }
 
       .mobileBioSectionContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobileBioImgContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
           margin: 15px;
 
           .mobileBioImg {
             height: 300px;
             border-radius: 15px;
+            margin: 15px;
           }
         }
         .mobileBioParagraphContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
           margin: 0px 15px;
           width: 90%;
 
@@ -463,11 +940,15 @@
 
       .mobileBioSectionContainer2 {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobileBioImgContainer2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
           margin: 15px;
 
           .mobileBioImg2 {
@@ -476,6 +957,10 @@
           }
         }
         .mobileBioParagraphContainer2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
           margin: 15px 0px;
           width: 90%;
 
@@ -506,7 +991,7 @@
       margin: 30px 0px 30px 0px;
     }
 
-    .philanthropyContainer {
+    .showPhilanthropyContainer {
       display: flex;
       flex-direction: column;
       position: relative;
@@ -515,18 +1000,31 @@
       margin: 10px 0px;
 
       .philanthropyTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
         .philanthropyTitle {
-          font-size: 30px;
+          font-family: sans-serif;
+          font-size: 35px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
         }
       }
 
       .mobilePhilanthropySectionContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobilePhilanthropyImgContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           margin: 15px;
           width: 400px;
 
@@ -547,6 +1045,10 @@
         }
 
         .mobilePhilanthropyImgContainer2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           margin: 15px;
           width: 250px;
 
@@ -557,12 +1059,16 @@
         }
 
         .mobilePhilanthropyParagraphContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
           width: 90%;
           margin: 15px;
 
           .mobilePhilanthropyParagraph {
             margin: 10px 0px;
-            line-height: 30px;
+            line-height: 35px;
             font-family: sans-serif;
             font-size: 20px;
             text-align: left;
@@ -575,67 +1081,215 @@
         display: none;
       }
     }
+
+    .showAppointmentsContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .currentAppointmentsTitleContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .currentAppointmentsTitle {
+          font-family: sans-serif;
+          font-size: 35px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
+        }
+      }
+
+      .currentAppointmentsContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+
+        .singleAppointmentContainer {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+
+          .appointmentGroup {
+            margin: 10px 0px;
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentTitle {
+            margin: 10px 0px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDate {
+            margin: 10px 0px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDescription {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: red;
+          }
+        }
+
+        .separator {
+          display: flex;
+          position: relative;
+          width: 90%;
+          height: 5px;
+          border-radius: 5px;
+          background-color: #20638c;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+          margin: 20px 0px 20px 0px;
+        }
+      }
+
+      .mobileAppointmentsContainer {
+        display: none;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 414px) and (max-width: 599px) {
   .aboutPageContainer {
-    .bioContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .aboutBtnContainer {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      width: 100%;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+      .aboutBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px 0px 5px;
+        background-color: #20638c;
+        border-style: outset;
+        border-width: 5px;
+        border-radius: 10px;
+        width: 140px;
+        height: 60px;
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+          1px 1px 1px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .aboutBtn:hover {
+        transform: scale(1.025);
+      }
+
+      .aboutBtn:active {
+        border-style: inset;
+        border-width: 5px;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),
+          1px 1px 1px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .hideContainer {
+      display: none;
+    }
+
+    .showBioContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
       .bioTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
         .bioTitle {
-          font-size: 24px;
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
         }
       }
 
       .mobileBioSectionContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobileBioImgContainer {
-          margin: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
 
           .mobileBioImg {
-            height: 200px;
+            height: 250px;
             border-radius: 10px;
+            margin: 7.5px;
           }
         }
         .mobileBioParagraphContainer {
-          margin: 0px 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          margin: 0px 10px;
           width: 90%;
 
           .mobileBioParagraph {
-            margin: 10px 0px;
-            line-height: 30px;
-            font-family: sans-serif;
-            font-size: 18px;
-            text-align: left;
-            letter-spacing: 1px;
-          }
-        }
-      }
-
-      .mobileBioSectionContainer2 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-
-        .mobileBioImgContainer2 {
-          margin: 15px;
-
-          .mobileBioImg2 {
-            height: 125px;
-            border-radius: 10px;
-          }
-        }
-        .mobileBioParagraphContainer2 {
-          margin: 0px 15px;
-          width: 90%;
-
-          .mobileBioParagraph2 {
-            margin: 10px 0px;
+            margin: 7.5px 0px;
             line-height: 30px;
             font-family: sans-serif;
             font-size: 18px;
@@ -647,6 +1301,43 @@
 
       .bioSectionContainer {
         display: none;
+      }
+
+      .mobileBioSectionContainer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobileBioImgContainer2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
+
+          .mobileBioImg2 {
+            height: 140px;
+            border-radius: 10px;
+          }
+        }
+        .mobileBioParagraphContainer2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          margin: 7.5px 0px;
+          width: 90%;
+
+          .mobileBioParagraph2 {
+            margin: 7.5px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
       }
 
       .bioSectionContainer2 {
@@ -662,10 +1353,10 @@
       border-radius: 5px;
       background-color: #20638c;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
-      margin: 15px 0px 15px 0px;
+      margin: 30px 0px 30px 0px;
     }
 
-    .philanthropyContainer {
+    .showPhilanthropyContainer {
       display: flex;
       flex-direction: column;
       position: relative;
@@ -674,20 +1365,33 @@
       margin: 10px 0px;
 
       .philanthropyTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
         .philanthropyTitle {
-          font-size: 24px;
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: #20638c;
         }
       }
 
       .mobilePhilanthropySectionContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobilePhilanthropyImgContainer {
-          margin: 15px;
-          width: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 15px 0px 7.5px 0px;
+          width: 350px;
 
           .mobilePhilanthropyImg {
             width: 100%;
@@ -706,8 +1410,12 @@
         }
 
         .mobilePhilanthropyImgContainer2 {
-          margin: 15px;
-          width: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
+          width: 250px;
 
           .mobilePhilanthropyImg2 {
             width: 100%;
@@ -716,11 +1424,15 @@
         }
 
         .mobilePhilanthropyParagraphContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
           width: 90%;
-          margin: 15px;
+          margin: 7.5px;
 
           .mobilePhilanthropyParagraph {
-            margin: 10px 0px;
+            margin: 7.5px 0px;
             line-height: 30px;
             font-family: sans-serif;
             font-size: 18px;
@@ -731,6 +1443,100 @@
       }
 
       .philanthropySectionContainer {
+        display: none;
+      }
+    }
+
+    .showAppointmentsContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .currentAppointmentsTitleContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .currentAppointmentsTitle {
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: #20638c;
+          text-align: center;
+          line-height: 40px;
+        }
+      }
+
+      .currentAppointmentsContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        .singleAppointmentContainer {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+
+          .appointmentGroup {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentTitle {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDate {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDescription {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: red;
+          }
+        }
+
+        .separator {
+          display: flex;
+          position: relative;
+          width: 90%;
+          height: 5px;
+          border-radius: 5px;
+          background-color: #20638c;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+          margin: 10px 0px 10px 0px;
+        }
+      }
+
+      .mobileAppointmentsContainer {
         display: none;
       }
     }
@@ -739,62 +1545,118 @@
 
 @media only screen and (min-width: 360px) and (max-width: 413px) {
   .aboutPageContainer {
-    .bioContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .aboutBtnContainer {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      width: 100%;
+      height: 80px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+      .aboutBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 2px 0px 2px;
+        background-color: #20638c;
+        border-style: outset;
+        border-width: 5px;
+        border-radius: 10px;
+        width: 115px;
+        height: 60px;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+          1px 1px 1px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .aboutBtn:hover {
+        transform: scale(1.025);
+      }
+
+      .aboutBtn:active {
+        border-style: inset;
+        border-width: 5px;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),
+          1px 1px 1px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .hideContainer {
+      display: none;
+    }
+
+    .showBioContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
       .bioTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
         .bioTitle {
-          font-size: 24px;
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
         }
       }
 
       .mobileBioSectionContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobileBioImgContainer {
-          margin: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
 
           .mobileBioImg {
-            height: 200px;
+            height: 250px;
             border-radius: 10px;
+            margin: 7.5px;
           }
         }
         .mobileBioParagraphContainer {
-          margin: 0px 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          margin: 0px 10px;
           width: 90%;
 
           .mobileBioParagraph {
-            margin: 10px 0px;
-            line-height: 30px;
-            font-family: sans-serif;
-            font-size: 18px;
-            text-align: left;
-            letter-spacing: 1px;
-          }
-        }
-      }
-
-      .mobileBioSectionContainer2 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-
-        .mobileBioImgContainer2 {
-          margin: 15px;
-
-          .mobileBioImg2 {
-            height: 125px;
-            border-radius: 10px;
-          }
-        }
-        .mobileBioParagraphContainer2 {
-          margin: 0px 15px;
-          width: 90%;
-
-          .mobileBioParagraph2 {
-            margin: 10px 0px;
+            margin: 7.5px 0px;
             line-height: 30px;
             font-family: sans-serif;
             font-size: 18px;
@@ -806,6 +1668,43 @@
 
       .bioSectionContainer {
         display: none;
+      }
+
+      .mobileBioSectionContainer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobileBioImgContainer2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
+
+          .mobileBioImg2 {
+            height: 125px;
+            border-radius: 10px;
+          }
+        }
+        .mobileBioParagraphContainer2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          margin: 7.5px 0px;
+          width: 90%;
+
+          .mobileBioParagraph2 {
+            margin: 7.5px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
       }
 
       .bioSectionContainer2 {
@@ -821,10 +1720,10 @@
       border-radius: 5px;
       background-color: #20638c;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
-      margin: 15px 0px 15px 0px;
+      margin: 30px 0px 30px 0px;
     }
 
-    .philanthropyContainer {
+    .showPhilanthropyContainer {
       display: flex;
       flex-direction: column;
       position: relative;
@@ -833,19 +1732,404 @@
       margin: 10px 0px;
 
       .philanthropyTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
         .philanthropyTitle {
-          font-size: 24px;
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: #20638c;
+          text-align: center;
+          line-height: 36px;
         }
       }
 
       .mobilePhilanthropySectionContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .mobilePhilanthropyImgContainer {
-          margin: 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 15px 0px 7.5px 0px;
+          width: 325px;
+
+          .mobilePhilanthropyImg {
+            width: 100%;
+            border-radius: 10px;
+          }
+
+          .mobileImgRow1 > .mobilePhilanthropyImg {
+            width: 49%;
+            margin: 0 1% 0 0;
+          }
+
+          .mobileImgRow2 > .mobilePhilanthropyImg {
+            width: 99%;
+            margin: 0.5% 1% 0 0;
+          }
+        }
+
+        .mobilePhilanthropyImgContainer2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
+          width: 250px;
+
+          .mobilePhilanthropyImg2 {
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+
+        .mobilePhilanthropyParagraphContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          width: 90%;
+          margin: 7.5px;
+
+          .mobilePhilanthropyParagraph {
+            margin: 7.5px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .philanthropySectionContainer {
+        display: none;
+      }
+    }
+
+    .showAppointmentsContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .currentAppointmentsTitleContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .currentAppointmentsTitle {
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: #20638c;
+          text-align: center;
+          line-height: 36px;
+        }
+      }
+
+      .currentAppointmentsContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        .singleAppointmentContainer {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+
+          .appointmentGroup {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentTitle {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDate {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDescription {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: red;
+          }
+        }
+
+        .separator {
+          display: flex;
+          position: relative;
+          width: 90%;
+          height: 5px;
+          border-radius: 5px;
+          background-color: #20638c;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+          margin: 10px 0px 10px 0px;
+        }
+      }
+
+      .mobileAppointmentsContainer {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .aboutPageContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .aboutBtnContainer {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      width: 100%;
+      height: 80px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+      .aboutBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 2px 0px 2px;
+        background-color: #20638c;
+        border-style: outset;
+        border-width: 5px;
+        border-radius: 10px;
+        width: 100px;
+        height: 60px;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+          1px 1px 1px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .aboutBtn:hover {
+        transform: scale(1.025);
+      }
+
+      .aboutBtn:active {
+        border-style: inset;
+        border-width: 5px;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),
+          1px 1px 1px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .hideContainer {
+      display: none;
+    }
+
+    .showBioContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .bioTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .bioTitle {
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #20638c;
+        }
+      }
+
+      .mobileBioSectionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobileBioImgContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
+
+          .mobileBioImg {
+            height: 250px;
+            border-radius: 10px;
+            margin: 7.5px;
+          }
+        }
+        .mobileBioParagraphContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          margin: 0px 10px;
+          width: 90%;
+
+          .mobileBioParagraph {
+            margin: 7.5px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .bioSectionContainer {
+        display: none;
+      }
+
+      .mobileBioSectionContainer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobileBioImgContainer2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
+
+          .mobileBioImg2 {
+            height: 110px;
+            border-radius: 10px;
+          }
+        }
+        .mobileBioParagraphContainer2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          margin: 7.5px 0px;
+          width: 90%;
+
+          .mobileBioParagraph2 {
+            margin: 7.5px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: left;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .bioSectionContainer2 {
+        display: none;
+      }
+    }
+
+    .separator {
+      display: flex;
+      position: relative;
+      width: 90%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #20638c;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+      margin: 30px 0px 30px 0px;
+    }
+
+    .showPhilanthropyContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px;
+
+      .philanthropyTitleContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .philanthropyTitle {
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: #20638c;
+          text-align: center;
+          line-height: 36px;
+        }
+      }
+
+      .mobilePhilanthropySectionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .mobilePhilanthropyImgContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 15px 0px 7.5px 0px;
           width: 300px;
 
           .mobilePhilanthropyImg {
@@ -865,8 +2149,12 @@
         }
 
         .mobilePhilanthropyImgContainer2 {
-          margin: 15px;
-          width: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 7.5px;
+          width: 250px;
 
           .mobilePhilanthropyImg2 {
             width: 100%;
@@ -875,11 +2163,15 @@
         }
 
         .mobilePhilanthropyParagraphContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
           width: 90%;
-          margin: 15px;
+          margin: 7.5px;
 
           .mobilePhilanthropyParagraph {
-            margin: 10px 0px;
+            margin: 7.5px 0px;
             line-height: 30px;
             font-family: sans-serif;
             font-size: 18px;
@@ -893,97 +2185,8 @@
         display: none;
       }
     }
-  }
-}
 
-@media only screen and (max-width: 359px) {
-  .aboutPageContainer {
-    .bioContainer {
-      .bioTitleContainer {
-        .bioTitle {
-          font-size: 24px;
-        }
-      }
-
-      .mobileBioSectionContainer {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-
-        .mobileBioImgContainer {
-          margin: 15px;
-
-          .mobileBioImg {
-            height: 200px;
-            border-radius: 10px;
-          }
-        }
-        .mobileBioParagraphContainer {
-          margin: 0px 15px;
-          width: 90%;
-
-          .mobileBioParagraph {
-            margin: 10px 0px;
-            line-height: 30px;
-            font-family: sans-serif;
-            font-size: 18px;
-            text-align: left;
-            letter-spacing: 1px;
-          }
-        }
-      }
-
-      .mobileBioSectionContainer2 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-
-        .mobileBioImgContainer2 {
-          margin: 15px;
-
-          .mobileBioImg2 {
-            height: 100px;
-            border-radius: 10px;
-          }
-        }
-        .mobileBioParagraphContainer2 {
-          margin: 0px 15px;
-          width: 90%;
-
-          .mobileBioParagraph2 {
-            margin: 10px 0px;
-            line-height: 30px;
-            font-family: sans-serif;
-            font-size: 18px;
-            text-align: left;
-            letter-spacing: 1px;
-          }
-        }
-      }
-
-      .bioSectionContainer {
-        display: none;
-      }
-
-      .bioSectionContainer2 {
-        display: none;
-      }
-    }
-
-    .separator {
-      display: flex;
-      position: relative;
-      width: 90%;
-      height: 5px;
-      border-radius: 5px;
-      background-color: #20638c;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
-      margin: 15px 0px 15px 0px;
-    }
-
-    .philanthropyContainer {
+    .showAppointmentsContainer {
       display: flex;
       flex-direction: column;
       position: relative;
@@ -991,64 +2194,89 @@
       align-items: center;
       margin: 10px 0px;
 
-      .philanthropyTitleContainer {
-        .philanthropyTitle {
-          font-size: 20px;
-        }
-      }
-
-      .mobilePhilanthropySectionContainer {
+      .currentAppointmentsTitleContainer {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
+        position: relative;
         justify-content: center;
         align-items: center;
 
-        .mobilePhilanthropyImgContainer {
-          margin: 15px;
-          width: 290px;
-
-          .mobilePhilanthropyImg {
-            width: 100%;
-            border-radius: 10px;
-          }
-
-          .mobileImgRow1 > .mobilePhilanthropyImg {
-            width: 49%;
-            margin: 0 1% 0 0;
-          }
-
-          .mobileImgRow2 > .mobilePhilanthropyImg {
-            width: 99%;
-            margin: 0.5% 1% 0 0;
-          }
-        }
-
-        .mobilePhilanthropyImgContainer2 {
-          margin: 15px;
-          width: 200px;
-
-          .mobilePhilanthropyImg2 {
-            width: 100%;
-            border-radius: 10px;
-          }
-        }
-
-        .mobilePhilanthropyParagraphContainer {
-          width: 90%;
-          margin: 15px;
-
-          .mobilePhilanthropyParagraph {
-            margin: 10px 0px;
-            line-height: 30px;
-            font-family: sans-serif;
-            font-size: 18px;
-            text-align: left;
-            letter-spacing: 1px;
-          }
+        .currentAppointmentsTitle {
+          font-family: sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: #20638c;
+          text-align: center;
+          line-height: 36px;
         }
       }
 
-      .philanthropySectionContainer {
+      .currentAppointmentsContainer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        .singleAppointmentContainer {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+
+          .appointmentGroup {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentTitle {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDate {
+            margin: 7.5px 0px;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+
+          .appointmentDescription {
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: red;
+          }
+        }
+
+        .separator {
+          display: flex;
+          position: relative;
+          width: 90%;
+          height: 5px;
+          border-radius: 5px;
+          background-color: #20638c;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+          margin: 10px 0px 10px 0px;
+        }
+      }
+
+      .mobileAppointmentsContainer {
         display: none;
       }
     }

@@ -7,13 +7,13 @@ class Footer extends Component {
   constructor() {
     super();
     this.state = {
-      showMobileMenu: false
+      showMobileMenu: false,
     };
   }
 
   toggleMobileMenu = () => {
     this.setState({
-      showMobileMenu: !this.state.showMobileMenu
+      showMobileMenu: !this.state.showMobileMenu,
     });
   };
 
@@ -55,7 +55,7 @@ class Footer extends Component {
         </div>
         <div className='reportsContainer'>
           <p className='reports'>
-            Copies of reports filed with the State Board of Elections is (or
+            Copies of reports filed with the State Board of Elections are (or
             will be) available on the board's official website (
             <a
               className='reportsLink'

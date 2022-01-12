@@ -198,30 +198,33 @@ export default class Homepage extends Component {
           </div>
           <div className='reasonParagraphContainer'>
             <p className='reasonParagraph'>
-              I am running to be your voice. I hear your frustrations as you
-              feel your concerns are not being addressed. I hear you when you
-              are frustrated at the misuse of your tax money. I hear your
-              worries about living paycheck to paycheck. I hear you say the
-              county needs to prioritize fair elections, protection for all
-              people's rights, and search for new jobs that will benefit the
-              area. These are things worth fighting for and I have experience
-              leading, mediating, and 20+ years of solving resident's problems.
-              I hear you and want to be your voice on the DuPage County Board.
+              I heard your worries about living paycheck to paycheck. I heard
+              you say the county needs to prioritize fair election, protections
+              for all people’s rights and search for new jobs that will benefit
+              the area. These are the things I have been fighting for and I have
+              been using my experience leading, mediating and 21 years of
+              solving residents through my career at the Village of Lisle. I
+              hear you and want to continue to be your voice on the DuPage
+              County Board. As a board member this last year I am very proud to
+              have voted to have all new election equipment – we all win as
+              residents.
               <br />
               <br />
-              I am running not as an individual voice, but as a spokesperson for
-              the many diverse and unique voices that make up our great
-              community.
+              I am so appreciative of those that helped elect me in 2020 and
+              yes, it is 2021 and it is election time again. I feel as if I have
+              been learning and making strides to be your voice and I look
+              forward to doing more to make DuPage County the best place to call
+              home.
               <br />
               <br />
-              That's why I want to help build a better DuPage.
+              That’s why I have been working to help build a better DuPage.
             </p>
             <p className='hashtagLogo'>#BuildaBetterDuPage</p>
           </div>
         </div>
         <span className='separator' />
         <div className='mediaMainContainer'>
-          <div className='campaignVideosMainContainer'>
+          {/* <div className='campaignVideosMainContainer'>
             <div className='campaignVideosTitleContainer'>
               <p className='campaignVideosTitle'>Campaign Videos</p>
             </div>
@@ -240,7 +243,7 @@ export default class Homepage extends Component {
                 allowFullScreen
               ></iframe>
             </div>
-            {/* <div className='campaignVideoContainer'>
+            <div className='campaignVideoContainer'>
               <div className='videoTitleContainer'>
                 <p className='videoTitle'>League of Women Voters Q & A</p>
               </div>
@@ -252,7 +255,7 @@ export default class Homepage extends Component {
                 allow='accelerometer; encrypted-media; gyroscope;'
                 allowFullScreen
               ></iframe>
-            </div> */}
+            </div>
             <div className='campaignVideoContainer'>
               <div className='videoTitleContainer'>
                 <p className='videoTitle'>Meet Paula Deacon Garcia</p>
@@ -266,8 +269,8 @@ export default class Homepage extends Component {
                 allowFullScreen
               ></iframe>
             </div>
-          </div>
-          <span className='separator' />
+          </div> */}
+          {/* <span className='separator' /> */}
           <div className='facebookFeedsMainContainer'>
             <div className='facebookFeedsTitleContainer'>
               <p className='facebookFeedsTitle'>Facebook Feed</p>
