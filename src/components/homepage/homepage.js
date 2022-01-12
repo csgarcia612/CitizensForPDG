@@ -211,7 +211,7 @@ export default class Homepage extends Component {
               <br />
               <br />
               I am so appreciative of those that helped elect me in 2020 and
-              yes, it is 2021 and it is election time again. I feel as if I have
+              yes, it is 2022 and it is election time again. I feel as if I have
               been learning and making strides to be your voice and I look
               forward to doing more to make DuPage County the best place to call
               home.
