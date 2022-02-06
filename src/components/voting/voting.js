@@ -23,7 +23,8 @@ export default class Voting extends Component {
               To find out if you live in District 2 you can check by
               <a
                 className='districtCheckLink'
-                href='https://www.dupageco.org/VoterLookup/'
+                // href='https://www.dupageco.org/VoterLookup/'
+                href='https://dupage.maps.arcgis.com/apps/instant/lookup/index.html?appid=679c2d2563994f308c34e0e7b1a29c69'
                 target='_blank'
                 rel='noopener noreferrer'
                 title='DuPage County Voter Lookup - www.dupageco.org/VoterLookup'
