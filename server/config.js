@@ -8,4 +8,6 @@ module.exports = {
   gmailClientSecret: `${process.env.GMAIL_CLIENT_SECRET}`,
   gmailRefreshToken: `${process.env.GMAIL_REFRESH_TOKEN}`,
   gmailAccessToken: `${process.env.GMAIL_ACCESS_TOKEN}`,
+  etherealClientId: `${process.env.ETHEREAL_CLIENT_ID}`,
+  etherealClientSecret: `${process.env.ETHEREAL_CLIENT_SECRET}`,
 };

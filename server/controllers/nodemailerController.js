@@ -3,36 +3,58 @@ dotenv.config();
 const nodemailer = require('nodemailer');
 const config = require('../config');
 
-// let transporter = nodemailer.createTransport({
-//   host: 'smtp.gmail.com',
-//   auth: {
-//     user: config.gmailUsername,
-//     pass: config.gmailSecret
-//   }
-// });
+let transporter = null;
+let senderEmail = null;
 
-let transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
-  auth: {
-    type: 'OAuth2',
-    clientId: config.gmailClientId,
-    clientSecret: config.gmailClientSecret,
-  },
-});
+if (process.env.NODE_ENV === 'production') {
+  transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      type: 'OAuth2',
+      clientId: config.gmailClientId,
+      clientSecret: config.gmailClientSecret,
+    },
+  });
 
-transporter.verify(function (error, success) {
-  if (error) {
-    console.log('*** Error with connection to Gmail: ', error);
-  } else {
-    console.log('Server connection to Gmail is ready to take messages');
-  }
-});
+  transporter.verify(function (error, success) {
+    if (error) {
+      console.log('*** Error with connection to Gmail: ', error);
+    } else {
+      console.log('Server connection to Gmail is ready to take messages');
+    }
+  });
+
+  senderEmail = 'pdg4dupage@gmail.com';
+} else if (process.env.NODE_ENV != 'production') {
+  transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    secure: false,
+    auth: {
+      user: config.etherealClientId,
+      pass: config.etherealClientSecret,
+    },
+  });
+
+  transporter.verify(function (error, success) {
+    if (error) {
+      console.log('*** Error with connection to Ethereal Email: ', error);
+    } else {
+      console.log(
+        'Server connection to Ethereal Email is ready to take messages'
+      );
+    }
+  });
+
+  senderEmail = 'smtp.ethereal.email';
+}
 
 module.exports = {
   sendEmail: (req, res, next) => {
     // console.log(req.body);
+
     const {
       contactName,
       contactEmailAddress,
@@ -40,8 +62,9 @@ module.exports = {
       contactSubject,
       contactMessage,
     } = req.body;
+
     const mailOptions = {
-      from: 'pdg4dupage.gmail.com',
+      from: { senderEmail },
       to: 'CitizensforPaulaDeaconGarcia@gmail.com',
       subject: 'Message From Citizens For Paula Deacon Garcia Website',
       auth: {
@@ -50,159 +73,8 @@ module.exports = {
         accessToken: config.gmailAccessToken,
         expires: 3598,
       },
-      text: `Message from ${contactName} at ${contactEmailAddress} and ${contactPhoneNumber}. The subject of the message is: ${contactSubject}. The message is as follows: ${contactMessage}`,
-      // html: `
-      //     <!doctype html>
-      //     <html>
-      //       <head>
-      //         <title></title>
-      //         <style>
-      //           @media screen and (max-width: 600px) {
-      //             .img-max {
-      //               width: 100% !important;
-      //               max-width: 100% !important;
-      //               height: auto !important;
-      //             }
-
-      //             .max-width {
-      //               max-width: 100% !important;
-      //             }
-
-      //             .mobile-wrapper {
-      //               width: 85% !important;
-      //               max-width: 85% !important;
-      //             }
-
-      //             .mobile-padding {
-      //               padding-left: 5% !important;
-      //               padding-right: 5% !important;
-      //             }
-      //           }
-
-      //           body {
-      //             background-color: #f6f6f6;
-      //             height: 100%;
-      //             padding: 0;
-      //             width: 100%;
-      //             margin: 0;
-      //           }
-
-      //           .table1 {
-      //             border-collapse: collapse;
-      //           }
-
-      //           .td1 {
-      //             background-color: #3b4a69;
-      //             background-image: url('https://i.imgur.com/GOVUaph.jpg');
-      //             background-size: cover;
-      //             background-attachment: fixed;
-      //             padding: 50px 15px 0 15px;
-      //           }
-
-      //           .table2 {
-      //             max-width: 600px;
-      //             border-collapse: collapse;
-      //           }
-
-      //           .td2 {
-      //             padding: 0 0 25px 0;
-      //           }
-
-      //           .a {
-      //             cursor: none;
-      //           }
-
-      //           .a > img {
-      //             border: 0;
-      //             height: auto;
-      //             line-height: 100%;
-      //             outline: none;
-      //             text-decoration: none;
-      //             box-shadow: 0px 0px 15px 5px #000000;
-      //             display: block;
-      //             border-radius: 10px;
-      //           }
-
-      //           .td3 {
-      //             padding: 50px;
-      //             font-family: Open Sans, Helvetica, Arial, sans-serif;
-      //             border-radius: 15px;
-      //             box-shadow: 0 0 15px #000000;
-      //           }
-
-      //           .td3 > p {
-      //             color: #4D4D4D;
-      //             font-size: 16px;
-      //             line-height: 26px;
-      //             margin: 0;
-      //           }
-
-      //           .td4 {
-      //             padding: 25px 0;
-      //             font-family: Open Sans, Helvetica, Arial, sans-serif;
-      //             color: #0000FF;
-      //           }
-
-      //           .td4 > p {
-      //             font-size: 32px;
-      //             font-weight: bold;
-      //             line-height: 35px;
-      //             text-shadow: 3px 3px 0 #FFFFFF, 3px -3px 0 #FFFFFF, -3px 3px 0 #FFFFFF, -3px -3px 0 #FFFFFF, 3px 0px 0 #FFFFFF, 0px 3px 0 #FFFFFF, -3px 0px 0 #FFFFFF, 0px -3px 0 #FFFFFF, 3px 3px 0px rgba(0,0,255,0)
-      //           }
-      //         </style>
-      //       </head>
-      //       <body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; !importantbackground-color: #f6f6f6; height: 100%; padding: 0; width: 100%; margin: 0;" bgcolor="#f6f6f6">
-
-      //         <table class="table1" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
-      //           <tr>
-      //             <td class="td1" align="center" valign="top" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #3b4a69; background-image: url('https://i.imgur.com/GOVUaph.jpg'); background-size: cover; background-attachment: fixed; padding: 50px 15px 0 15px;" class="mobile-padding" bgcolor="#3b4a69" background="url('https://i.imgur.com/GOVUaph.jpg')">
-      //               <!--[if (gte mso 9)|(IE)]>
-      //               <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-      //               <tr>
-      //                 <td align="center" valign="top" width="600">
-      //                   <![endif]-->
-      //                   <table class="table2" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px; border-collapse: collapse;">
-      //                     <tr>
-      //                       <td class="td2" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 0 50px 0;">
-      //                         <a href=#>
-      //                           <img src="https://i.imgur.com/MwSJGpe.png" alt="Paula Deacon Garcia For DuPage Count, District 2" width="350" style="-ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; box-shadow: 0px 0px 15px 5px #000000; display: block; border-radius: 10px;">
-      //                         </a>
-      //                       </td>
-      //                     </tr>
-      //                     <tr>
-      //                       <td class="td3" align="left" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 50px; font-family: Open Sans, Helvetica, Arial, sans-serif; border-radius: 15px; box-shadow: 0 0 15px #000000;" bgcolor="#f6f6f6">
-      //                         <p style="color: #4D4D4D; font-size: 16px; line-height: 26px; margin: 0;">
-
-      //                               Dear Citizens For Paula Deacon Garcia,<br><br>
-
-      //                               ${contactMessage}<br><br>
-
-      //                               Sincerely,<br>
-      //                               ${contactName}<br>
-      //                               ${contactEmailAddress}<br>
-      //                               ${contactPhoneNumber}
-      //                         </p>
-      //                       </td>
-      //                     </tr>
-      //                     <tr>
-      //                       <td class="td4" align="center" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 25px 0; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #0000FF;">
-      //                         <p style="font-size: 32px; font-weight: bold; line-height: 35px; text-shadow: 3px 3px 0 #FFFFFF, 3px -3px 0 #FFFFFF, -3px 3px 0 #FFFFFF, -3px -3px 0 #FFFFFF, 3px 0px 0 #FFFFFF, 0px 3px 0 #FFFFFF, -3px 0px 0 #FFFFFF, 0px -3px 0 #FFFFFF, 3px 3px 0px rgba(0,0,255,0)">
-      //                           #BuildaBetterDuPage
-      //                         </p>
-      //                       </td>
-      //                     </tr>
-      //         </table>
-      //       <!--[if (gte mso 9)|(IE)]>
-      //                       </td>
-      //                     </tr>
-      //         </table>
-      //       <![endif]-->
-      //               </td>
-      //           </tr>
-      //         </table>
-      //       </body>
-      //     </html>
-      // `
+      // Remove the auth object when working in developer mode
+      text: `Message from ${contactName} at ${contactEmailAddress} and ${contactPhoneNumber}. The subject of the message is: Message From Citizens For Paula Deacon Garcia Website. The message is as follows: ${contactMessage}`,
       html: `<!doctype html>
       <html>
           <head>
