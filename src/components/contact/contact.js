@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
 import './contact.scss';
-const dotenv = require('dotenv');
-dotenv.config();
 
 class Contact extends Component {
   constructor() {
@@ -15,7 +13,7 @@ class Contact extends Component {
       contactName: '',
       contactEmailAddress: '',
       contactPhoneNumber: '',
-      contactMessage: ''
+      contactMessage: '',
     };
     this.contactFormChange = this.contactFormChange.bind(this);
     this.checkEmail = this.checkEmail.bind(this);
@@ -27,7 +25,7 @@ class Contact extends Component {
 
   contactFormChange(event) {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   }
 
@@ -491,7 +489,7 @@ class Contact extends Component {
       'willies',
       'willy',
       'xrated',
-      'xxx'
+      'xxx',
     ];
 
     let emailSafe = true;
@@ -512,38 +510,49 @@ class Contact extends Component {
   }
 
   sendEmail() {
-    axios.post('/api/nodemailer', this.state).then(resp => {
-      if (resp.data === 'Email Sent') {
-        this.setState({
-          showEmailMsg: true,
-          contactName: '',
-          contactEmailAddress: '',
-          contactPhoneNumber: '',
-          contactMessage: ''
-        });
-      } else if (resp.data === 'Email Failed') {
-        this.setState({
-          showEmailErr: true
-        });
-      }
-    });
+    axios
+      .post('/api/nodemailer', this.state)
+      .then((resp) => {
+        // console.log('***Email Respopnse : ', resp);
+
+        if (resp.data === 'Email Sent') {
+          this.setState({
+            showEmailMsg: true,
+            contactName: '',
+            contactEmailAddress: '',
+            contactPhoneNumber: '',
+            contactMessage: '',
+          });
+        } else if (resp.data === 'Email Failed') {
+          this.setState({
+            showEmailErr: true,
+          });
+        }
+      })
+      .catch((error) => {
+        if (error.response && error.response.data === 'Email Failed') {
+          this.setState({
+            showEmailErr: true,
+          });
+        }
+      });
   }
 
   toggleEmailMsg() {
     this.setState({
-      showEmailMsg: !this.state.showEmailMsg
+      showEmailMsg: !this.state.showEmailMsg,
     });
   }
 
   toggleEmailErr() {
     this.setState({
-      showEmailErr: !this.state.showEmailErr
+      showEmailErr: !this.state.showEmailErr,
     });
   }
 
   toggleEmailWarn() {
     this.setState({
-      showEmailWarn: !this.state.showEmailWarn
+      showEmailWarn: !this.state.showEmailWarn,
     });
   }
 
@@ -555,7 +564,7 @@ class Contact extends Component {
       contactName,
       contactEmailAddress,
       contactPhoneNumber,
-      contactMessage
+      contactMessage,
     } = this.state;
 
     return (
