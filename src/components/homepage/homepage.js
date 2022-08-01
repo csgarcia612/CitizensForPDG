@@ -199,11 +199,11 @@ export default class Homepage extends Component {
           <div className='reasonParagraphContainer'>
             <p className='reasonParagraph'>
               I heard your worries about living paycheck to paycheck. I heard
-              you say the county needs to prioritize fair election, protections
+              you say the county needs to prioritize fair elections, protections
               for all people’s rights and search for new jobs that will benefit
-              the area. These are the things I have been fighting for and I have
-              been using my experience leading, mediating and 21 years of
-              solving residents through my career at the Village of Lisle. I
+              the area. These are the things I have been fighting for; calling
+              upon my experience leading, mediating and 21 years of solving
+              residents problems during my career at the Village of Lisle. I
               hear you and want to continue to be your voice on the DuPage
               County Board. As a board member this last year I am very proud to
               have voted to have all new election equipment – we all win as

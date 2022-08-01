@@ -15,12 +15,14 @@ import FosterEndorsement from '../../images/Foster_Banner2.jpg';
 import IADOEndorsement from '../../images/IADO_Banner.jpg';
 import DuckworthEndorsement from '../../images/Duckworth_Banner.jpg';
 import DailyHeraldEndorsement from '../../images/DH_Banner2.jpg';
+import LiUNAEndorsement from '../../images/LiUNA_Endorsement.jpg';
+import AFSCME31Endorsement from '../../images/AFSCME31_Endorsement.jpg';
 
 class Endorsements extends Component {
   constructor() {
     super();
     this.state = {
-      showCurrentEndorsements: false,
+      showCurrentEndorsements: true,
     };
   }
 
@@ -56,94 +58,98 @@ class Endorsements extends Component {
             <p className='endorsementsTitle'>Honored To Be Endorsed By</p>
           </div>
           <div className='endorsementsMainContainer'>
-            <p className='endorsementPlaceholder'>
+            {/* <p className='endorsementPlaceholder'>
               Endorsements for Paula's 2022 campaign will appear here as they
               are announced.
-            </p>
-            {/* <div className='endorserContainerTall2'>
+            </p> */}
+            <div className='endorserContainerShort1'>
+              <div className='endorserInfoMainContainer'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>AFSCME - Council 31</p>
+                  <p className='endorserSubTitle'>American Federation of</p>
+                  <p className='endorserSubTitle'>
+                    State, County, & Municipal Employees
+                  </p>
+                  <a
+                    className='endorserSiteLink'
+                    href='https://www.afscme31.org/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    title='AFSCME : Council 31 - afscme31.org'
+                  >
+                    <p className='endorserSiteLinkTitle'>afscme31.org</p>
+                  </a>
+                </div>
+              </div>
               <div className='endorserImgContainer'>
                 <img
                   className='endorserImg'
-                  src={DailyHeraldEndorsement}
-                  alt='Daily Herald Logo'
+                  src={AFSCME31Endorsement}
+                  alt='AFSCME : Council 31 Logo'
+                />
+              </div>
+            </div>
+            <div className='endorserContainerShort2'>
+              <div className='endorserImgContainer'>
+                <img
+                  className='endorserImg'
+                  src={LiUNAEndorsement}
+                  alt='LiUNA Logo'
                 />
               </div>
               <div className='endorserInfoMainContainer'>
                 <div className='endorserTitleContainer'>
-                  <p className='endorserTitle'>Daily Herald</p>
+                  <p className='endorserTitle'>Laborers' International Union</p>
+                  <p className='endorserTitle'>of North America</p>
                   <a
                     className='endorserSiteLink'
-                    href='https://www.dailyherald.com/discuss/20200930/endorsement-our-choices-for-dupage-county-board-districts-1-6'
+                    href='http://www.liuna.org/'
                     target='_blank'
                     rel='noopener noreferrer'
-                    title='Daily Herald : 2020 Endorsements for DuPage County Board - https://www.dailyherald.com/discuss/20200930/endorsement-our-choices-for-dupage-county-board-districts-1-6'
+                    title='Laborers International Union of North America - liuna.org'
                   >
-                    <p className='endorserSiteLinkTitle'>
-                      DuPage County Board Endorsements Article
-                    </p>
+                    <p className='endorserSiteLinkTitle'>liuna.org</p>
                   </a>
+                </div>
+              </div>
+            </div>
+            <div className='endorserContainerTall1'>
+              <div className='endorserInfoMainContainer'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>US Representative</p>
+                  <p className='endorserTitle'>Sean Casten</p>
                   <a
                     className='endorserSiteLink'
-                    href='https://www.dailyherald.com/news/20200929/paula-deacon-garcia-candidate-profile-dupage-county-board-district-2'
+                    href='https://castenforcongress.com/'
                     target='_blank'
                     rel='noopener noreferrer'
-                    title='Daily Herald : Candidate Profile Article - https://www.dailyherald.com/news/20200929/paula-deacon-garcia-candidate-profile-dupage-county-board-district-2'
+                    title='Sean Casten - castenforcongress.com'
                   >
                     <p className='endorserSiteLinkTitle'>
-                      Candidate Profile Article
+                      castenforcongress.com
                     </p>
                   </a>
                 </div>
-                <div className='endorserQuoteContainer-Split'>
+                <div className='endorserQuoteContainer'>
                   <p className='endorserQuote'>
-                    "Democrat Paula Deacon Garcia of Lisle challenges Republican
-                    incumbent Sean Noonan of Elmhurst.
-                  </p>
-                  <br />
-                  <p className='endorserQuote'>
-                    Public safety and public health are top priorities for
-                    Noonan, a Bloomingdale police officer who has represented
-                    the district since 2012, while Deacon Garcia, who has worked
-                    for a local municipality's building and customer service
-                    department for more than two decades, cites stormwater
-                    management, economic recovery for businesses affected by
-                    COVID-19, mental health and overall health and safety as her
-                    top reasons for running in her first election.
-                  </p>
-                  <br />
-                  <p className='endorserQuote'>
-                    While Noonan thinks the board should stay at 18 members,
-                    Deacon Garcia believes that reducing the board to 12 could
-                    produce many cost savings. She believes voters should have
-                    had the chance to have their voices heard at the ballot box
-                    on that issue.
-                  </p>
-                  <br />
-                  <p className='endorserQuote'>
-                    When it comes to efficiencies, Deacon Garcia proposes more
-                    cross training to save money in the recorder's and clerk's
-                    offices, while Noonan would like to see a study to determine
-                    if there might be benefits from merging the Office of
-                    Emergency Management with the Sheriff's Office. Deacon
-                    Garcia would like to create a social media task force to
-                    improve information available to the public online, in turn
-                    creating more transparency, and to host budget workshops for
-                    the public so residents could understand where the county's
-                    money is going.
-                  </p>
-                  <br />
-                  <p className='endorserQuote'>
-                    Both candidates pledge to strive for bipartisanship through
-                    cooperation and listening, with the goal of doing what's
-                    best for the residents of DuPage, but Deacon Garcia stands
-                    out for her energy and forward thinking. Noonan is a likable
-                    candidate, but in two terms hasn't distinguished himself as
-                    a champion for the causes he advocates. We think Deacon
-                    Garcia will be more forceful and that makes her our choice."
+                    "Today, I am endorsing Paula Deacon Garcia in her election
+                    for DuPage County Board. She knows that real leadership is
+                    about public service. She has demonstrated she has the right
+                    experience, passion, and drive to bring our neighbors
+                    together to tackle the challenges we face. She has already
+                    been a tireless advocate for our community and that's why I
+                    am proud to endorse her campaign."
                   </p>
                 </div>
               </div>
-            </div> */}
+              <div className='endorserImgContainer'>
+                <img
+                  className='endorserImg'
+                  src={CastenEndorsement}
+                  alt='Sean Casten Logo'
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './voting.scss';
-import countyDistrictMap from '../../images/countyDistrictMap.png';
+import countyDistrictMap from '../../images/countyDistrictMap-NEW.jpg';
 
 export default class Voting extends Component {
   render() {
@@ -27,10 +27,24 @@ export default class Voting extends Component {
                 href='https://dupage.maps.arcgis.com/apps/instant/lookup/index.html?appid=679c2d2563994f308c34e0e7b1a29c69'
                 target='_blank'
                 rel='noopener noreferrer'
-                title='DuPage County Voter Lookup - www.dupageco.org/VoterLookup'
+                title='DuPage County Voter Lookup'
               >
                 CLICKING HERE
               </a>
+            </p>
+          </div>
+          <div className='districtCheckContainer'>
+            <p className='districtCheck'>
+              <a
+                className='districtCheckLink'
+                href='https://dupage.maps.arcgis.com/apps/PublicGallery/map.html?appid=a022f4eb22854f76a0dbf2d129e229fa&webmap=ae2ceab26d8a4baa83853a9e73d9319a'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='DuPage County Interactive Map'
+              >
+                CLICK HERE
+              </a>
+              for an interactive map all DuPage County districts
             </p>
           </div>
           <div className='districtImgContainer'>
