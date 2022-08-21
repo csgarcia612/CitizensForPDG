@@ -613,6 +613,21 @@ class Contact extends Component {
             <br />
             &bull; Send a message of support
           </p>
+          <span className='linkSeparator' />
+          <div className='countyProfileContainer'>
+            <p className='countyProfile'>
+              <a
+                className='countyProfileLink'
+                href='https://www.dupagecounty.gov/CountyBoard/Garcia/'
+                target='_blank'
+                rel='noopener noreferrer'
+                title='DuPage County Board Member Profile'
+              >
+                CLICK HERE
+              </a>
+              for Paula Deacon Garcia's official DuPage County profile
+            </p>
+          </div>
         </div>
         <span className='separator' />
         <div className='contactFormContainer'>

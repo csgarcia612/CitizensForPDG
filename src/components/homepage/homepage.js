@@ -36,31 +36,116 @@ export default class Homepage extends Component {
     }
   };
 
-  // checkLeapYear = (year) => {
-  //   if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // };
-
   render() {
     // eslint - disable - next - line;
+
+    let countDown = setInterval(() => {
+      let isLeapYear = (Year) => {
+        return (Year % 4 === 0 && Year % 100 !== 0) || Year % 400 === 0;
+      };
+
+      let daysInMonth = [29, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+      let targetDate = new Date('nov 8, 2022 00:00:00');
+
+      let currentDate = new Date();
+
+      let remaining = targetDate.getTime() - currentDate.getTime();
+
+      let timeLeft = {
+        seconds: Math.floor((remaining % (1000 * 60)) / 1000),
+        minutes: Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60)),
+        hours: Math.floor(
+          (remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
+        days: Math.floor(remaining / (1000 * 60 * 60 * 24)),
+        weeks: 0,
+        months: 0,
+        years: 0,
+      };
+
+      for (
+        let thisYear = currentDate.getFullYear();
+        timeLeft.days >= (isLeapYear(thisYear + 1) ? 366 : 365);
+        thisYear++
+      ) {
+        timeLeft.days -= isLeapYear(thisYear + 1) ? 366 : 365;
+
+        timeLeft.years++;
+      }
+
+      for (
+        let thisYear = currentDate.getFullYear(),
+          thisMonth = currentDate.getMonth() + 1;
+        timeLeft.days >=
+        (isLeapYear(thisYear) && thisMonth === 2
+          ? daysInMonth[0]
+          : daysInMonth[thisMonth]);
+        thisMonth++, thisYear++
+      ) {
+        timeLeft.days -=
+          isLeapYear(thisYear) && thisMonth === 2
+            ? daysInMonth[0]
+            : daysInMonth[thisMonth];
+
+        timeLeft.months++;
+
+        if (thisMonth === 12) {
+          thisMonth = 0;
+        }
+      }
+
+      // NEED TO FIGURE OUT CODE FOR CALCULATING WEEKS LEFT TO WORK WITH DAYS, MONTHS, AND YEARS
+
+      // console.log(
+      //   '***Remaining Time : ',
+      //   `${timeLeft.months} Months - ${timeLeft.days} Days - ${timeLeft.hours} Hours - ${timeLeft.minutes} Minutes - ${timeLeft.seconds} Seconds`
+      // );
+
+      if (window.location.pathname === '/') {
+        document.getElementById('years').innerHTML = timeLeft.years;
+        document.getElementById('months').innerHTML = timeLeft.months;
+        document.getElementById('days').innerHTML = timeLeft.days;
+        document.getElementById('hours').innerHTML = timeLeft.hours;
+        document.getElementById('minutes').innerHTML = timeLeft.minutes;
+        document.getElementById('seconds').innerHTML = timeLeft.seconds;
+      }
+    }, 1000);
+
     // let countdownClock = setInterval(() => {
-    //   let endDateTime = new Date('aug 5, 2020 00:00:00').getTime();
+    //   let endDateTime = new Date('nov 8, 2022 00:00:00').getTime();
 
     //   let currentDateTime = new Date().getTime();
 
     //   let remaining = endDateTime - currentDateTime;
 
+    //   let isLeapYear = (year) => {
+    //     if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+    //       return true;
+    //     } else {
+    //       return false;
+    //     }
+    //   };
+
+    //   let daysInYear = isLeapYear ? 366 : 365;
+
     //   let daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-    //   let days = Math.floor(remaining / (1000 * 60 * 60 * 24));
-    //   let hours = Math.floor(
+    //   let daysInMonthLeap = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+    //   let daysInThisMonth = isLeapYear
+    //     ? daysInMonthLeap[new Date().getMonth() - 1]
+    //     : daysInMonth[new Date().getMonth() - 1];
+
+    //   let secondsLeft = Math.floor((remaining % (1000 * 60)) / 1000);
+    //   let minutesLeft = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+    //   let hoursLeft = Math.floor(
     //     (remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     //   );
-    //   let minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
-    //   let seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+    //   let daysLeft = Math.floor(remaining / (1000 * 60 * 60 * 24));
+    //   let weeksLeft = Math.floor((daysLeft>daysInThisMonth) ?  : );
+    //   let monthsLeft = 0;
+    //   let yearsLeft = Math.floor((monthsLeft>()) ? : );
 
     //   if (days < 10) {
     //     days = '0' + days;
@@ -78,12 +163,13 @@ export default class Homepage extends Component {
     //     seconds = '0' + seconds;
     //   }
 
-    //   // console.log(
-    //   //   '***Remaining Time : ',
-    //   //   `${days} Days - ${hours} Hours - ${minutes} Minutes - ${seconds} Seconds`
-    //   // );
+    //   console.log(
+    //     '***Remaining Time : ',
+    //     `${months} - ${days} Days - ${hours} Hours - ${minutes} Minutes - ${seconds} Seconds`
+    //   );
 
     //   if (window.location.pathname === '/') {
+    //     document.getElementById('months').innerHTML = months;
     //     document.getElementById('days').innerHTML = days;
     //     document.getElementById('hours').innerHTML = hours;
     //     document.getElementById('minutes').innerHTML = minutes;
@@ -94,8 +180,41 @@ export default class Homepage extends Component {
     return (
       <div className='homepageContainer'>
         <div className='homepageHeaderContainer'>
-          {/* <div className='countdownMainContainer'>
+          {/* <div class='base-timer'>
+            <svg
+              class='base-timer__svg'
+              viewBox='0 0 100 100'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <g class='base-timer__circle'>
+                <circle
+                  class='base-timer__path-elapsed'
+                  cx='50'
+                  cy='50'
+                  r='45'
+                />
+              </g>
+            </svg>
+            <span><!-- Remaining time label --></span>
+          </div> */}
+          <div className='countdownMainContainer'>
             <div className='voteCountdownContainer'>
+              <div className='counterMainContainer'>
+                <div className='counterContainer'>
+                  <p className='counterNum' id='years'></p>
+                </div>
+                <div className='counterTitleContainer'>
+                  <p className='counterTitle'>Years</p>
+                </div>
+              </div>
+              <div className='counterMainContainer'>
+                <div className='counterContainer'>
+                  <p className='counterNum' id='months'></p>
+                </div>
+                <div className='counterTitleContainer'>
+                  <p className='counterTitle'>Months</p>
+                </div>
+              </div>
               <div className='counterMainContainer'>
                 <div className='counterContainer'>
                   <p className='counterNum' id='days'></p>
@@ -131,11 +250,10 @@ export default class Homepage extends Component {
             </div>
             <div className='voteMsgContainer'>
               <p className='voteMsg'>
-                Until the Illinois General Primary Election : Tuesday, March 17,
-                2020
+                Until the Illinois General Election : Tuesday, November 8, 2022
               </p>
             </div>
-          </div> */}
+          </div>
           {/* <div className='specialMsgMainContainer'>
             <div className='specialMsgRow1'>
               <a

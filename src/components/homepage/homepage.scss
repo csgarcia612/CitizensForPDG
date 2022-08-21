@@ -11,6 +11,25 @@
   .homepageHeaderContainer {
     margin: 0px 0px 25px 0px;
 
+    /* Sets the containers height and width */
+.base-timer {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+/* Removes SVG styling that would hide the time label */
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+/* The SVG path that displays the timer's progress */
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
     .countdownMainContainer {
       display: flex;
       position: relative;

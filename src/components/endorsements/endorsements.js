@@ -17,6 +17,7 @@ import DuckworthEndorsement from '../../images/Duckworth_Banner.jpg';
 import DailyHeraldEndorsement from '../../images/DH_Banner2.jpg';
 import LiUNAEndorsement from '../../images/LiUNA_Endorsement.jpg';
 import AFSCME31Endorsement from '../../images/AFSCME31_Endorsement.jpg';
+import SMART265Endorsement from '../../images/SMART_Union265.jpg';
 
 class Endorsements extends Component {
   constructor() {
@@ -62,6 +63,38 @@ class Endorsements extends Component {
               Endorsements for Paula's 2022 campaign will appear here as they
               are announced.
             </p> */}
+            <div className='endorserContainerShort2'>
+              <div className='endorserImgContainer'>
+                <img
+                  className='endorserImg'
+                  src={SMART265Endorsement}
+                  alt='S.M.A.R.T. Union Local 265 Logo'
+                />
+              </div>
+              <div className='endorserInfoMainContainer'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>SMART - Local Union 265</p>
+                  <p className='endorserSubTitle'>
+                    Sheet Metal, Air, Rail, Transportation
+                  </p>
+                  <a
+                    className='endorserSiteLink'
+                    href='https://www.smart265.org/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    title='SMART - Local Union 265 - smart265.org'
+                  >
+                    <p className='endorserSiteLinkTitle'>smart265.org</p>
+                  </a>
+                </div>
+                <div className='endorserQuoteContainer'>
+                  <p className='endorserQuote'>
+                    "Paula Deacon Garcia is endorsed by SMART for her extensive
+                    experience in local government."
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className='endorserContainerShort1'>
               <div className='endorserInfoMainContainer'>
                 <div className='endorserTitleContainer'>
