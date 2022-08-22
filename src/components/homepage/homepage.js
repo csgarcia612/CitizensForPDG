@@ -37,8 +37,7 @@ export default class Homepage extends Component {
   };
 
   render() {
-    // eslint - disable - next - line;
-
+    // eslint-disable-next-line
     let countDown = setInterval(() => {
       let isLeapYear = (Year) => {
         return (Year % 4 === 0 && Year % 100 !== 0) || Year % 400 === 0;
@@ -103,79 +102,77 @@ export default class Homepage extends Component {
       // );
 
       if (window.location.pathname === '/') {
-        document.getElementById('years').innerHTML = timeLeft.years;
-        document.getElementById('months').innerHTML = timeLeft.months;
-        document.getElementById('days').innerHTML = timeLeft.days;
-        document.getElementById('hours').innerHTML = timeLeft.hours;
-        document.getElementById('minutes').innerHTML = timeLeft.minutes;
-        document.getElementById('seconds').innerHTML = timeLeft.seconds;
+        if (
+          timeLeft.years === 0 &&
+          timeLeft.months === 0 &&
+          timeLeft.days === 0 &&
+          timeLeft.hours === 0 &&
+          timeLeft.minutes === 0 &&
+          timeLeft.seconds === 0
+        ) {
+          document.getElementById('countdownBox').className = 'hideCountdown';
+          document.getElementById('electionDayBox').className =
+            'electionDayMsgContainer';
+        } else if (
+          timeLeft.years === 0 &&
+          timeLeft.months === 0 &&
+          timeLeft.days === 0 &&
+          timeLeft.hours === 0 &&
+          timeLeft.minutes === 0
+        ) {
+          document.getElementById('yearsBox').className = 'hideCountdown';
+          document.getElementById('monthsBox').className = 'hideCountdown';
+          document.getElementById('daysBox').className = 'hideCountdown';
+          document.getElementById('hoursBox').className = 'hideCountdown';
+          document.getElementById('minutesBox').className = 'hideCountdown';
+          document.getElementById('seconds').innerHTML = timeLeft.seconds;
+        } else if (
+          timeLeft.years === 0 &&
+          timeLeft.months === 0 &&
+          timeLeft.days === 0 &&
+          timeLeft.hours === 0
+        ) {
+          document.getElementById('yearsBox').className = 'hideCountdown';
+          document.getElementById('monthsBox').className = 'hideCountdown';
+          document.getElementById('daysBox').className = 'hideCountdown';
+          document.getElementById('hoursBox').className = 'hideCountdown';
+          document.getElementById('minutes').innerHTML = timeLeft.minutes;
+          document.getElementById('seconds').innerHTML = timeLeft.seconds;
+        } else if (
+          timeLeft.years === 0 &&
+          timeLeft.months === 0 &&
+          timeLeft.days === 0
+        ) {
+          document.getElementById('yearsBox').className = 'hideCountdown';
+          document.getElementById('monthsBox').className = 'hideCountdown';
+          document.getElementById('daysBox').className = 'hideCountdown';
+          document.getElementById('hours').innerHTML = timeLeft.hours;
+          document.getElementById('minutes').innerHTML = timeLeft.minutes;
+          document.getElementById('seconds').innerHTML = timeLeft.seconds;
+        } else if (timeLeft.years === 0 && timeLeft.months === 0) {
+          document.getElementById('yearsBox').className = 'hideCountdown';
+          document.getElementById('monthsBox').className = 'hideCountdown';
+          document.getElementById('days').innerHTML = timeLeft.days;
+          document.getElementById('hours').innerHTML = timeLeft.hours;
+          document.getElementById('minutes').innerHTML = timeLeft.minutes;
+          document.getElementById('seconds').innerHTML = timeLeft.seconds;
+        } else if (timeLeft.years === 0) {
+          document.getElementById('yearsBox').className = 'hideCountdown';
+          document.getElementById('months').innerHTML = timeLeft.months;
+          document.getElementById('days').innerHTML = timeLeft.days;
+          document.getElementById('hours').innerHTML = timeLeft.hours;
+          document.getElementById('minutes').innerHTML = timeLeft.minutes;
+          document.getElementById('seconds').innerHTML = timeLeft.seconds;
+        } else {
+          document.getElementById('years').innerHTML = timeLeft.years;
+          document.getElementById('months').innerHTML = timeLeft.months;
+          document.getElementById('days').innerHTML = timeLeft.days;
+          document.getElementById('hours').innerHTML = timeLeft.hours;
+          document.getElementById('minutes').innerHTML = timeLeft.minutes;
+          document.getElementById('seconds').innerHTML = timeLeft.seconds;
+        }
       }
     }, 1000);
-
-    // let countdownClock = setInterval(() => {
-    //   let endDateTime = new Date('nov 8, 2022 00:00:00').getTime();
-
-    //   let currentDateTime = new Date().getTime();
-
-    //   let remaining = endDateTime - currentDateTime;
-
-    //   let isLeapYear = (year) => {
-    //     if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-    //       return true;
-    //     } else {
-    //       return false;
-    //     }
-    //   };
-
-    //   let daysInYear = isLeapYear ? 366 : 365;
-
-    //   let daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
-    //   let daysInMonthLeap = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
-    //   let daysInThisMonth = isLeapYear
-    //     ? daysInMonthLeap[new Date().getMonth() - 1]
-    //     : daysInMonth[new Date().getMonth() - 1];
-
-    //   let secondsLeft = Math.floor((remaining % (1000 * 60)) / 1000);
-    //   let minutesLeft = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
-    //   let hoursLeft = Math.floor(
-    //     (remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    //   );
-    //   let daysLeft = Math.floor(remaining / (1000 * 60 * 60 * 24));
-    //   let weeksLeft = Math.floor((daysLeft>daysInThisMonth) ?  : );
-    //   let monthsLeft = 0;
-    //   let yearsLeft = Math.floor((monthsLeft>()) ? : );
-
-    //   if (days < 10) {
-    //     days = '0' + days;
-    //   }
-
-    //   if (hours < 10) {
-    //     hours = '0' + hours;
-    //   }
-
-    //   if (minutes < 10) {
-    //     minutes = '0' + minutes;
-    //   }
-
-    //   if (seconds < 10) {
-    //     seconds = '0' + seconds;
-    //   }
-
-    //   console.log(
-    //     '***Remaining Time : ',
-    //     `${months} - ${days} Days - ${hours} Hours - ${minutes} Minutes - ${seconds} Seconds`
-    //   );
-
-    //   if (window.location.pathname === '/') {
-    //     document.getElementById('months').innerHTML = months;
-    //     document.getElementById('days').innerHTML = days;
-    //     document.getElementById('hours').innerHTML = hours;
-    //     document.getElementById('minutes').innerHTML = minutes;
-    //     document.getElementById('seconds').innerHTML = seconds;
-    //   }
-    // }, 1000);
 
     return (
       <div className='homepageContainer'>
@@ -198,8 +195,8 @@ export default class Homepage extends Component {
             <span><!-- Remaining time label --></span>
           </div> */}
           <div className='countdownMainContainer'>
-            <div className='voteCountdownContainer'>
-              <div className='counterMainContainer'>
+            <div className='voteCountdownContainer' id='countdownBox'>
+              <div className='counterMainContainer' id='yearsBox'>
                 <div className='counterContainer'>
                   <p className='counterNum' id='years'></p>
                 </div>
@@ -207,7 +204,7 @@ export default class Homepage extends Component {
                   <p className='counterTitle'>Years</p>
                 </div>
               </div>
-              <div className='counterMainContainer'>
+              <div className='counterMainContainer' id='monthsBox'>
                 <div className='counterContainer'>
                   <p className='counterNum' id='months'></p>
                 </div>
@@ -215,7 +212,7 @@ export default class Homepage extends Component {
                   <p className='counterTitle'>Months</p>
                 </div>
               </div>
-              <div className='counterMainContainer'>
+              <div className='counterMainContainer' id='daysBox'>
                 <div className='counterContainer'>
                   <p className='counterNum' id='days'></p>
                 </div>
@@ -223,7 +220,7 @@ export default class Homepage extends Component {
                   <p className='counterTitle'>Days</p>
                 </div>
               </div>
-              <div className='counterMainContainer'>
+              <div className='counterMainContainer' id='hoursBox'>
                 <div className='counterContainer'>
                   <p className='counterNum' id='hours'></p>
                 </div>
@@ -231,7 +228,7 @@ export default class Homepage extends Component {
                   <p className='counterTitle'>Hours</p>
                 </div>
               </div>
-              <div className='counterMainContainer'>
+              <div className='counterMainContainer' id='minutesBox'>
                 <div className='counterContainer'>
                   <p className='counterNum' id='minutes'></p>
                 </div>
@@ -239,7 +236,7 @@ export default class Homepage extends Component {
                   <p className='counterTitle'>Minutes</p>
                 </div>
               </div>
-              <div className='counterMainContainer'>
+              <div className='counterMainContainer' id='secondsBox'>
                 <div className='counterContainer'>
                   <p className='counterNum' id='seconds'></p>
                 </div>
@@ -248,10 +245,13 @@ export default class Homepage extends Component {
                 </div>
               </div>
             </div>
-            <div className='voteMsgContainer'>
+            <div className='voteMsgContainer' id='countdownBox'>
               <p className='voteMsg'>
                 Until the Illinois General Election : Tuesday, November 8, 2022
               </p>
+            </div>
+            <div className='hideElectionDayMsg' id='electionDayBox'>
+              <p className='electionDayMsg'>HAPPY ELECTION DAY</p>
             </div>
           </div>
           {/* <div className='specialMsgMainContainer'>

@@ -51,6 +51,10 @@
         width: 100%;
         margin: 10px 0px;
 
+        .hideCountdown {
+          display: none;
+        }
+
         .counterMainContainer {
           display: flex;
           position: relative;
@@ -117,6 +121,34 @@
         border-radius: 10px;
 
         .voteMsg {
+          flex-wrap: wrap;
+          text-align: center;
+          font-size: 24px;
+          letter-spacing: 1px;
+          color: white;
+        }
+      }
+
+      .hideElectionDayMsg {
+        display: none;
+      }
+  
+      .electionDayMsgContainer {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 775px;
+        height: 36px;
+        margin: 0px 10px 0px 10px;
+        background-color: blue;
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: white;
+        border-radius: 10px;
+  
+        .electionDayMsg {
           flex-wrap: wrap;
           text-align: center;
           font-size: 24px;
