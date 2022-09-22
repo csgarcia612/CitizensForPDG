@@ -18,6 +18,7 @@ import DailyHeraldEndorsement from '../../images/DH_Banner2.jpg';
 import LiUNAEndorsement from '../../images/LiUNA_Endorsement.jpg';
 import AFSCME31Endorsement from '../../images/AFSCME31_Endorsement.jpg';
 import SMART265Endorsement from '../../images/SMART_Union265.jpg';
+import MomsDemandActionLogo from '../../images/MomsDemandAction.png';
 
 class Endorsements extends Component {
   constructor() {
@@ -63,6 +64,49 @@ class Endorsements extends Component {
               Endorsements for Paula's 2022 campaign will appear here as they
               are announced.
             </p> */}
+            <div className='endorserContainerShort1'>
+              <div className='endorserInfoMainContainer'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>Moms Demand Action</p>
+                  <p className='endorserSubTitle'>Gun Sense Candidate</p>
+                  <a
+                    className='endorserSiteLink'
+                    href='https://momsdemandaction.org/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    title='Moms Demand Action - momsdemandaction.org'
+                  >
+                    <p className='endorserSiteLinkTitle'>
+                      momsdemandaction.org
+                    </p>
+                  </a>
+                  <a
+                    className='endorserSiteLink'
+                    href='https://www.everytown.org/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    title='Everytown - everytown.org'
+                  >
+                    <p className='endorserSiteLinkTitle'>everytown.org</p>
+                  </a>
+                </div>
+                <div className='endorserQuoteContainer'>
+                  <p className='endorserQuote'>
+                    "...your campaign has been awarded the 2022 Moms Demand
+                    Action Gun Sense Candidate distinction. Thank you again for
+                    advocating for gun violence prevention and making a
+                    commitment to govern with gun safety in mind..."
+                  </p>
+                </div>
+              </div>
+              <div className='endorserImgContainer'>
+                <img
+                  className='endorserImg'
+                  src={MomsDemandActionLogo}
+                  alt='Moms Demand Action : Gun Sense Candidate Distinction Logo'
+                />
+              </div>
+            </div>
             <div className='endorserContainerShort2'>
               <div className='endorserImgContainer'>
                 <img

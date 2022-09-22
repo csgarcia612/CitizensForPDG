@@ -11,24 +11,61 @@
   .homepageHeaderContainer {
     margin: 0px 0px 25px 0px;
 
-    /* Sets the containers height and width */
-.base-timer {
+
+  .base-timer {
   position: relative;
-  height: 300px;
   width: 300px;
+  height: 300px;
 }
 
-/* Removes SVG styling that would hide the time label */
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
 .base-timer__circle {
   fill: none;
   stroke: none;
 }
 
-/* The SVG path that displays the timer's progress */
 .base-timer__path-elapsed {
-  stroke-width: 7px;
+  stroke-width: 8px;
   stroke: grey;
 }
+
+.base-timer__path-remaining {
+  stroke-width: 6px;
+  stroke-linecap: butt;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+
 
     .countdownMainContainer {
       display: flex;
