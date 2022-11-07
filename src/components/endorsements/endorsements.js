@@ -19,6 +19,8 @@ import LiUNAEndorsement from '../../images/LiUNA_Endorsement.jpg';
 import AFSCME31Endorsement from '../../images/AFSCME31_Endorsement.jpg';
 import SMART265Endorsement from '../../images/SMART_Union265.jpg';
 import MomsDemandActionLogo from '../../images/MomsDemandAction.png';
+import Local150Logo from '../../images/Local150_Logo.png';
+import Local130Logo from '../../images/Local130_Logo.png';
 
 class Endorsements extends Component {
   constructor() {
@@ -64,6 +66,104 @@ class Endorsements extends Component {
               Endorsements for Paula's 2022 campaign will appear here as they
               are announced.
             </p> */}
+            <div className='endorserContainerShort1'>
+              <div className='endorserInfoMainContainer'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>International Union of</p>
+                  <p className='endorserTitle'>Operating Engineers</p>
+                  <p className='endorserSubTitle'>Local 150</p>
+                  <a
+                    className='endorserSiteLink'
+                    href='https://local150.org/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    title='Local 150 - local150.org'
+                  >
+                    <p className='endorserSiteLinkTitle'>local150.org</p>
+                  </a>
+                </div>
+              </div>
+              <div className='endorserImgContainer'>
+                <img
+                  className='endorserImg'
+                  src={Local150Logo}
+                  alt='Local 150 Logo'
+                />
+              </div>
+            </div>
+            <div className='endorserContainerShort2'>
+              <div className='endorserImgContainer'>
+                <img
+                  className='endorserImg'
+                  src={DailyHeraldEndorsement}
+                  alt='Daily Herald Logo'
+                />
+              </div>
+              <div className='endorserInfoMainContainer'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>Daily Herald</p>
+                  <p className='endorserTitle'>Editorial Board</p>
+                </div>
+                <div className='endorserQuoteContainer-Split'>
+                  <p className='endorserQuote'>
+                    "Deacon Garcia stands out for her energy and forward
+                    thinking. We think Deacon Garcia will be more forceful and
+                    that makes her our choice."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='endorserContainerShort1'>
+              <div className='endorserInfoMainContainer'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>Union of</p>
+                  <p className='endorserTitle'>Plumbers and Tech Engineers</p>
+                  <p className='endorserSubTitle'>UA Local 130</p>
+                  <a
+                    className='endorserSiteLink'
+                    href='https://plumberslu130ua.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    title='Local 130 - plumberslu130ua.com'
+                  >
+                    <p className='endorserSiteLinkTitle'>plumberslu130ua.com</p>
+                  </a>
+                </div>
+              </div>
+              <div className='endorserImgContainer'>
+                <img
+                  className='endorserImg'
+                  src={Local130Logo}
+                  alt='Local 130 Logo'
+                />
+              </div>
+            </div>
+            <div className='endorserContainerShort2'>
+              <div className='endorserImgContainer'>
+                <img
+                  className='endorserImg'
+                  src={DailyHeraldEndorsement}
+                  alt='Daily Herald Logo'
+                />
+              </div>
+              <div className='endorserInfoMainContainer'>
+                <div className='endorserTitleContainer'>
+                  <p className='endorserTitle'>Daily Herald</p>
+                </div>
+                <div className='endorserQuoteContainer-Split'>
+                  <p className='endorserQuote'>
+                    "Lisle resident Deacon Garcia, the other incumbent in
+                    District 2, co-chairs the Intergovernmental Committee and is
+                    vice chairwoman on the Development Committee. She is focused
+                    on finding a way to create more affordable housing in DuPage
+                    County as available open space is shrinking. She has worked
+                    toward finding affordable housing to keep young parents and
+                    business professionals in the county. She deserves to be
+                    reelected."
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className='endorserContainerShort1'>
               <div className='endorserInfoMainContainer'>
                 <div className='endorserTitleContainer'>
