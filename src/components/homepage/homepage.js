@@ -297,7 +297,7 @@ export default class Homepage extends Component {
             </span>
           </div> */}
 
-          <div className='countdownMainContainer'>
+          {/* <div className='countdownMainContainer'>
             <div className='voteCountdownContainer' id='countdownBox'>
               <div className='counterMainContainer' id='yearsBox'>
                 <div className='counterContainer'>
@@ -356,7 +356,7 @@ export default class Homepage extends Component {
             <div className='hideElectionDayMsg' id='electionDayBox'>
               <p className='electionDayMsg'>HAPPY ELECTION DAY</p>
             </div>
-          </div>
+          </div> */}
           {/* <div className='specialMsgMainContainer'>
             <div className='specialMsgRow1'>
               <a
